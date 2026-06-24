@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundial 2026 — Visor Dual</title>
+<meta name="description" content="Mirá dos partidos del Mundial 2026 al mismo tiempo. Visor dual de streams deportivos.">
+<meta name="author" content="Juan Martinez Garcia">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://juanaustral.github.io/visor-dual/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mundial 2026 — Visor Dual">
+<meta property="og:description" content="Mirá dos partidos del Mundial 2026 al mismo tiempo.">
+<meta property="og:url" content="https://juanaustral.github.io/visor-dual/">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface2: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e0e0e0;
+  --text-dim: #888;
+  --accent: #3CAC3B;
+  --accent2: #E61D25;
+  --blue: #2A398D;
+  --radius: 10px;
+  --gap: 8px;
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --mono: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  display:flex;flex-direction:column;
+}
+
+/* ── Top Bar ── */
+.topbar{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 12px;
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  flex-shrink:0;z-index:10;
+  flex-wrap:wrap;
+}
+.topbar .logo{
+  font-weight:700;font-size:15px;white-space:nowrap;
+  background:linear-gradient(135deg,var(--accent),var(--blue));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.topbar .sep{color:var(--border);margin:0 2px;}
+.topbar input{
+  flex:1;min-width:180px;max-width:500px;
+  background:var(--surface2);border:1px solid var(--border);
+  color:var(--text);padding:6px 10px;border-radius:6px;
+  font-size:12px;font-family:var(--mono);
+  outline:none;transition:border-color .15s;
+}
+.topbar input:focus{border-color:var(--accent)}
+.topbar .label{
+  font-size:10px;text-transform:uppercase;letter-spacing:.5px;
+  color:var(--text-dim);white-space:nowrap;
+}
+.btn{
+  background:var(--surface2);border:1px solid var(--border);
+  color:var(--text);padding:6px 12px;border-radius:6px;
+  cursor:pointer;font-size:12px;white-space:nowrap;
+  transition:all .15s;display:inline-flex;align-items:center;gap:4px;
+  font-family:var(--font);
+}
+.btn:hover{background:var(--border);border-color:var(--text-dim)}
+.btn.accent{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.btn.accent:hover{filter:brightness(1.15)}
+.btn.danger{background:var(--accent2);border-color:var(--accent2);color:#fff}
+.btn.danger:hover{filter:brightness(1.15)}
+.btn-sm{padding:4px 8px;font-size:11px}
+
+/* ── Video Area ── */
+.main-area{
+  flex:1;display:flex;flex-direction:column;
+  overflow:hidden;position:relative;
+}
+.slot{
+  flex:1;display:flex;flex-direction:column;
+  position:relative;min-height:0;
+  border-bottom:2px solid var(--border);
+}
+.slot:last-child{border-bottom:none}
+.slot-header{
+  display:flex;align-items:center;gap:8px;
+  padding:4px 10px;background:var(--surface);
+  flex-shrink:0;z-index:2;
+}
+.slot-label{
+  font-size:11px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.5px;display:flex;align-items:center;gap:6px;
+}
+.slot-status{
+  width:8px;height:8px;border-radius:50%;flex-shrink:0;
+}
+.status-live{background:var(--accent);box-shadow:0 0 6px var(--accent)}
+.status-loading{background:#f0a500;animation:pulse .8s infinite}
+.status-dead{background:var(--accent2)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.slot-url{
+  font-size:10px;color:var(--text-dim);font-family:var(--mono);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;
+}
+.slot-actions{display:flex;gap:4px;flex-shrink:0}
+.slot-frame{
+  flex:1;border:none;background:#000;
+  width:100%;min-height:0;
+}
+
+/* ── Empty State ── */
+.empty-state{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:12px;
+  color:var(--text-dim);text-align:center;padding:20px;
+}
+.empty-state .icon{font-size:40px;opacity:.3}
+.empty-state p{font-size:13px;max-width:300px}
+
+/* ── Footer ── */
+.footer{
+  display:flex;align-items:center;gap:12px;
+  padding:4px 12px;background:var(--surface);
+  border-top:1px solid var(--border);
+  font-size:10px;color:var(--text-dim);
+  flex-shrink:0;flex-wrap:wrap;
+}
+.footer kbd{
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:3px;padding:1px 5px;font-family:var(--mono);
+  font-size:10px;color:var(--text);
+}
+
+/* ── Toast ── */
+.toast{
+  position:fixed;bottom:40px;left:50%;transform:translateX(-50%);
+  background:var(--surface);border:1px solid var(--border);
+  padding:8px 18px;border-radius:20px;font-size:12px;
+  z-index:100;pointer-events:none;
+  animation:toastIn .3s ease-out, toastOut .3s 1.7s ease-in forwards;
+  opacity:0;
+}
+@keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes toastOut{from{opacity:1}to{opacity:0}}
+
+/* ── Responsive ── */
+@media(max-width:600px){
+  .topbar{flex-direction:column;align-items:stretch;gap:6px}
+  .topbar input{max-width:100%}
+  .btn{font-size:11px;padding:5px 10px}
+}
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar" id="topbar">
+  <span class="logo">⚽ Mundial 2026 — Visor Dual</span>
+  <span class="sep">|</span>
+  <span class="label">Stream 1</span>
+  <input type="text" id="url1" placeholder="Pegá el link de rojadirecta..." spellcheck="false">
+  <span class="label">Stream 2</span>
+  <input type="text" id="url2" placeholder="Pegá el link de rojadirecta..." spellcheck="false">
+  <button class="btn accent" onclick="loadBoth()" title="Cargar ambos streams">▶ Cargar</button>
+  <button class="btn" onclick="swapSlots()" title="Intercambiar streams">⇅ Swap</button>
+  <button class="btn" onclick="reloadBoth()" title="Recargar ambos">🔄</button>
+  <button class="btn" onclick="toggleFullscreen()" title="Pantalla completa">⛶</button>
+</div>
+
+<!-- Video Area -->
+<div class="main-area" id="mainArea">
+  <div class="slot" id="slot1">
+    <div class="slot-header">
+      <span class="slot-label"><span class="slot-status" id="status1"></span> <span id="label1">Stream 1</span></span>
+      <span class="slot-url" id="urlDisplay1"></span>
+      <span class="slot-actions">
+        <button class="btn btn-sm" onclick="reloadSlot(1)" title="Recargar stream 1 (R)">🔄</button>
+        <button class="btn btn-sm" onclick="fullscreenSlot(1)" title="Fullscreen stream 1">⛶</button>
+      </span>
+    </div>
+    <div class="empty-state" id="empty1">
+      <span class="icon">📺</span>
+      <p>Pegá un link de rojadirecta arriba y presioná <strong>Cargar</strong></p>
+    </div>
+    <iframe class="slot-frame" id="frame1" style="display:none" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+  <div class="slot" id="slot2">
+    <div class="slot-header">
+      <span class="slot-label"><span class="slot-status" id="status2"></span> <span id="label2">Stream 2</span></span>
+      <span class="slot-url" id="urlDisplay2"></span>
+      <span class="slot-actions">
+        <button class="btn btn-sm" onclick="reloadSlot(2)" title="Recargar stream 2">🔄</button>
+        <button class="btn btn-sm" onclick="fullscreenSlot(2)" title="Fullscreen stream 2">⛶</button>
+      </span>
+    </div>
+    <div class="empty-state" id="empty2">
+      <span class="icon">📺</span>
+      <p>Pegá un link de rojadirecta arriba y presioná <strong>Cargar</strong></p>
+    </div>
+    <iframe class="slot-frame" id="frame2" style="display:none" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <span>⌨ Atajos:</span>
+  <span><kbd>Enter</kbd> Cargar ambos</span>
+  <span><kbd>S</kbd> Swap</span>
+  <span><kbd>R</kbd> Recargar ambos</span>
+  <span><kbd>F</kbd> Fullscreen</span>
+  <span><kbd>1</kbd> Recargar stream 1</span>
+  <span><kbd>2</kbd> Recargar stream 2</span>
+  <span style="margin-left:auto">Desarrollado por <a href="https://juanmartinezgarcia.com" target="_blank" style="color:var(--accent);text-decoration:none">Juan Martinez Garcia</a></span>
+</div>
+
+<!-- Toast container -->
+<div class="toast" id="toast" style="display:none"></div>
+
+<script>
+// ── Default URLs ──
+const DEFAULTS = {
+  url1: 'https://rojadirectastream.com/embed/eventos.html?r=aHR0cHM6Ly9sYTE4aGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10eWNzcG9ydHM=',
+  url2: 'https://rojadirectastream.com/embed/eventos.html?r=aHR0cHM6Ly9sYTE2aGQuY29tL2RzcG9ydHNsYXRhbS5waHA=',
+  label1: 'TyC Sports',
+  label2: 'DSports Latam'
+};
+
+// ── State ──
+let state = { url1: '', url2: '', decoded1: '', decoded2: '', label1: '', label2: '' };
+
+// ── Init ──
+function init() {
+  // Load from localStorage or use defaults
+  const saved = localStorage.getItem('visor-dual-state');
+  if (saved) {
+    try {
+      const s = JSON.parse(saved);
+      state = { ...state, ...s };
+    } catch(e) {}
+  }
+  if (!state.url1 && !state.url2) {
+    state.url1 = DEFAULTS.url1;
+    state.url2 = DEFAULTS.url2;
+    state.label1 = DEFAULTS.label1;
+    state.label2 = DEFAULTS.label2;
+  }
+  document.getElementById('url1').value = state.url1;
+  document.getElementById('url2').value = state.url2;
+  document.getElementById('label1').textContent = state.label1 || 'Stream 1';
+  document.getElementById('label2').textContent = state.label2 || 'Stream 2';
+  // Auto-load if URLs present
+  if (state.url1 || state.url2) {
+    setTimeout(() => loadBoth(), 300);
+  }
+}
+
+// ── URL Parsing ──
+function decodeRojadirecta(url) {
+  try {
+    const u = new URL(url);
+    const r = u.searchParams.get('r');
+    if (r) {
+      const decoded = atob(r);
+      return decoded;
+    }
+  } catch(e) {}
+  return url; // Return as-is if not a rojadirecta URL
+}
+
+function extractLabel(url) {
+  try {
+    const u = new URL(url);
+    const path = u.pathname;
+    const params = new URLSearchParams(u.search);
+    // Try to extract meaningful name
+    if (params.get('stream')) return params.get('stream').toUpperCase();
+    const parts = path.split('/').filter(Boolean);
+    const last = parts[parts.length - 1] || '';
+    return last.replace('.php','').replace('.html','').replace(/-/g,' ').toUpperCase();
+  } catch(e) {}
+  return '';
+}
+
+// ── Load ──
+function loadSlot(n) {
+  const rawUrl = document.getElementById('url' + n).value.trim();
+  if (!rawUrl) return;
+
+  const decoded = decodeRojadirecta(rawUrl);
+  const label = extractLabel(decoded) || ('Stream ' + n);
+
+  state['url' + n] = rawUrl;
+  state['decoded' + n] = decoded;
+  state['label' + n] = label;
+
+  document.getElementById('label' + n).textContent = label;
+  document.getElementById('urlDisplay' + n).textContent = decoded;
+  document.getElementById('empty' + n).style.display = 'none';
+
+  const frame = document.getElementById('frame' + n);
+  const status = document.getElementById('status' + n);
+
+  status.className = 'slot-status status-loading';
+  frame.style.display = 'block';
+  frame.src = decoded;
+
+  frame.onload = () => {
+    status.className = 'slot-status status-live';
+  };
+  frame.onerror = () => {
+    status.className = 'slot-status status-dead';
+    toast('⚠️ Error cargando Stream ' + n);
+  };
+
+  saveState();
+}
+
+function loadBoth() {
+  loadSlot(1);
+  loadSlot(2);
+  toast('▶ Streams cargados');
+}
+
+function reloadSlot(n) {
+  const frame = document.getElementById('frame' + n);
+  const status = document.getElementById('status' + n);
+  if (!frame.src) return;
+  status.className = 'slot-status status-loading';
+  frame.src = frame.src; // Reload
+  toast('🔄 Stream ' + n + ' recargado');
+}
+
+function reloadBoth() {
+  reloadSlot(1);
+  reloadSlot(2);
+}
+
+// ── Swap ──
+function swapSlots() {
+  // Swap state
+  ['url1','url2','decoded1','decoded2','label1','label2'].forEach((k,i) => {
+    if (i % 2 === 0) {
+      const tmp = state[k];
+      state[k] = state[k.replace('1','2')];
+      state[k.replace('1','2')] = tmp;
+    }
+  });
+
+  // Swap DOM
+  document.getElementById('url1').value = state.url1;
+  document.getElementById('url2').value = state.url2;
+  document.getElementById('label1').textContent = state.label1 || 'Stream 1';
+  document.getElementById('label2').textContent = state.label2 || 'Stream 2';
+  document.getElementById('urlDisplay1').textContent = state.decoded1;
+  document.getElementById('urlDisplay2').textContent = state.decoded2;
+
+  // Swap iframes
+  const f1 = document.getElementById('frame1');
+  const f2 = document.getElementById('frame2');
+  const s1 = f1.src;
+  f1.src = f2.src;
+  f2.src = s1;
+
+  // Swap display states
+  const e1 = document.getElementById('empty1').style.display;
+  document.getElementById('empty1').style.display = document.getElementById('empty2').style.display;
+  document.getElementById('empty2').style.display = e1;
+
+  const d1 = document.getElementById('frame1').style.display;
+  document.getElementById('frame1').style.display = document.getElementById('frame2').style.display;
+  document.getElementById('frame2').style.display = d1;
+
+  saveState();
+  toast('⇅ Streams intercambiados');
+}
+
+// ── Fullscreen ──
+function fullscreenSlot(n) {
+  const frame = document.getElementById('frame' + n);
+  if (frame.requestFullscreen) {
+    frame.requestFullscreen().catch(() => {});
+  } else if (frame.webkitRequestFullscreen) {
+    frame.webkitRequestFullscreen();
+  }
+}
+
+function toggleFullscreen() {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  } else {
+    document.documentElement.requestFullscreen().catch(() => {});
+  }
+}
+
+// ── Persistence ──
+function saveState() {
+  localStorage.setItem('visor-dual-state', JSON.stringify({
+    url1: state.url1, url2: state.url2,
+    label1: state.label1, label2: state.label2
+  }));
+}
+
+// ── Toast ──
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.display = 'block';
+  t.style.animation = 'none';
+  t.offsetHeight; // reflow
+  t.style.animation = 'toastIn .3s ease-out, toastOut .3s 1.7s ease-in forwards';
+}
+
+// ── Keyboard Shortcuts ──
+document.addEventListener('keydown', (e) => {
+  // Ignore when focused on input
+  if (e.target.tagName === 'INPUT') return;
+
+  switch(e.key.toLowerCase()) {
+    case 'enter': e.preventDefault(); loadBoth(); break;
+    case 's': e.preventDefault(); swapSlots(); break;
+    case 'r': e.preventDefault(); reloadBoth(); break;
+    case 'f': e.preventDefault(); toggleFullscreen(); break;
+    case '1': e.preventDefault(); reloadSlot(1); break;
+    case '2': e.preventDefault(); reloadSlot(2); break;
+  }
+});
+
+// ── Start ──
+init();
+</script>
+</body>
+</html>
