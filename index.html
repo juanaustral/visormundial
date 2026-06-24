@@ -16,574 +16,350 @@
 <meta name="twitter:card" content="summary">
 <style>
 :root {
-  --bg: #0a0a0a;
-  --surface: #111;
-  --surface2: #1a1a1a;
-  --border: #2a2a2a;
-  --text: #e0e0e0;
-  --text-dim: #777;
-  --accent: #3CAC3B;
-  --accent2: #E61D25;
-  --blue: #2A398D;
-  --radius: 8px;
-  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --mono: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
-  --sidebar-w: 320px;
+  --bg:#0a0a0a;--surface:#111;--surface2:#1a1a1a;--border:#2a2a2a;
+  --text:#e0e0e0;--text-dim:#777;--accent:#3CAC3B;--accent2:#E61D25;
+  --radius:6px;--font:system-ui,-apple-system,sans-serif;
+  --mono:'SF Mono','Cascadia Code',monospace;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;overflow:hidden}
-body{
-  font-family:var(--font);
-  background:var(--bg);
-  color:var(--text);
-  display:flex;
-}
+html,body{height:100%;overflow:hidden;background:var(--bg)}
+body{font-family:var(--font);color:var(--text);display:flex;flex-direction:column}
 
-/* ── Sidebar ── */
-#sidebar{
-  width:var(--sidebar-w);min-width:var(--sidebar-w);
-  background:var(--surface);
-  border-right:1px solid var(--border);
-  display:flex;flex-direction:column;
-  transition:margin-left .25s ease,min-width .25s ease,width .25s ease;
-  z-index:20;overflow:hidden;
-  height:100%;
-}
-#sidebar.collapsed{
-  margin-left:calc(-1 * var(--sidebar-w));
-  min-width:0;width:0;
-}
-.sidebar-inner{
-  display:flex;flex-direction:column;
-  height:100%;overflow-y:auto;overflow-x:hidden;
-  padding:12px;gap:10px;
-  scrollbar-width:thin;scrollbar-color:var(--border) transparent;
-}
-
-/* Sidebar sections */
-.side-logo{
-  font-weight:700;font-size:16px;white-space:nowrap;
-  background:linear-gradient(135deg,var(--accent),var(--blue));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  text-align:center;padding-bottom:8px;
-  border-bottom:1px solid var(--border);
-  flex-shrink:0;
-}
-.side-section{
-  display:flex;flex-direction:column;gap:6px;
-  flex-shrink:0;
-}
-.side-section-title{
-  font-size:10px;text-transform:uppercase;letter-spacing:1px;
-  color:var(--text-dim);margin-bottom:2px;
-}
-
-/* Inputs */
-.input-group{display:flex;gap:4px}
-.input-group input{
-  flex:1;min-width:0;
-  background:var(--surface2);border:1px solid var(--border);
-  color:var(--text);padding:7px 9px;border-radius:6px;
-  font-size:11px;font-family:var(--mono);
-  outline:none;transition:border-color .15s;
-}
-.input-group input:focus{border-color:var(--accent)}
-.input-group input::placeholder{color:var(--text-dim);opacity:.5}
-
-/* Buttons */
-.btn{
-  background:var(--surface2);border:1px solid var(--border);
-  color:var(--text);padding:7px 11px;border-radius:6px;
-  cursor:pointer;font-size:11px;white-space:nowrap;
-  transition:all .15s;display:inline-flex;align-items:center;gap:4px;
-  font-family:var(--font);
-}
-.btn:hover{background:var(--border);border-color:var(--text-dim)}
-.btn.accent{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
-.btn.accent:hover{filter:brightness(1.15)}
-.btn-sm{padding:5px 8px;font-size:10px;border-radius:5px}
-.btn-block{width:100%;justify-content:center}
-
-/* Channel directory */
-#channelSearch{
-  background:var(--surface2);border:1px solid var(--border);
-  color:var(--text);padding:7px 9px;border-radius:6px;
-  font-size:11px;font-family:var(--font);
-  outline:none;transition:border-color .15s;
-  width:100%;
-}
-#channelSearch:focus{border-color:var(--accent)}
-#channelSearch::placeholder{color:var(--text-dim);opacity:.5}
-.channel-list{
-  display:flex;flex-direction:column;gap:1px;
-  max-height:250px;overflow-y:auto;
-  scrollbar-width:thin;scrollbar-color:var(--border) transparent;
-  border:1px solid var(--border);border-radius:6px;
-  background:var(--surface2);
-}
-.channel-item{
-  display:flex;align-items:center;gap:8px;
-  padding:7px 9px;cursor:pointer;
-  transition:background .12s;font-size:11px;
-  border-bottom:1px solid rgba(255,255,255,.03);
-}
-.channel-item:last-child{border-bottom:none}
-.channel-item:hover{background:var(--border)}
-.channel-item.active{background:rgba(60,172,59,.12);border-left:2px solid var(--accent)}
-.channel-item .ch-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.channel-item .ch-slot{
-  font-size:9px;padding:2px 6px;border-radius:3px;
-  background:var(--surface);color:var(--text-dim);
-  flex-shrink:0;
-}
-.channel-item .ch-slot.filled{background:var(--accent);color:#fff}
-.channel-item.hidden{display:none}
-
-/* Sidebar footer */
-.side-footer{
-  margin-top:auto;padding-top:10px;
-  border-top:1px solid var(--border);
-  text-align:center;flex-shrink:0;
-}
-.side-footer .credit{
-  font-size:10px;color:var(--text-dim);
-  line-height:1.5;
-}
-.side-footer .credit a{
-  color:var(--accent);text-decoration:none;
-}
-
-/* ── Toggle Button ── */
-#sidebarToggle{
-  position:fixed;top:10px;left:10px;z-index:30;
-  width:32px;height:32px;border-radius:6px;
-  background:var(--surface);border:1px solid var(--border);
-  color:var(--text);cursor:pointer;font-size:16px;
-  display:flex;align-items:center;justify-content:center;
-  transition:left .25s ease;
-}
-#sidebarToggle.shifted{left:calc(var(--sidebar-w) + 10px)}
-
-/* ── Main Video Area ── */
-#mainArea{
-  flex:1;display:flex;flex-direction:column;
-  overflow:hidden;position:relative;min-width:0;
-}
-.slot{
-  flex:1;display:flex;flex-direction:column;
-  position:relative;min-height:0;
-  border-bottom:2px solid var(--border);
-}
+/* ── Video Area ── */
+#mainArea{flex:1;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.slot{flex:1;position:relative;min-height:0;border-bottom:1px solid var(--border);background:#000}
 .slot:last-child{border-bottom:none}
-.slot-overlay{
-  position:absolute;top:0;left:0;right:0;z-index:5;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:4px 8px;
-  background:linear-gradient(180deg,rgba(0,0,0,.7) 0%,transparent 100%);
-  pointer-events:none;opacity:1;transition:opacity .4s;
+
+/* ── Control Bar (overlays each video) ── */
+.ctrl{
+  position:absolute;top:0;left:0;right:0;z-index:10;
+  display:flex;align-items:center;gap:6px;padding:6px 8px;
+  background:linear-gradient(180deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.5) 70%,transparent 100%);
+  transition:opacity .4s;opacity:1;flex-wrap:wrap;
 }
-.slot-overlay.hide{opacity:0}
-.slot-overlay > *{pointer-events:auto}
-.slot-label{
-  font-size:11px;font-weight:600;display:flex;align-items:center;gap:6px;
+.ctrl.hide{opacity:0;pointer-events:none}
+.ctrl select{
+  background:var(--surface2);border:1px solid var(--border);
+  color:var(--text);padding:5px 8px;border-radius:var(--radius);
+  font-size:11px;font-family:var(--font);cursor:pointer;
+  outline:none;max-width:140px;min-width:0;
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23777'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 8px center;
+  padding-right:24px;
 }
-.slot-status{
-  width:7px;height:7px;border-radius:50%;flex-shrink:0;
+.ctrl select:focus{border-color:var(--accent)}
+.ctrl input{
+  flex:1;min-width:120px;max-width:320px;
+  background:var(--surface2);border:1px solid var(--border);
+  color:var(--text);padding:5px 8px;border-radius:var(--radius);
+  font-size:10px;font-family:var(--mono);outline:none;
+  transition:border-color .15s;
 }
-.status-live{background:var(--accent);box-shadow:0 0 6px var(--accent)}
+.ctrl input:focus{border-color:var(--accent)}
+.ctrl input::placeholder{color:var(--text-dim);opacity:.5}
+.ctrl .label{
+  font-size:10px;font-weight:600;white-space:nowrap;
+  display:flex;align-items:center;gap:4px;margin-right:4px;
+}
+.ctrl .status{
+  width:6px;height:6px;border-radius:50%;flex-shrink:0;
+}
+.status-live{background:var(--accent);box-shadow:0 0 5px var(--accent)}
 .status-loading{background:#f0a500;animation:pulse .8s infinite}
 .status-dead{background:var(--accent2)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.slot-actions{display:flex;gap:4px}
+.btn{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  color:var(--text);padding:5px 10px;border-radius:var(--radius);
+  cursor:pointer;font-size:10px;white-space:nowrap;
+  transition:all .12s;font-family:var(--font);
+  display:inline-flex;align-items:center;gap:3px;
+}
+.btn:hover{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.25)}
+.btn.go{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.btn.go:hover{filter:brightness(1.15)}
 .btn-icon{
-  width:28px;height:24px;border-radius:4px;
-  background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.1);
-  color:var(--text);cursor:pointer;font-size:12px;
-  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  color:var(--text);width:28px;height:26px;border-radius:var(--radius);
+  cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;
   transition:all .12s;
 }
-.btn-icon:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+.btn-icon:hover{background:rgba(255,255,255,.15)}
 
-.slot-frame{
-  flex:1;border:none;background:#000;
-  width:100%;min-height:0;
-}
+/* ── Slot frame ── */
+.slot-frame{width:100%;height:100%;border:none;background:#000;display:none}
 
-/* Empty state */
-.empty-state{
-  flex:1;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:10px;
-  color:var(--text-dim);text-align:center;padding:20px;
+/* ── Empty state ── */
+.empty{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:8px;
+  color:var(--text-dim);pointer-events:none;
 }
-.empty-state .icon{font-size:36px;opacity:.3}
-.empty-state p{font-size:12px;max-width:260px}
+.empty .icon{font-size:32px;opacity:.2}
+.empty p{font-size:11px;text-align:center;line-height:1.4}
+
+/* ── Footer ── */
+#footer{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:3px 10px;background:var(--surface);
+  border-top:1px solid var(--border);
+  font-size:10px;color:var(--text-dim);flex-shrink:0;
+  flex-wrap:wrap;gap:7px;
+}
+#footer a{color:var(--accent);text-decoration:none}
+#footer .kbd{
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:3px;padding:1px 4px;font-family:var(--mono);
+  font-size:9px;color:var(--text);
+}
 
 /* ── Toast ── */
 .toast{
-  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  position:fixed;bottom:28px;left:50%;transform:translateX(-50%);
   background:var(--surface);border:1px solid var(--border);
-  padding:8px 18px;border-radius:20px;font-size:12px;
+  padding:7px 16px;border-radius:20px;font-size:11px;
   z-index:100;pointer-events:none;
-  animation:toastIn .3s ease-out, toastOut .3s 1.7s ease-in forwards;
+  animation:toastIn .3s ease-out,toastOut .3s 1.7s ease-in forwards;
 }
-@keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(8px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 @keyframes toastOut{from{opacity:1}to{opacity:0}}
 
 /* ── Mobile ── */
-@media(max-width:700px){
-  #sidebar{
-    position:fixed;top:0;left:0;bottom:0;
-    width:280px;min-width:280px;
-  }
-  #sidebar.collapsed{margin-left:-280px}
-  #sidebarToggle{top:8px;left:8px}
-  #sidebarToggle.shifted{left:288px}
-  #mainArea{margin-left:0 !important}
+@media(max-width:550px){
+  .ctrl{gap:4px;padding:4px 5px}
+  .ctrl select{max-width:110px;font-size:10px}
+  .ctrl input{max-width:160px;font-size:9px}
+  .btn{padding:4px 7px;font-size:9px}
+  .ctrl .label{font-size:9px}
 }
 </style>
 </head>
 <body>
 
-<!-- Sidebar Toggle -->
-<button id="sidebarToggle" onclick="toggleSidebar()" title="Menú">☰</button>
-
-<!-- Sidebar -->
-<div id="sidebar">
-  <div class="sidebar-inner">
-    <div class="side-logo">⚽ Visor Dual</div>
-
-    <!-- Stream 1 -->
-    <div class="side-section">
-      <div class="side-section-title">📺 Stream 1</div>
-      <div class="input-group">
-        <input type="text" id="url1" placeholder="Link de rojadirecta..." spellcheck="false">
-        <button class="btn accent btn-sm" onclick="loadSlot(1)" title="Cargar stream 1">▶</button>
-      </div>
-    </div>
-
-    <!-- Stream 2 -->
-    <div class="side-section">
-      <div class="side-section-title">📺 Stream 2</div>
-      <div class="input-group">
-        <input type="text" id="url2" placeholder="Link de rojadirecta..." spellcheck="false">
-        <button class="btn accent btn-sm" onclick="loadSlot(2)" title="Cargar stream 2">▶</button>
-      </div>
-    </div>
-
-    <!-- Global actions -->
-    <div class="side-section" style="flex-direction:row;gap:4px">
-      <button class="btn btn-sm" onclick="swapSlots()" title="Intercambiar streams">⇅ Swap</button>
-      <button class="btn btn-sm" onclick="reloadBoth()" title="Recargar ambos">🔄 Ambos</button>
-      <button class="btn btn-sm" onclick="toggleFullscreen()" title="Pantalla completa">⛶</button>
-    </div>
-
-    <!-- Channel Directory -->
-    <div class="side-section">
-      <div class="side-section-title">🔍 Buscar canales</div>
-      <input type="text" id="channelSearch" placeholder="ESPN, TyC, Fox..." oninput="filterChannels()">
-      <div class="channel-list" id="channelList"></div>
-    </div>
-
-    <!-- Footer -->
-    <div class="side-footer">
-      <div class="credit">
-        Desarrollado por<br>
-        <a href="https://juanmartinezgarcia.com" target="_blank">Juan Martinez Garcia</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Video Area -->
 <div id="mainArea">
+  <!-- Slot 1 -->
   <div class="slot" id="slot1">
-    <div class="slot-overlay" id="overlay1">
-      <span class="slot-label"><span class="slot-status" id="status1"></span> <span id="label1">Stream 1</span></span>
-      <span class="slot-actions">
-        <button class="btn-icon" onclick="reloadSlot(1)" title="Recargar (1)">🔄</button>
-        <button class="btn-icon" onclick="fullscreenSlot(1)" title="Fullscreen">⛶</button>
-      </span>
+    <div class="ctrl" id="ctrl1">
+      <span class="label"><span class="status" id="status1"></span> <span id="label1">Stream 1</span></span>
+      <select id="chan1" onchange="pickChannel(1,this.value)"><option value="">— Canal —</option></select>
+      <input id="url1" placeholder="o pegá link...">
+      <button class="btn go" onclick="loadSlot(1)">▶</button>
+      <button class="btn-icon" onclick="reloadSlot(1)" title="Recargar (tecla 1)">🔄</button>
+      <button class="btn-icon" onclick="fullscreenSlot(1)" title="Fullscreen">⛶</button>
     </div>
-    <div class="empty-state" id="empty1">
-      <span class="icon">📺</span>
-      <p>Seleccioná un canal del directorio<br>o pegá un link de rojadirecta</p>
-    </div>
-    <iframe class="slot-frame" id="frame1" style="display:none" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="empty" id="empty1"><span class="icon">📺</span><p>Elegí un canal del selector<br>o pegá un link de rojadirecta</p></div>
+    <iframe class="slot-frame" id="frame1" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
+
+  <!-- Slot 2 -->
   <div class="slot" id="slot2">
-    <div class="slot-overlay" id="overlay2">
-      <span class="slot-label"><span class="slot-status" id="status2"></span> <span id="label2">Stream 2</span></span>
-      <span class="slot-actions">
-        <button class="btn-icon" onclick="reloadSlot(2)" title="Recargar (2)">🔄</button>
-        <button class="btn-icon" onclick="fullscreenSlot(2)" title="Fullscreen">⛶</button>
-      </span>
+    <div class="ctrl" id="ctrl2">
+      <span class="label"><span class="status" id="status2"></span> <span id="label2">Stream 2</span></span>
+      <select id="chan2" onchange="pickChannel(2,this.value)"><option value="">— Canal —</option></select>
+      <input id="url2" placeholder="o pegá link...">
+      <button class="btn go" onclick="loadSlot(2)">▶</button>
+      <button class="btn-icon" onclick="reloadSlot(2)" title="Recargar (tecla 2)">🔄</button>
+      <button class="btn-icon" onclick="fullscreenSlot(2)" title="Fullscreen">⛶</button>
     </div>
-    <div class="empty-state" id="empty2">
-      <span class="icon">📺</span>
-      <p>Seleccioná un canal del directorio<br>o pegá un link de rojadirecta</p>
-    </div>
-    <iframe class="slot-frame" id="frame2" style="display:none" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="empty" id="empty2"><span class="icon">📺</span><p>Elegí un canal del selector<br>o pegá un link de rojadirecta</p></div>
+    <iframe class="slot-frame" id="frame2" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
 </div>
 
-<!-- Toast -->
+<div id="footer">
+  <span>⌨ <kbd>1</kbd><kbd>2</kbd> recargar · <kbd>S</kbd> swap · <kbd>F</kbd> fullscreen</span>
+  <span>Desarrollado por <a href="https://juanmartinezgarcia.com" target="_blank">Juan Martinez Garcia</a></span>
+</div>
+
 <div class="toast" id="toast" style="display:none"></div>
 
 <script>
-// ── Channel Directory ──
+// ── Channels (direct stream URLs — no rojadirecta wrapper) ──
 const CHANNELS = [
-  {name:'DSports',       url:'https://rojadirectastream.com/en-vivo/directv-sports'},
-  {name:'DSports 2',     url:'https://rojadirectastream.com/en-vivo/directv-sports-2'},
-  {name:'DSports +',     url:'https://rojadirectastream.com/en-vivo/directv-sports-plus'},
-  {name:'ESPN 1',        url:'https://rojadirectastream.com/en-vivo/espn-1'},
-  {name:'ESPN 2',        url:'https://rojadirectastream.com/en-vivo/espn-2'},
-  {name:'ESPN 3',        url:'https://rojadirectastream.com/en-vivo/espn-3'},
-  {name:'ESPN Premium',  url:'https://rojadirectastream.com/en-vivo/espn-premium'},
-  {name:'ESPN Deportes', url:'https://rojadirectastream.com/en-vivo/espn-deportes'},
-  {name:'Fox Sports',    url:'https://rojadirectastream.com/en-vivo/fox-sports-1'},
-  {name:'Fox Sports 2',  url:'https://rojadirectastream.com/en-vivo/fox-sports-2'},
-  {name:'Fox Sports 3',  url:'https://rojadirectastream.com/en-vivo/fox-sports-3'},
-  {name:'Fox Sports Premium', url:'https://rojadirectastream.com/en-vivo/fox-sports-premium'},
-  {name:'TNT Sports',    url:'https://rojadirectastream.com/en-vivo/tnt-sports-argentina'},
-  {name:'TyC Sports',    url:'https://rojadirectastream.com/en-vivo/tyc-sports'},
-  {name:'TUDN',          url:'https://rojadirectastream.com/en-vivo/tudn'},
-  {name:'Win Sports',    url:'https://rojadirectastream.com/en-vivo/win-sports'},
-  {name:'Win Sports +',  url:'https://rojadirectastream.com/en-vivo/win-sports-plus'},
-  {name:'Liga 1 Max',    url:'https://rojadirectastream.com/en-vivo/liga-1-max'},
-  {name:'Gol Perú',      url:'https://rojadirectastream.com/en-vivo/golperu'},
-  {name:'Movistar Dep.', url:'https://rojadirectastream.com/en-vivo/movistar-deportes'}
+  {name:'DSports',          url:'https://tvtvhd.com/vivo/canales.php?stream=dsports'},
+  {name:'DSports 2',        url:'https://tvtvhd.com/vivo/canales.php?stream=dsports2'},
+  {name:'DSports +',        url:'https://tvtvhd.com/vivo/canales.php?stream=dsportsplus'},
+  {name:'ESPN 1',           url:'https://tvtvhd.com/vivo/canales.php?stream=espn'},
+  {name:'ESPN 2',           url:'https://tvtvhd.com/vivo/canales.php?stream=espn2'},
+  {name:'ESPN 3',           url:'https://tvtvhd.com/vivo/canales.php?stream=espn3'},
+  {name:'ESPN Premium',     url:'https://tvtvhd.com/vivo/canales.php?stream=espnpremium'},
+  {name:'ESPN Deportes',    url:'https://tvtvhd.com/vivo/canales.php?stream=espndeportesusa'},
+  {name:'Fox Sports',       url:'https://tvtvhd.com/vivo/canales.php?stream=foxsports'},
+  {name:'Fox Sports 2',     url:'https://tvtvhd.com/vivo/canales.php?stream=foxsports2'},
+  {name:'Fox Sports 3',     url:'https://tvtvhd.com/vivo/canales.php?stream=foxsports3'},
+  {name:'Fox Sports Premium',url:'https://tvtvhd.com/vivo/canales.php?stream=foxsportspremiummx'},
+  {name:'TNT Sports',       url:'https://tvtvhd.com/vivo/canales.php?stream=tntsports'},
+  {name:'TyC Sports',       url:'https://tvtvhd.com/vivo/canales.php?stream=tycsports'},
+  {name:'TUDN',             url:'https://tvtvhd.com/vivo/canales.php?stream=tudnusa'},
+  {name:'Win Sports',       url:'https://tvtvhd.com/vivo/canales.php?stream=winsports'},
+  {name:'Win Sports +',     url:'https://tvtvhd.com/vivo/canales.php?stream=winsportsplus'},
+  {name:'Liga 1 Max',       url:'https://tvtvhd.com/vivo/canales.php?stream=liga1max'},
+  {name:'Gol Perú',         url:'https://tvtvhd.com/vivo/canales.php?stream=liga1max'},
+  {name:'Movistar Dep.',    url:'https://tvtvhd.com/vivo/canales.php?stream=movistar'}
 ];
 
 // ── Defaults ──
-const DEFAULTS = {
-  url1:'https://rojadirectastream.com/en-vivo/tyc-sports',
-  url2:'https://rojadirectastream.com/en-vivo/directv-sports',
-  label1:'TyC Sports',
-  label2:'DSports'
-};
+const DEFAULTS = [
+  {url:'https://tvtvhd.com/vivo/canales.php?stream=tycsports', label:'TyC Sports'},
+  {url:'https://tvtvhd.com/vivo/canales.php?stream=dsports',   label:'DSports'}
+];
 
-// ── State ──
-let state = {url1:'',url2:'',decoded1:'',decoded2:'',label1:'',label2:'',sidebarOpen:true};
+// ── State per slot ──
+let S = [{url:'',label:'',chanIdx:-1},{url:'',label:'',chanIdx:-1}];
 
 // ── Init ──
 function init(){
-  const saved = localStorage.getItem('visor-dual-v2');
-  if(saved){try{state={...state,...JSON.parse(saved)}}catch(e){}}
-  if(!state.url1&&!state.url2){state.url1=DEFAULTS.url1;state.url2=DEFAULTS.url2;state.label1=DEFAULTS.label1;state.label2=DEFAULTS.label2}
+  // Build channel dropdowns
+  const opts = '<option value="">— Canal —</option>'+CHANNELS.map((c,i)=>`<option value="${i}">${c.name}</option>`).join('');
+  document.getElementById('chan1').innerHTML=opts;
+  document.getElementById('chan2').innerHTML=opts;
 
-  document.getElementById('url1').value=state.url1;
-  document.getElementById('url2').value=state.url2;
-  document.getElementById('label1').textContent=state.label1||'Stream 1';
-  document.getElementById('label2').textContent=state.label2||'Stream 2';
+  // Load state
+  const saved = localStorage.getItem('visor-dual-v3');
+  if(saved){try{const s=JSON.parse(saved);if(Array.isArray(s))S=s}catch(e){}}
 
-  if(!state.sidebarOpen) closeSidebar(false);
-  else document.getElementById('sidebarToggle').classList.add('shifted');
+  // Restore or defaults
+  for(let n=0;n<2;n++){
+    if(!S[n].url){S[n]={...DEFAULTS[n],chanIdx:CHANNELS.findIndex(c=>c.url===DEFAULTS[n].url)}}
+    document.getElementById('url'+(n+1)).value=S[n].url;
+    document.getElementById('label'+(n+1)).textContent=S[n].label||('Stream '+(n+1));
+    if(S[n].chanIdx>=0) document.getElementById('chan'+(n+1)).value=S[n].chanIdx;
+  }
 
-  renderChannels();
-  if(state.url1||state.url2) setTimeout(()=>{if(state.url1)loadSlot(1);if(state.url2)loadSlot(2)},400);
+  // Auto-load
+  setTimeout(()=>{loadSlot(1);loadSlot(2)},300);
+
+  // Overlay auto-hide
+  for(let n=1;n<=2;n++){
+    const slot=document.getElementById('slot'+n);
+    const ctrl=document.getElementById('ctrl'+n);
+    let timer;
+    slot.addEventListener('mousemove',()=>{
+      ctrl.classList.remove('hide');
+      clearTimeout(timer);
+      timer=setTimeout(()=>ctrl.classList.add('hide'),3000);
+    });
+    slot.addEventListener('mouseleave',()=>{
+      timer=setTimeout(()=>ctrl.classList.add('hide'),600);
+    });
+  }
 }
 
-// ── Render Channels ──
-function renderChannels(filter=''){
-  const list=document.getElementById('channelList');
-  list.innerHTML=CHANNELS.map((ch,i)=>{
-    const q=filter.toLowerCase();
-    const match=!q||ch.name.toLowerCase().includes(q);
-    const in1=state.url1===ch.url;
-    const in2=state.url2===ch.url;
-    let slotClass='',slotText='';
-    if(in1){slotClass='filled';slotText='1'}
-    else if(in2){slotClass='filled';slotText='2'}
-    return `<div class="channel-item${match?'':' hidden'}${in1||in2?' active':''}" onclick="pickChannel('${ch.url.replace(/'/g,"\\'")}','${ch.name.replace(/'/g,"\\'")}')">
-      <span class="ch-name">${ch.name}</span>
-      ${slotText?`<span class="ch-slot ${slotClass}">${slotText}</span>`:''}
-    </div>`;
-  }).join('');
-}
-
-function filterChannels(){
-  renderChannels(document.getElementById('channelSearch').value);
-}
-
-function pickChannel(url,name){
-  // Fill first empty slot, or slot 1
-  if(!state.decoded1&&!state.decoded2){setSlot(1,url,name);return}
-  if(state.decoded1&&!state.decoded2){setSlot(2,url,name);return}
-  if(!state.decoded1&&state.decoded2){setSlot(1,url,name);return}
-  // Both filled — replace slot 1
-  setSlot(1,url,name);
-}
-
-function setSlot(n,url,name){
-  document.getElementById('url'+n).value=url;
-  state['url'+n]=url;
-  state['label'+n]=name||'Stream '+n;
-  document.getElementById('label'+n).textContent=state['label'+n];
+// ── Pick channel from dropdown ──
+function pickChannel(n,idx){
+  if(idx==='') return;
+  const ch=CHANNELS[parseInt(idx)];
+  S[n-1].url=ch.url;
+  S[n-1].label=ch.name;
+  S[n-1].chanIdx=parseInt(idx);
+  document.getElementById('url'+n).value=ch.url;
+  document.getElementById('label'+n).textContent=ch.name;
+  document.getElementById('chan'+n).value=idx;
   loadSlot(n);
-  renderChannels(document.getElementById('channelSearch').value);
-  saveState();
 }
 
-// ── URL Parsing ──
-function decodeIfRojadirecta(url){
-  try{
-    const u=new URL(url);
-    const r=u.searchParams.get('r');
-    if(r) return atob(r);
-  }catch(e){}
-  return url;
+// ── Decode rojadirecta embed URL ──
+function decodeUrl(raw){
+  try{const u=new URL(raw);const r=u.searchParams.get('r');if(r)return atob(r)}catch(e){}
+  return raw;
 }
 
 // ── Load ──
 function loadSlot(n){
-  const rawUrl=document.getElementById('url'+n).value.trim();
-  if(!rawUrl) return;
+  const raw=document.getElementById('url'+n).value.trim();
+  if(!raw) return;
 
-  const decoded=decodeIfRojadirecta(rawUrl);
-  const label=state['label'+n]||extractLabel(decoded)||('Stream '+n);
+  const decoded=decodeUrl(raw);
+  document.getElementById('url'+n).value=decoded;
 
-  state['url'+n]=rawUrl;
-  state['decoded'+n]=decoded;
-  state['label'+n]=label;
+  S[n-1].url=decoded;
+  if(!S[n-1].label||S[n-1].label===('Stream '+n)){
+    const ch=CHANNELS.find(c=>c.url===decoded);
+    if(ch){S[n-1].label=ch.name;S[n-1].chanIdx=CHANNELS.indexOf(ch);document.getElementById('chan'+n).value=S[n-1].chanIdx}
+    else S[n-1].label=extractLabel(decoded);
+  }
+  document.getElementById('label'+n).textContent=S[n-1].label||('Stream '+n);
 
-  document.getElementById('label'+n).textContent=label;
   document.getElementById('empty'+n).style.display='none';
-
   const frame=document.getElementById('frame'+n);
   const status=document.getElementById('status'+n);
-
-  status.className='slot-status status-loading';
+  status.className='status status-loading';
   frame.style.display='block';
   frame.src=decoded;
-  frame.onload=()=>{status.className='slot-status status-live'};
-  frame.onerror=()=>{status.className='slot-status status-dead';toast('⚠ Error en Stream '+n)};
-
-  renderChannels(document.getElementById('channelSearch').value);
+  frame.onload=()=>{status.className='status status-live'};
+  frame.onerror=()=>{status.className='status status-dead';toast('⚠ Error en '+S[n-1].label)};
   saveState();
+  toast('▶ '+S[n-1].label);
 }
 
 function extractLabel(url){
   try{
-    const parts=url.split('/').filter(Boolean);
-    const last=parts[parts.length-1]||'';
-    return last.replace(/-/g,' ').replace('.php','').replace('.html','').toUpperCase();
-  }catch(e){}
-  return '';
+    const u=new URL(url);
+    const s=u.searchParams.get('stream');
+    if(s)return s.replace(/([a-z])([A-Z0-9])/g,'$1 $2').replace(/[-_]/g,' ').replace(/\b\w/g,l=>l.toUpperCase());
+    return '';
+  }catch(e){return ''}
 }
 
 function reloadSlot(n){
   const frame=document.getElementById('frame'+n);
-  const status=document.getElementById('status'+n);
-  if(!frame.src) return;
-  status.className='slot-status status-loading';
+  if(!frame.src)return;
+  document.getElementById('status'+n).className='status status-loading';
   frame.src=frame.src;
-  toast('🔄 Stream '+n+' recargado');
+  toast('🔄 '+S[n-1].label);
 }
-function reloadBoth(){reloadSlot(1);reloadSlot(2)}
 
 // ── Swap ──
 function swapSlots(){
-  ['url1','url2','decoded1','decoded2','label1','label2'].forEach((k,i)=>{
-    if(i%2===0){const tmp=state[k];state[k]=state[k.replace('1','2')];state[k.replace('1','2')]=tmp}
-  });
-  document.getElementById('url1').value=state.url1;
-  document.getElementById('url2').value=state.url2;
-  document.getElementById('label1').textContent=state.label1||'Stream 1';
-  document.getElementById('label2').textContent=state.label2||'Stream 2';
-
+  const tmp=S[0];S[0]=S[1];S[1]=tmp;
+  for(let n=1;n<=2;n++){
+    document.getElementById('url'+n).value=S[n-1].url;
+    document.getElementById('label'+n).textContent=S[n-1].label||('Stream '+n);
+    document.getElementById('chan'+n).value=S[n-1].chanIdx>=0?S[n-1].chanIdx:'';
+  }
   const f1=document.getElementById('frame1'),f2=document.getElementById('frame2');
   const s1=f1.src;f1.src=f2.src;f2.src=s1;
   const e1=document.getElementById('empty1').style.display;
   document.getElementById('empty1').style.display=document.getElementById('empty2').style.display;
   document.getElementById('empty2').style.display=e1;
-  const d1=document.getElementById('frame1').style.display;
-  document.getElementById('frame1').style.display=document.getElementById('frame2').style.display;
-  document.getElementById('frame2').style.display=d1;
-
-  renderChannels(document.getElementById('channelSearch').value);
-  saveState();
-  toast('⇅ Streams intercambiados');
+  if(f1.style.display!=='none'){document.getElementById('status1').className='status status-live'}
+  if(f2.style.display!=='none'){document.getElementById('status2').className='status status-live'}
+  saveState();toast('⇅ Intercambiados');
 }
 
 // ── Fullscreen ──
 function fullscreenSlot(n){
   const frame=document.getElementById('frame'+n);
-  if(frame.requestFullscreen) frame.requestFullscreen().catch(()=>{});
-  else if(frame.webkitRequestFullscreen) frame.webkitRequestFullscreen();
+  if(frame.requestFullscreen)frame.requestFullscreen().catch(()=>{});
 }
 function toggleFullscreen(){
-  if(document.fullscreenElement) document.exitFullscreen();
+  if(document.fullscreenElement)document.exitFullscreen();
   else document.documentElement.requestFullscreen().catch(()=>{});
 }
 
-// ── Sidebar ──
-function toggleSidebar(){
-  const sb=document.getElementById('sidebar');
-  const btn=document.getElementById('sidebarToggle');
-  if(sb.classList.contains('collapsed')){
-    sb.classList.remove('collapsed');
-    btn.classList.add('shifted');
-    state.sidebarOpen=true;
-  }else{
-    sb.classList.add('collapsed');
-    btn.classList.remove('shifted');
-    state.sidebarOpen=false;
-  }
-  saveState();
-}
-function closeSidebar(save=true){
-  document.getElementById('sidebar').classList.add('collapsed');
-  document.getElementById('sidebarToggle').classList.remove('shifted');
-  state.sidebarOpen=false;
-  if(save) saveState();
-}
-
-// ── Overlay auto-hide ──
-let overlayTimers={};
-['1','2'].forEach(n=>{
-  const slot=document.getElementById('slot'+n);
-  const overlay=document.getElementById('overlay'+n);
-  slot.addEventListener('mousemove',()=>{
-    overlay.classList.remove('hide');
-    clearTimeout(overlayTimers[n]);
-    overlayTimers[n]=setTimeout(()=>overlay.classList.add('hide'),3000);
-  });
-  slot.addEventListener('mouseleave',()=>{
-    overlayTimers[n]=setTimeout(()=>overlay.classList.add('hide'),800);
-  });
-});
-
 // ── Persistence ──
-function saveState(){
-  localStorage.setItem('visor-dual-v2',JSON.stringify({
-    url1:state.url1,url2:state.url2,
-    label1:state.label1,label2:state.label2,
-    sidebarOpen:state.sidebarOpen
-  }));
-}
+function saveState(){localStorage.setItem('visor-dual-v3',JSON.stringify(S))}
 
 // ── Toast ──
 function toast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg;t.style.display='block';
   t.style.animation='none';t.offsetHeight;
-  t.style.animation='toastIn .3s ease-out, toastOut .3s 1.7s ease-in forwards';
+  t.style.animation='toastIn .3s ease-out,toastOut .3s 1.7s ease-in forwards';
 }
 
-// ── Keyboard Shortcuts ──
-document.addEventListener('keydown',(e)=>{
-  if(e.target.tagName==='INPUT') return;
+// ── Keyboard ──
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT')return;
   switch(e.key.toLowerCase()){
-    case 'm':e.preventDefault();toggleSidebar();break;
-    case 's':e.preventDefault();swapSlots();break;
-    case 'r':e.preventDefault();reloadBoth();break;
-    case 'f':e.preventDefault();toggleFullscreen();break;
-    case '1':e.preventDefault();reloadSlot(1);break;
-    case '2':e.preventDefault();reloadSlot(2);break;
+    case's':e.preventDefault();swapSlots();break;
+    case'f':e.preventDefault();toggleFullscreen();break;
+    case'1':e.preventDefault();reloadSlot(1);break;
+    case'2':e.preventDefault();reloadSlot(2);break;
   }
 });
 
-// ── Start ──
 init();
 </script>
 </body>
