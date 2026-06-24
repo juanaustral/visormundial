@@ -33,11 +33,10 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 /* ── Control Bar (overlays each video) ── */
 .ctrl{
   position:absolute;top:0;left:0;right:0;z-index:10;
-  display:flex;align-items:center;gap:6px;padding:6px 8px;
-  background:linear-gradient(180deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.5) 70%,transparent 100%);
-  transition:opacity .4s;opacity:1;flex-wrap:wrap;
+  display:flex;align-items:center;gap:6px;padding:5px 8px;
+  background:linear-gradient(180deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.35) 60%,transparent 100%);
+  flex-wrap:wrap;
 }
-.ctrl.hide{opacity:0;pointer-events:none}
 .ctrl select{
   background:var(--surface2);border:1px solid var(--border);
   color:var(--text);padding:5px 8px;border-radius:var(--radius);
@@ -99,19 +98,17 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 .empty .icon{font-size:32px;opacity:.2}
 .empty p{font-size:11px;text-align:center;line-height:1.4}
 
-/* ── Footer ── */
-#footer{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:3px 10px;background:var(--surface);
-  border-top:1px solid var(--border);
-  font-size:10px;color:var(--text-dim);flex-shrink:0;
-  flex-wrap:wrap;gap:7px;
+/* ── Bottom-left corner info ── */
+#corner{
+  position:fixed;bottom:8px;left:10px;z-index:20;
+  font-size:10px;color:rgba(255,255,255,.35);
+  pointer-events:none;line-height:1.5;
 }
-#footer a{color:var(--accent);text-decoration:none}
-#footer .kbd{
-  background:var(--surface2);border:1px solid var(--border);
-  border-radius:3px;padding:1px 4px;font-family:var(--mono);
-  font-size:9px;color:var(--text);
+#corner a{color:rgba(255,255,255,.5);text-decoration:none;pointer-events:auto}
+#corner kbd{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:3px;padding:0 4px;font-family:var(--mono);
+  font-size:9px;color:rgba(255,255,255,.35);
 }
 
 /* ── Toast ── */
@@ -167,9 +164,9 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
   </div>
 </div>
 
-<div id="footer">
-  <span>⌨ <kbd>1</kbd><kbd>2</kbd> recargar · <kbd>S</kbd> swap · <kbd>F</kbd> fullscreen</span>
-  <span>Desarrollado por <a href="https://juanmartinezgarcia.com" target="_blank">Juan Martinez Garcia</a></span>
+<div id="corner">
+  <kbd>1</kbd><kbd>2</kbd> recargar · <kbd>S</kbd> swap · <kbd>F</kbd> fullscreen<br>
+  <a href="https://juanmartinezgarcia.com" target="_blank">Juan Martinez Garcia</a>
 </div>
 
 <div class="toast" id="toast" style="display:none"></div>
@@ -229,21 +226,6 @@ function init(){
 
   // Auto-load
   setTimeout(()=>{loadSlot(1);loadSlot(2)},300);
-
-  // Overlay auto-hide
-  for(let n=1;n<=2;n++){
-    const slot=document.getElementById('slot'+n);
-    const ctrl=document.getElementById('ctrl'+n);
-    let timer;
-    slot.addEventListener('mousemove',()=>{
-      ctrl.classList.remove('hide');
-      clearTimeout(timer);
-      timer=setTimeout(()=>ctrl.classList.add('hide'),3000);
-    });
-    slot.addEventListener('mouseleave',()=>{
-      timer=setTimeout(()=>ctrl.classList.add('hide'),600);
-    });
-  }
 }
 
 // ── Pick channel from dropdown ──
