@@ -18,7 +18,7 @@
 :root {
   --bg:#0a0a0a;--surface:#111;--surface2:#1a1a1a;--border:#2a2a2a;
   --text:#e0e0e0;--text-dim:#777;--accent:#3CAC3B;--accent2:#E61D25;
-  --radius:6px;--font:system-ui,-apple-system,sans-serif;
+  --radius:5px;--font:system-ui,-apple-system,sans-serif;
   --mono:'SF Mono','Cascadia Code',monospace;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -26,70 +26,80 @@ html,body{height:100%;overflow:hidden;background:var(--bg)}
 body{font-family:var(--font);color:var(--text);display:flex;flex-direction:column}
 
 /* ── Video Area ── */
-#mainArea{flex:1;display:flex;flex-direction:column;overflow:hidden;position:relative}
-.slot{flex:1;position:relative;min-height:0;border-bottom:1px solid var(--border);background:#000}
-.slot:last-child{border-bottom:none}
+#mainArea{flex:1;display:flex;overflow:hidden;position:relative}
+#mainArea.vertical{flex-direction:column}
+#mainArea.horizontal{flex-direction:row}
+.slot{
+  flex:1;position:relative;min-height:0;min-width:0;
+  background:#000;
+}
+#mainArea.vertical .slot{border-bottom:1px solid var(--border)}
+#mainArea.vertical .slot:last-child{border-bottom:none}
+#mainArea.horizontal .slot{border-right:1px solid var(--border)}
+#mainArea.horizontal .slot:last-child{border-right:none}
 
-/* ── Control Bar (overlays each video) ── */
+/* ── Control Bar (two rows per slot) ── */
 .ctrl{
   position:absolute;top:0;left:0;right:0;z-index:10;
-  display:flex;align-items:center;gap:6px;padding:5px 8px;
-  background:linear-gradient(180deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.35) 60%,transparent 100%);
-  flex-wrap:wrap;
+  display:flex;flex-direction:column;gap:3px;
+  padding:5px 7px;
+  background:linear-gradient(180deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.3) 70%,transparent 100%);
 }
+.ctrl-row{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
 .ctrl select{
   background:var(--surface2);border:1px solid var(--border);
-  color:var(--text);padding:5px 8px;border-radius:var(--radius);
+  color:var(--text);padding:4px 7px;border-radius:var(--radius);
   font-size:11px;font-family:var(--font);cursor:pointer;
-  outline:none;max-width:140px;min-width:0;
+  outline:none;flex:1;min-width:80px;max-width:170px;
   appearance:none;-webkit-appearance:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23777'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 8px center;
-  padding-right:24px;
+  background-repeat:no-repeat;background-position:right 7px center;
+  padding-right:22px;
 }
 .ctrl select:focus{border-color:var(--accent)}
 .ctrl input{
-  flex:1;min-width:120px;max-width:320px;
-  background:var(--surface2);border:1px solid var(--border);
-  color:var(--text);padding:5px 8px;border-radius:var(--radius);
+  flex:1;min-width:100px;
+  background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08);
+  color:rgba(255,255,255,.5);padding:3px 7px;border-radius:var(--radius);
   font-size:10px;font-family:var(--mono);outline:none;
   transition:border-color .15s;
 }
-.ctrl input:focus{border-color:var(--accent)}
-.ctrl input::placeholder{color:var(--text-dim);opacity:.5}
+.ctrl input:focus{border-color:var(--accent);color:rgba(255,255,255,.8)}
+.ctrl input::placeholder{color:rgba(255,255,255,.2)}
 .ctrl .label{
   font-size:10px;font-weight:600;white-space:nowrap;
-  display:flex;align-items:center;gap:4px;margin-right:4px;
+  display:flex;align-items:center;gap:3px;
 }
 .ctrl .status{
   width:6px;height:6px;border-radius:50%;flex-shrink:0;
 }
-.status-live{background:var(--accent);box-shadow:0 0 5px var(--accent)}
+.status-live{background:var(--accent);box-shadow:0 0 4px var(--accent)}
 .status-loading{background:#f0a500;animation:pulse .8s infinite}
 .status-dead{background:var(--accent2)}
+.status-paused{background:#555}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* Buttons */
 .btn{
-  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
-  color:var(--text);padding:5px 10px;border-radius:var(--radius);
-  cursor:pointer;font-size:10px;white-space:nowrap;
-  transition:all .12s;font-family:var(--font);
-  display:inline-flex;align-items:center;gap:3px;
-}
-.btn:hover{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.25)}
-.btn.go{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
-.btn.go:hover{filter:brightness(1.15)}
-.btn-icon{
-  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
   color:var(--text);width:28px;height:26px;border-radius:var(--radius);
   cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;
-  transition:all .12s;
+  transition:all .12s;flex-shrink:0;padding:0;
 }
-.btn-icon:hover{background:rgba(255,255,255,.15)}
+.btn:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.22)}
+.btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.play-btn{width:auto;padding:0 7px;font-size:10px;gap:2px}
 
-/* ── Slot frame ── */
+/* ── Slot frame + overlay ── */
 .slot-frame{width:100%;height:100%;border:none;background:#000;display:none}
-
-/* ── Empty state ── */
+.pause-overlay{
+  position:absolute;inset:0;z-index:5;
+  display:none;align-items:center;justify-content:center;
+  background:rgba(0,0,0,.85);
+  font-size:14px;color:var(--text-dim);flex-direction:column;gap:6px;
+  cursor:pointer;
+}
+.pause-overlay.show{display:flex}
 .empty{
   position:absolute;inset:0;display:flex;flex-direction:column;
   align-items:center;justify-content:center;gap:8px;
@@ -98,53 +108,71 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 .empty .icon{font-size:32px;opacity:.2}
 .empty p{font-size:11px;text-align:center;line-height:1.4}
 
-/* ── Bottom-left corner info ── */
+/* ── Corner info ── */
 #corner{
   position:fixed;bottom:8px;left:10px;z-index:20;
-  font-size:10px;color:rgba(255,255,255,.35);
+  font-size:10px;color:rgba(255,255,255,.3);
   pointer-events:none;line-height:1.5;
 }
-#corner a{color:rgba(255,255,255,.5);text-decoration:none;pointer-events:auto}
+#corner a{color:rgba(255,255,255,.45);text-decoration:none;pointer-events:auto}
 #corner kbd{
-  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
   border-radius:3px;padding:0 4px;font-family:var(--mono);
-  font-size:9px;color:rgba(255,255,255,.35);
+  font-size:9px;color:rgba(255,255,255,.3);
 }
+
+/* ── Layout switch ── */
+#layoutBtn{
+  position:fixed;bottom:8px;right:10px;z-index:20;
+  width:28px;height:28px;border-radius:var(--radius);
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  color:rgba(255,255,255,.5);cursor:pointer;font-size:14px;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .12s;
+}
+#layoutBtn:hover{background:rgba(255,255,255,.12);color:#fff}
 
 /* ── Toast ── */
 .toast{
-  position:fixed;bottom:28px;left:50%;transform:translateX(-50%);
-  background:var(--surface);border:1px solid var(--border);
+  position:fixed;bottom:50%;left:50%;transform:translate(-50%,50%);
+  background:rgba(0,0,0,.85);border:1px solid var(--border);
   padding:7px 16px;border-radius:20px;font-size:11px;
   z-index:100;pointer-events:none;
-  animation:toastIn .3s ease-out,toastOut .3s 1.7s ease-in forwards;
+  animation:toastIn .3s ease-out,toastOut .3s 1.4s ease-in forwards;
 }
-@keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(8px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes toastIn{from{opacity:0;transform:translate(-50%,50%) translateY(8px)}to{opacity:1;transform:translate(-50%,50%) translateY(0)}}
 @keyframes toastOut{from{opacity:1}to{opacity:0}}
 
 /* ── Mobile ── */
 @media(max-width:550px){
-  .ctrl{gap:4px;padding:4px 5px}
-  .ctrl select{max-width:110px;font-size:10px}
-  .ctrl input{max-width:160px;font-size:9px}
-  .btn{padding:4px 7px;font-size:9px}
+  .ctrl{padding:3px 4px;gap:2px}
+  .ctrl select{max-width:120px;font-size:10px}
+  .ctrl input{min-width:60px;font-size:9px}
+  .btn{width:24px;height:22px;font-size:10px}
   .ctrl .label{font-size:9px}
 }
 </style>
 </head>
 <body>
 
-<div id="mainArea">
+<div id="mainArea" class="vertical">
   <!-- Slot 1 -->
   <div class="slot" id="slot1">
     <div class="ctrl" id="ctrl1">
-      <span class="label"><span class="status" id="status1"></span> <span id="label1">Stream 1</span></span>
-      <select id="chan1" onchange="pickChannel(1,this.value)"><option value="">— Canal —</option></select>
-      <input id="url1" placeholder="o pegá link...">
-      <button class="btn go" onclick="loadSlot(1)">▶</button>
-      <button class="btn-icon" onclick="reloadSlot(1)" title="Recargar (tecla 1)">🔄</button>
-      <button class="btn-icon" onclick="fullscreenSlot(1)" title="Fullscreen">⛶</button>
+      <div class="ctrl-row">
+        <span class="label"><span class="status" id="status1"></span><span id="label1">Stream 1</span></span>
+        <select id="chan1" onchange="pickChannel(1,this.value)"><option value="">— Canal —</option></select>
+        <button class="btn" id="mute1" onclick="toggleMute(1)" title="Mute">🔊</button>
+        <button class="btn play-btn" id="play1" onclick="togglePlay(1)" title="Pausar">⏸</button>
+        <button class="btn" onclick="reloadSlot(1)" title="Recargar">🔄</button>
+        <button class="btn" onclick="fullscreenSlot(1)" title="Fullscreen">⛶</button>
+      </div>
+      <div class="ctrl-row">
+        <input id="url1" placeholder="o pegá link de rojadirecta..." spellcheck="false">
+        <button class="btn play-btn" style="width:auto;padding:0 8px" onclick="loadSlot(1)">▶ Cargar</button>
+      </div>
     </div>
+    <div class="pause-overlay" id="paused1" onclick="togglePlay(1)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
     <div class="empty" id="empty1"><span class="icon">📺</span><p>Elegí un canal del selector<br>o pegá un link de rojadirecta</p></div>
     <iframe class="slot-frame" id="frame1" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
@@ -152,27 +180,36 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
   <!-- Slot 2 -->
   <div class="slot" id="slot2">
     <div class="ctrl" id="ctrl2">
-      <span class="label"><span class="status" id="status2"></span> <span id="label2">Stream 2</span></span>
-      <select id="chan2" onchange="pickChannel(2,this.value)"><option value="">— Canal —</option></select>
-      <input id="url2" placeholder="o pegá link...">
-      <button class="btn go" onclick="loadSlot(2)">▶</button>
-      <button class="btn-icon" onclick="reloadSlot(2)" title="Recargar (tecla 2)">🔄</button>
-      <button class="btn-icon" onclick="fullscreenSlot(2)" title="Fullscreen">⛶</button>
+      <div class="ctrl-row">
+        <span class="label"><span class="status" id="status2"></span><span id="label2">Stream 2</span></span>
+        <select id="chan2" onchange="pickChannel(2,this.value)"><option value="">— Canal —</option></select>
+        <button class="btn" id="mute2" onclick="toggleMute(2)" title="Mute">🔊</button>
+        <button class="btn play-btn" id="play2" onclick="togglePlay(2)" title="Pausar">⏸</button>
+        <button class="btn" onclick="reloadSlot(2)" title="Recargar">🔄</button>
+        <button class="btn" onclick="fullscreenSlot(2)" title="Fullscreen">⛶</button>
+      </div>
+      <div class="ctrl-row">
+        <input id="url2" placeholder="o pegá link de rojadirecta..." spellcheck="false">
+        <button class="btn play-btn" style="width:auto;padding:0 8px" onclick="loadSlot(2)">▶ Cargar</button>
+      </div>
     </div>
+    <div class="pause-overlay" id="paused2" onclick="togglePlay(2)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
     <div class="empty" id="empty2"><span class="icon">📺</span><p>Elegí un canal del selector<br>o pegá un link de rojadirecta</p></div>
     <iframe class="slot-frame" id="frame2" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
 </div>
 
 <div id="corner">
-  <kbd>1</kbd><kbd>2</kbd> recargar · <kbd>S</kbd> swap · <kbd>F</kbd> fullscreen<br>
+  <kbd>1</kbd><kbd>2</kbd> reload · <kbd>M</kbd> mute · <kbd>S</kbd> swap · <kbd>L</kbd> layout · <kbd>F</kbd> fullscreen<br>
   <a href="https://juanmartinezgarcia.com" target="_blank">Juan Martinez Garcia</a>
 </div>
+
+<button id="layoutBtn" onclick="toggleLayout()" title="Vertical / Horizontal">⬍</button>
 
 <div class="toast" id="toast" style="display:none"></div>
 
 <script>
-// ── Channels (direct stream URLs — no rojadirecta wrapper) ──
+// ── Channels ──
 const CHANNELS = [
   {name:'DSports',          url:'https://tvtvhd.com/vivo/canales.php?stream=dsports'},
   {name:'DSports 2',        url:'https://tvtvhd.com/vivo/canales.php?stream=dsports2'},
@@ -196,65 +233,46 @@ const CHANNELS = [
   {name:'Movistar Dep.',    url:'https://tvtvhd.com/vivo/canales.php?stream=movistar'}
 ];
 
-// ── Defaults ──
-const DEFAULTS = [
-  {url:'https://tvtvhd.com/vivo/canales.php?stream=tycsports', label:'TyC Sports'},
-  {url:'https://tvtvhd.com/vivo/canales.php?stream=dsports',   label:'DSports'}
+const DEFAULTS=[
+  {url:'https://tvtvhd.com/vivo/canales.php?stream=tycsports',label:'TyC Sports'},
+  {url:'https://tvtvhd.com/vivo/canales.php?stream=dsports',label:'DSports'}
 ];
 
-// ── State per slot ──
-let S = [{url:'',label:'',chanIdx:-1},{url:'',label:'',chanIdx:-1}];
+// State
+let S=[{url:'',label:'',chanIdx:-1,muted:false,paused:false},{url:'',label:'',chanIdx:-1,muted:false,paused:false}];
+let layout='vertical';
 
-// ── Init ──
 function init(){
-  // Build channel dropdowns
-  const opts = '<option value="">— Canal —</option>'+CHANNELS.map((c,i)=>`<option value="${i}">${c.name}</option>`).join('');
+  const opts='<option value="">— Canal —</option>'+CHANNELS.map((c,i)=>`<option value="${i}">${c.name}</option>`).join('');
   document.getElementById('chan1').innerHTML=opts;
   document.getElementById('chan2').innerHTML=opts;
 
-  // Load state
-  const saved = localStorage.getItem('visor-dual-v3');
-  if(saved){try{const s=JSON.parse(saved);if(Array.isArray(s))S=s}catch(e){}}
+  const saved=localStorage.getItem('visor-dual-v5');
+  if(saved){try{const s=JSON.parse(saved);if(Array.isArray(s))S=s;if(s.layout)layout=s.layout}catch(e){}}
 
-  // Restore or defaults
   for(let n=0;n<2;n++){
-    if(!S[n].url){S[n]={...DEFAULTS[n],chanIdx:CHANNELS.findIndex(c=>c.url===DEFAULTS[n].url)}}
+    if(!S[n].url){S[n]={...DEFAULTS[n],chanIdx:CHANNELS.findIndex(c=>c.url===DEFAULTS[n].url),muted:false,paused:false}}
     document.getElementById('url'+(n+1)).value=S[n].url;
     document.getElementById('label'+(n+1)).textContent=S[n].label||('Stream '+(n+1));
-    if(S[n].chanIdx>=0) document.getElementById('chan'+(n+1)).value=S[n].chanIdx;
+    if(S[n].chanIdx>=0)document.getElementById('chan'+(n+1)).value=S[n].chanIdx;
   }
 
-  // Auto-load
+  if(layout==='horizontal')setLayout('horizontal',false);
+  document.getElementById('layoutBtn').textContent=layout==='vertical'?'⬍':'⬌';
+
   setTimeout(()=>{loadSlot(1);loadSlot(2)},300);
 }
 
-// ── Pick channel from dropdown ──
-function pickChannel(n,idx){
-  if(idx==='') return;
-  const ch=CHANNELS[parseInt(idx)];
-  S[n-1].url=ch.url;
-  S[n-1].label=ch.name;
-  S[n-1].chanIdx=parseInt(idx);
-  document.getElementById('url'+n).value=ch.url;
-  document.getElementById('label'+n).textContent=ch.name;
-  document.getElementById('chan'+n).value=idx;
-  loadSlot(n);
-}
-
-// ── Decode rojadirecta embed URL ──
+// ── Load ──
 function decodeUrl(raw){
   try{const u=new URL(raw);const r=u.searchParams.get('r');if(r)return atob(r)}catch(e){}
   return raw;
 }
-
-// ── Load ──
 function loadSlot(n){
   const raw=document.getElementById('url'+n).value.trim();
-  if(!raw) return;
-
+  if(!raw)return;
   const decoded=decodeUrl(raw);
   document.getElementById('url'+n).value=decoded;
-
   S[n-1].url=decoded;
   if(!S[n-1].label||S[n-1].label===('Stream '+n)){
     const ch=CHANNELS.find(c=>c.url===decoded);
@@ -262,28 +280,75 @@ function loadSlot(n){
     else S[n-1].label=extractLabel(decoded);
   }
   document.getElementById('label'+n).textContent=S[n-1].label||('Stream '+n);
-
   document.getElementById('empty'+n).style.display='none';
+  document.getElementById('paused'+n).classList.remove('show');
+  S[n-1].paused=false;
+  document.getElementById('play'+n).textContent='⏸';
+
   const frame=document.getElementById('frame'+n);
   const status=document.getElementById('status'+n);
   status.className='status status-loading';
   frame.style.display='block';
   frame.src=decoded;
+  if(S[n-1].muted) frame.setAttribute('muted','');
+  else frame.removeAttribute('muted');
   frame.onload=()=>{status.className='status status-live'};
   frame.onerror=()=>{status.className='status status-dead';toast('⚠ Error en '+S[n-1].label)};
+  updateMuteButton(n);
   saveState();
   toast('▶ '+S[n-1].label);
 }
-
 function extractLabel(url){
-  try{
-    const u=new URL(url);
-    const s=u.searchParams.get('stream');
-    if(s)return s.replace(/([a-z])([A-Z0-9])/g,'$1 $2').replace(/[-_]/g,' ').replace(/\b\w/g,l=>l.toUpperCase());
-    return '';
-  }catch(e){return ''}
+  try{const u=new URL(url);const s=u.searchParams.get('stream');if(s)return s.replace(/([a-z])([A-Z0-9])/g,'$1 $2').replace(/[-_]/g,' ').replace(/\b\w/g,l=>l.toUpperCase());return''}catch(e){return''}
 }
 
+// ── Channel picker ──
+function pickChannel(n,idx){
+  if(idx==='')return;const ch=CHANNELS[parseInt(idx)];
+  S[n-1].url=ch.url;S[n-1].label=ch.name;S[n-1].chanIdx=parseInt(idx);
+  document.getElementById('url'+n).value=ch.url;
+  document.getElementById('label'+n).textContent=ch.name;
+  document.getElementById('chan'+n).value=idx;loadSlot(n);
+}
+
+// ── Mute ──
+function toggleMute(n){
+  S[n-1].muted=!S[n-1].muted;
+  const frame=document.getElementById('frame'+n);
+  if(S[n-1].muted){frame.setAttribute('muted','')}else{frame.removeAttribute('muted')}
+  updateMuteButton(n);
+  saveState();
+  toast(S[n-1].muted?'🔇 '+S[n-1].label+' muteado':'🔊 '+S[n-1].label+' con audio');
+}
+function updateMuteButton(n){
+  const btn=document.getElementById('mute'+n);
+  btn.textContent=S[n-1].muted?'🔇':'🔊';
+  if(S[n-1].muted)btn.classList.add('active');else btn.classList.remove('active');
+}
+
+// ── Play/Pause (visibility toggle) ──
+function togglePlay(n){
+  const was=S[n-1].paused;
+  S[n-1].paused=!was;
+  const frame=document.getElementById('frame'+n);
+  const overlay=document.getElementById('paused'+n);
+  const playBtn=document.getElementById('play'+n);
+  const status=document.getElementById('status'+n);
+
+  if(S[n-1].paused){
+    overlay.classList.add('show');
+    playBtn.textContent='▶';
+    status.className='status status-paused';
+  }else{
+    overlay.classList.remove('show');
+    playBtn.textContent='⏸';
+    status.className='status status-live';
+  }
+  saveState();
+  toast(S[n-1].paused?'⏸ '+S[n-1].label+' pausado':'▶ '+S[n-1].label+' reanudado');
+}
+
+// ── Reload ──
 function reloadSlot(n){
   const frame=document.getElementById('frame'+n);
   if(!frame.src)return;
@@ -299,14 +364,18 @@ function swapSlots(){
     document.getElementById('url'+n).value=S[n-1].url;
     document.getElementById('label'+n).textContent=S[n-1].label||('Stream '+n);
     document.getElementById('chan'+n).value=S[n-1].chanIdx>=0?S[n-1].chanIdx:'';
+    updateMuteButton(n);
+    if(S[n-1].paused){togglePlay(n)}
   }
   const f1=document.getElementById('frame1'),f2=document.getElementById('frame2');
   const s1=f1.src;f1.src=f2.src;f2.src=s1;
+  if(S[0].muted)f1.setAttribute('muted','');else f1.removeAttribute('muted');
+  if(S[1].muted)f2.setAttribute('muted','');else f2.removeAttribute('muted');
   const e1=document.getElementById('empty1').style.display;
   document.getElementById('empty1').style.display=document.getElementById('empty2').style.display;
   document.getElementById('empty2').style.display=e1;
-  if(f1.style.display!=='none'){document.getElementById('status1').className='status status-live'}
-  if(f2.style.display!=='none'){document.getElementById('status2').className='status status-live'}
+  if(f1.style.display!=='none')document.getElementById('status1').className='status status-live';
+  if(f2.style.display!=='none')document.getElementById('status2').className='status status-live';
   saveState();toast('⇅ Intercambiados');
 }
 
@@ -320,15 +389,28 @@ function toggleFullscreen(){
   else document.documentElement.requestFullscreen().catch(()=>{});
 }
 
+// ── Layout toggle ──
+function toggleLayout(){
+  setLayout(layout==='vertical'?'horizontal':'vertical',true);
+}
+function setLayout(mode,save){
+  layout=mode;
+  const area=document.getElementById('mainArea');
+  area.className=mode;
+  document.getElementById('layoutBtn').textContent=mode==='vertical'?'⬍':'⬌';
+  if(save)saveState();
+  toast(mode==='horizontal'?'⬌ Horizontal':'⬍ Vertical');
+}
+
 // ── Persistence ──
-function saveState(){localStorage.setItem('visor-dual-v3',JSON.stringify(S))}
+function saveState(){localStorage.setItem('visor-dual-v5',JSON.stringify([...S,{layout}]))}
 
 // ── Toast ──
 function toast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg;t.style.display='block';
   t.style.animation='none';t.offsetHeight;
-  t.style.animation='toastIn .3s ease-out,toastOut .3s 1.7s ease-in forwards';
+  t.style.animation='toastIn .3s ease-out,toastOut .3s 1.4s ease-in forwards';
 }
 
 // ── Keyboard ──
@@ -336,7 +418,10 @@ document.addEventListener('keydown',e=>{
   if(e.target.tagName==='INPUT')return;
   switch(e.key.toLowerCase()){
     case's':e.preventDefault();swapSlots();break;
+    case'l':e.preventDefault();toggleLayout();break;
     case'f':e.preventDefault();toggleFullscreen();break;
+    case'm':e.preventDefault();
+      const n=e.key==='m'?1:0;toggleMute(1);break;
     case'1':e.preventDefault();reloadSlot(1);break;
     case'2':e.preventDefault();reloadSlot(2);break;
   }
