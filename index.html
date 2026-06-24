@@ -43,9 +43,6 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
   position:absolute;top:0;left:0;right:0;z-index:10;
   display:flex;flex-direction:column;gap:3px;
   padding:5px 7px;
-  background:rgba(0,0,0,.45);
-  backdrop-filter:blur(2px);
-  -webkit-backdrop-filter:blur(2px);
 }
 .ctrl-row{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
 .ctrl select{
@@ -170,8 +167,7 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
         <button class="btn" onclick="fullscreenSlot(1)" title="Fullscreen">⛶</button>
       </div>
       <div class="ctrl-row">
-        <input id="url1" placeholder="o pegá link de rojadirecta..." spellcheck="false">
-        <button class="btn play-btn" style="width:auto;padding:0 8px" onclick="loadSlot(1)">▶ Cargar</button>
+        <input id="url1" placeholder="o pegá link de rojadirecta..." spellcheck="false" onkeydown="if(event.key==='Enter')loadSlot(1)">
       </div>
     </div>
     <div class="pause-overlay" id="paused1" onclick="togglePlay(1)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
@@ -191,8 +187,7 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
         <button class="btn" onclick="fullscreenSlot(2)" title="Fullscreen">⛶</button>
       </div>
       <div class="ctrl-row">
-        <input id="url2" placeholder="o pegá link de rojadirecta..." spellcheck="false">
-        <button class="btn play-btn" style="width:auto;padding:0 8px" onclick="loadSlot(2)">▶ Cargar</button>
+        <input id="url2" placeholder="o pegá link de rojadirecta..." spellcheck="false" onkeydown="if(event.key==='Enter')loadSlot(2)">
       </div>
     </div>
     <div class="pause-overlay" id="paused2" onclick="togglePlay(2)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
@@ -417,7 +412,7 @@ function toast(msg){
 
 // ── Keyboard ──
 document.addEventListener('keydown',e=>{
-  if(e.target.tagName==='INPUT')return;
+  if(e.target.tagName==='INPUT'&&e.key!=='Enter')return;
   switch(e.key.toLowerCase()){
     case's':e.preventDefault();swapSlots();break;
     case'l':e.preventDefault();toggleLayout();break;
