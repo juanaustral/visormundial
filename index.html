@@ -242,7 +242,7 @@ function init(){
   document.getElementById('chan1').innerHTML=opts;
   document.getElementById('chan2').innerHTML=opts;
 
-  const saved=localStorage.getItem('visor-dual-v6');
+  const saved=localStorage.getItem('visor-dual-v7');
   if(saved){try{const s=JSON.parse(saved);if(Array.isArray(s))S=s;if(s.layout)layout=s.layout}catch(e){}}
 
   for(let n=0;n<2;n++){
@@ -357,7 +357,7 @@ function setLayout(mode,save){
 }
 
 // ── Persistence ──
-function saveState(){localStorage.setItem('visor-dual-v6',JSON.stringify([...S,{layout}]))}
+function saveState(){localStorage.setItem('visor-dual-v7',JSON.stringify([...S,{layout}]))}
 
 // ── Toast ──
 function toast(msg){
