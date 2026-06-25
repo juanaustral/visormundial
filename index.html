@@ -46,7 +46,7 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 }
 .ctrl-row{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
 .ctrl select{
-  background:var(--surface2);border:1px solid var(--border);
+  background:transparent;border:1px solid rgba(255,255,255,.06);
   color:var(--text);padding:4px 7px;border-radius:var(--radius);
   font-size:11px;font-family:var(--font);cursor:pointer;
   outline:none;flex:1;min-width:80px;max-width:170px;
@@ -58,13 +58,13 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 .ctrl select:focus{border-color:var(--accent)}
 .ctrl input{
   flex:1;min-width:100px;
-  background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08);
+  background:transparent;border:1px solid rgba(255,255,255,.06);
   color:rgba(255,255,255,.5);padding:3px 7px;border-radius:var(--radius);
   font-size:10px;font-family:var(--mono);outline:none;
   transition:border-color .15s;
 }
 .ctrl input:focus{border-color:var(--accent);color:rgba(255,255,255,.8)}
-.ctrl input::placeholder{color:rgba(255,255,255,.2)}
+.ctrl input::placeholder{color:rgba(255,255,255,.15)}
 .ctrl .label{
   font-size:10px;font-weight:600;white-space:nowrap;
   display:flex;align-items:center;gap:3px;
@@ -80,12 +80,12 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 
 /* Buttons */
 .btn{
-  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
-  color:var(--text);width:28px;height:26px;border-radius:var(--radius);
+  background:transparent;border:1px solid rgba(255,255,255,.08);
+  color:rgba(255,255,255,.6);width:28px;height:26px;border-radius:var(--radius);
   cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;
   transition:all .12s;flex-shrink:0;padding:0;
 }
-.btn:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.22)}
+.btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#fff}
 .btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
 .btn.play-btn{width:auto;padding:0 7px;font-size:10px;gap:2px}
 
