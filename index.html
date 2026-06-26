@@ -232,9 +232,25 @@ function loadSlot(n){
   const status=document.getElementById('status'+n);
   status.className='status status-loading';
   frame.style.display='block';
+
+  // Timeout: if iframe doesn't fire onload in 12s, flag as error
+  const timeout=setTimeout(()=>{
+    if(!S[n-1].loaded){status.className='status status-dead';showRetry(n)}
+  },12000);
+  S[n-1].loaded=false;
+  S[n-1].retries=0;
+
   frame.src=url;
-  frame.onload=()=>{status.className='status status-live'};
-  frame.onerror=()=>{status.className='status status-dead'};
+  frame.onload=()=>{
+    clearTimeout(timeout);
+    S[n-1].loaded=true;
+    status.className='status status-live';
+  };
+  frame.onerror=()=>{
+    clearTimeout(timeout);
+    status.className='status status-dead';
+    showRetry(n);
+  };
   saveState();
 }
 
@@ -265,8 +281,26 @@ function togglePlay(n){
 function reloadSlot(n){
   const frame=document.getElementById('frame'+n);
   if(!frame.src)return;
+  S[n-1].retries=(S[n-1].retries||0)+1;
+  if(S[n-1].retries>5){toast('⚠ Demasiados reintentos en '+S[n-1].label);return}
   document.getElementById('status'+n).className='status status-loading';
   frame.src=frame.src;
+}
+
+function showRetry(n){
+  const playBtn=document.getElementById('play'+n);
+  playBtn.textContent='⚠ Reintentar';
+  playBtn.style.color='var(--red)';
+  playBtn.style.borderColor='var(--red)';
+  // Repurpose play button as retry for 10s
+  const origOnclick=playBtn.getAttribute('onclick');
+  playBtn.setAttribute('onclick','reloadSlot('+n+')');
+  setTimeout(()=>{
+    if(playBtn.textContent==='⚠ Reintentar'){
+      playBtn.style.color='';playBtn.style.borderColor='';
+      playBtn.textContent='⏸ Pausar';playBtn.setAttribute('onclick',origOnclick)
+    }
+  },10000);
 }
 
 function swapSlots(){
