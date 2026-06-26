@@ -4,22 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mundial 2026 — Visor Dual</title>
-<meta name="description" content="Mirá dos partidos del Mundial 2026 al mismo tiempo. Visor dual de streams deportivos.">
+<meta name="description" content="Mirá dos partidos del Mundial 2026 al mismo tiempo.">
 <meta name="author" content="Juan Martinez Garcia">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://juanaustral.github.io/visor-dual/">
-<meta property="og:type" content="website">
 <meta property="og:title" content="Mundial 2026 — Visor Dual">
 <meta property="og:description" content="Mirá dos partidos del Mundial 2026 al mismo tiempo.">
 <meta property="og:url" content="https://juanaustral.github.io/visor-dual/">
-<meta property="og:locale" content="es_AR">
-<meta name="twitter:card" content="summary">
 <style>
 :root {
-  --bg:#0a0a0a;--surface:#111;--text:#e0e0e0;--text-dim:#777;
+  --bg:#0a0a0a;--text:#e0e0e0;--text-dim:#777;
   --green:#3CAC3B;--blue:#2A398D;--red:#E61D25;--lgray:#D1D4D1;--dgray:#474A4A;
   --radius:5px;--font:system-ui,-apple-system,sans-serif;
-  --mono:'SF Mono','Cascadia Code',monospace;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;overflow:hidden;background:var(--bg)}
@@ -43,7 +39,7 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 }
 .ctrl-row{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
 .ctrl select{
-  background:transparent;border:1px solid rgba(255,255,255,.08);
+  background:transparent;border:1px solid rgba(255,255,255,.1);
   color:var(--text);padding:5px 8px;border-radius:var(--radius);
   font-size:12px;font-family:var(--font);cursor:pointer;
   outline:none;flex:1;min-width:100px;max-width:200px;
@@ -53,20 +49,14 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
   padding-right:24px;
 }
 .ctrl select:focus{border-color:var(--green)}
-.ctrl .label{
-  font-size:11px;font-weight:600;white-space:nowrap;
-  display:flex;align-items:center;gap:4px;
-}
-.ctrl .status{
-  width:7px;height:7px;border-radius:50%;flex-shrink:0;
-}
+.ctrl .label{font-size:11px;font-weight:600;white-space:nowrap;display:flex;align-items:center;gap:4px}
+.ctrl .status{width:7px;height:7px;border-radius:50%;flex-shrink:0}
 .status-live{background:var(--green);box-shadow:0 0 5px var(--green)}
 .status-loading{background:#f0a500;animation:pulse .8s infinite}
 .status-dead{background:var(--red)}
 .status-paused{background:var(--dgray)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
-/* Buttons */
 .btn{
   background:transparent;border:1px solid rgba(255,255,255,.1);
   color:rgba(255,255,255,.65);border-radius:var(--radius);
@@ -75,52 +65,28 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 }
 .btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);color:#fff}
 
-/* ── Frame + overlays + clip ── */
-.clip{overflow:hidden;position:absolute;inset:0;display:none}
-.clip.show{display:block}
-.slot-frame{
-  position:absolute;top:-72px;left:0;
-  width:100%;height:calc(100% + 72px + 65px);
-  border:none;background:#000;
-}
+/* ── Frame + overlay ── */
+.slot-frame{width:100%;height:100%;border:none;background:#000;display:none}
 .pause-overlay{
   position:absolute;inset:0;z-index:5;
   display:none;align-items:center;justify-content:center;
   background:rgba(0,0,0,.85);
-  font-size:14px;color:var(--text-dim);flex-direction:column;gap:6px;
-  cursor:pointer;
+  font-size:14px;color:var(--text-dim);flex-direction:column;gap:6px;cursor:pointer;
 }
 .pause-overlay.show{display:flex}
-.empty{
-  position:absolute;inset:0;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:8px;
-  color:var(--text-dim);pointer-events:none;
-}
-.empty .icon{font-size:32px;opacity:.2}
-.empty p{font-size:11px;text-align:center;line-height:1.4}
 
-/* ── Credit Box (World Cup style) ── */
+/* ── Credit ── */
 #credit{
   position:fixed;bottom:10px;left:10px;z-index:25;
   background:linear-gradient(135deg,rgba(60,172,59,.15),rgba(42,57,141,.12));
   border:1px solid rgba(60,172,59,.25);
   border-radius:20px;padding:5px 16px;
   backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-  transition:all .2s;
 }
-#credit:hover{
-  background:linear-gradient(135deg,rgba(60,172,59,.22),rgba(42,57,141,.18));
-  border-color:rgba(230,29,37,.4);
-}
-#credit a{
-  color:var(--lgray);text-decoration:none;
-  font-size:10px;font-weight:500;letter-spacing:.3px;
-  display:flex;align-items:center;gap:5px;
-}
+#credit:hover{background:linear-gradient(135deg,rgba(60,172,59,.22),rgba(42,57,141,.18));border-color:rgba(230,29,37,.4)}
+#credit a{color:var(--lgray);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:.3px;display:flex;align-items:center;gap:5px}
 #credit a:hover{color:#fff}
-#credit .dot{
-  width:5px;height:5px;border-radius:50%;flex-shrink:0;
-}
+#credit .dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
 #credit .dot.g{background:var(--green)}
 #credit .dot.b{background:var(--blue)}
 #credit .dot.r{background:var(--red)}
@@ -147,7 +113,6 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 @keyframes toastIn{from{opacity:0;transform:translate(-50%,50%) translateY(8px)}to{opacity:1;transform:translate(-50%,50%) translateY(0)}}
 @keyframes toastOut{from{opacity:1}to{opacity:0}}
 
-/* ── Mobile ── */
 @media(max-width:550px){
   .ctrl{padding:4px 5px;gap:3px}
   .ctrl select{max-width:140px;font-size:11px}
@@ -161,7 +126,6 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 <body>
 
 <div id="mainArea" class="vertical">
-  <!-- Slot 1 -->
   <div class="slot" id="slot1">
     <div class="ctrl" id="ctrl1">
       <div class="ctrl-row">
@@ -175,11 +139,8 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
       </div>
     </div>
     <div class="pause-overlay" id="paused1" onclick="togglePlay(1)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
-    <div class="empty" id="empty1"><span class="icon">📺</span><p>Elegí un canal del selector</p></div>
-    <div class="clip"><iframe class="slot-frame" id="frame1" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+    <iframe class="slot-frame" id="frame1" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
-
-  <!-- Slot 2 -->
   <div class="slot" id="slot2">
     <div class="ctrl" id="ctrl2">
       <div class="ctrl-row">
@@ -193,8 +154,7 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
       </div>
     </div>
     <div class="pause-overlay" id="paused2" onclick="togglePlay(2)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
-    <div class="empty" id="empty2"><span class="icon">📺</span><p>Elegí un canal del selector</p></div>
-    <div class="clip"><iframe class="slot-frame" id="frame2" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+    <iframe class="slot-frame" id="frame2" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -206,37 +166,36 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 </div>
 
 <button id="layoutBtn" onclick="toggleLayout()" title="Vertical / Horizontal">⬍</button>
-
 <div class="toast" id="toast" style="display:none"></div>
 
 <script>
-// ── Channels ──
+// ── Channels — streams directos (solo el reproductor, sin wrapper) ──
 const CHANNELS = [
-  {name:'DSports',          url:'https://rojadirectastream.com/en-vivo/directv-sports'},
-  {name:'DSports 2',        url:'https://rojadirectastream.com/en-vivo/directv-sports-2'},
-  {name:'DSports +',        url:'https://rojadirectastream.com/en-vivo/directv-sports-plus'},
-  {name:'ESPN 1',           url:'https://rojadirectastream.com/en-vivo/espn-1'},
-  {name:'ESPN 2',           url:'https://rojadirectastream.com/en-vivo/espn-2'},
-  {name:'ESPN 3',           url:'https://rojadirectastream.com/en-vivo/espn-3'},
-  {name:'ESPN Premium',     url:'https://rojadirectastream.com/en-vivo/espn-premium'},
-  {name:'ESPN Deportes',    url:'https://rojadirectastream.com/en-vivo/espn-deportes'},
-  {name:'Fox Sports',       url:'https://rojadirectastream.com/en-vivo/fox-sports-1'},
-  {name:'Fox Sports 2',     url:'https://rojadirectastream.com/en-vivo/fox-sports-2'},
-  {name:'Fox Sports 3',     url:'https://rojadirectastream.com/en-vivo/fox-sports-3'},
-  {name:'Fox Sports Premium',url:'https://rojadirectastream.com/en-vivo/fox-sports-premium'},
-  {name:'TNT Sports',       url:'https://rojadirectastream.com/en-vivo/tnt-sports-argentina'},
-  {name:'TyC Sports',       url:'https://rojadirectastream.com/en-vivo/tyc-sports'},
-  {name:'TUDN',             url:'https://rojadirectastream.com/en-vivo/tudn'},
-  {name:'Win Sports',       url:'https://rojadirectastream.com/en-vivo/win-sports'},
-  {name:'Win Sports +',     url:'https://rojadirectastream.com/en-vivo/win-sports-plus'},
-  {name:'Liga 1 Max',       url:'https://rojadirectastream.com/en-vivo/liga-1-max'},
-  {name:'Gol Perú',         url:'https://rojadirectastream.com/en-vivo/golperu'},
-  {name:'Movistar Dep.',    url:'https://rojadirectastream.com/en-vivo/movistar-deportes'}
+  {name:'DSports',          url:'https://tvhd2.com/tv/canales.php?stream=dsports'},
+  {name:'DSports 2',        url:'https://tvhd2.com/tv/canales.php?stream=dsports2'},
+  {name:'DSports +',        url:'https://tvhd2.com/tv/canales.php?stream=dsportsplus'},
+  {name:'ESPN 1',           url:'https://tvhd2.com/tv/canales.php?stream=espn'},
+  {name:'ESPN 2',           url:'https://tvhd2.com/tv/canales.php?stream=espn2'},
+  {name:'ESPN 3',           url:'https://tvhd2.com/tv/canales.php?stream=espn3'},
+  {name:'ESPN Premium',     url:'https://tvhd2.com/tv/canales.php?stream=espnpremium'},
+  {name:'ESPN Deportes',    url:'https://tvhd2.com/tv/canales.php?stream=espndeportesusa'},
+  {name:'Fox Sports',       url:'https://tvhd2.com/tv/canales.php?stream=foxsports'},
+  {name:'Fox Sports 2',     url:'https://tvhd2.com/tv/canales.php?stream=foxsports2'},
+  {name:'Fox Sports 3',     url:'https://tvhd2.com/tv/canales.php?stream=foxsports3'},
+  {name:'Fox Sports Premium',url:'https://tvhd2.com/tv/canales.php?stream=foxsportspremiummx'},
+  {name:'TNT Sports',       url:'https://tvhd2.com/tv/canales.php?stream=tntsports'},
+  {name:'TyC Sports',       url:'https://tvhd2.com/tv/canales.php?stream=tycsports'},
+  {name:'TUDN',             url:'https://tvhd2.com/tv/canales.php?stream=tudnusa'},
+  {name:'Win Sports',       url:'https://tvhd2.com/tv/canales.php?stream=winsports'},
+  {name:'Win Sports +',     url:'https://tvhd2.com/tv/canales.php?stream=winsportsplus'},
+  {name:'Liga 1 Max',       url:'https://tvhd2.com/tv/canales.php?stream=liga1max'},
+  {name:'Gol Perú',         url:'https://tvhd2.com/tv/canales.php?stream=liga1max'},
+  {name:'Movistar Dep.',    url:'https://tvhd2.com/tv/canales.php?stream=movistar'}
 ];
 
 const DEFAULTS=[
-  {url:'https://rojadirectastream.com/en-vivo/tyc-sports',label:'TyC Sports'},
-  {url:'https://rojadirectastream.com/en-vivo/directv-sports',label:'DSports'}
+  {url:'https://tvhd2.com/tv/canales.php?stream=tycsports',label:'TyC Sports'},
+  {url:'https://tvhd2.com/tv/canales.php?stream=dsports',label:'DSports'}
 ];
 
 // State
@@ -248,7 +207,7 @@ function init(){
   document.getElementById('chan1').innerHTML=opts;
   document.getElementById('chan2').innerHTML=opts;
 
-  const saved=localStorage.getItem('visor-dual-v7');
+  const saved=localStorage.getItem('visor-dual-v8');
   if(saved){try{const s=JSON.parse(saved);if(Array.isArray(s))S=s;if(s.layout)layout=s.layout}catch(e){}}
 
   for(let n=0;n<2;n++){
@@ -259,34 +218,26 @@ function init(){
 
   if(layout==='horizontal')setLayout('horizontal',false);
   document.getElementById('layoutBtn').textContent=layout==='vertical'?'⬍':'⬌';
-
   setTimeout(()=>{loadSlot(1);loadSlot(2)},300);
 }
 
-// ── Load ──
 function loadSlot(n){
-  const url=S[n-1].url;
-  if(!url)return;
-
+  const url=S[n-1].url; if(!url)return;
   document.getElementById('label'+n).textContent=S[n-1].label||('Stream '+n);
-  document.getElementById('empty'+n).style.display='none';
-  document.getElementById('paused'+n).classList.remove('show');
   S[n-1].paused=false;
   document.getElementById('play'+n).textContent='⏸ Pausar';
+  document.getElementById('paused'+n).classList.remove('show');
 
   const frame=document.getElementById('frame'+n);
-  const clip=document.getElementById('frame'+n).parentElement;
   const status=document.getElementById('status'+n);
   status.className='status status-loading';
-  clip.classList.add('show');
+  frame.style.display='block';
   frame.src=url;
   frame.onload=()=>{status.className='status status-live'};
-  frame.onerror=()=>{status.className='status status-dead';toast('⚠ Error en '+S[n-1].label)};
+  frame.onerror=()=>{status.className='status status-dead'};
   saveState();
-  toast('▶ '+S[n-1].label);
 }
 
-// ── Channel picker ──
 function pickChannel(n,idx){
   if(idx==='')return;const ch=CHANNELS[parseInt(idx)];
   S[n-1].url=ch.url;S[n-1].label=ch.name;S[n-1].chanIdx=parseInt(idx);
@@ -294,13 +245,11 @@ function pickChannel(n,idx){
   document.getElementById('chan'+n).value=idx;loadSlot(n);
 }
 
-// ── Play/Pause ──
 function togglePlay(n){
   S[n-1].paused=!S[n-1].paused;
   const overlay=document.getElementById('paused'+n);
   const playBtn=document.getElementById('play'+n);
   const status=document.getElementById('status'+n);
-
   if(S[n-1].paused){
     overlay.classList.add('show');
     playBtn.textContent='▶ Reanudar';
@@ -313,37 +262,27 @@ function togglePlay(n){
   saveState();
 }
 
-// ── Reload ──
 function reloadSlot(n){
   const frame=document.getElementById('frame'+n);
   if(!frame.src)return;
   document.getElementById('status'+n).className='status status-loading';
   frame.src=frame.src;
-  toast('🔄 '+S[n-1].label);
 }
 
-// ── Swap ──
 function swapSlots(){
   const tmp=S[0];S[0]=S[1];S[1]=tmp;
   for(let n=1;n<=2;n++){
     document.getElementById('label'+n).textContent=S[n-1].label||('Stream '+n);
     document.getElementById('chan'+n).value=S[n-1].chanIdx>=0?S[n-1].chanIdx:'';
-    if(S[n-1].paused)document.getElementById('play'+n).textContent='▶ Reanudar';
-    else document.getElementById('play'+n).textContent='⏸ Pausar';
+    document.getElementById('play'+n).textContent=S[n-1].paused?'▶ Reanudar':'⏸ Pausar';
   }
   const f1=document.getElementById('frame1'),f2=document.getElementById('frame2');
   const s1=f1.src;f1.src=f2.src;f2.src=s1;
-  const e1=document.getElementById('empty1').style.display;
-  document.getElementById('empty1').style.display=document.getElementById('empty2').style.display;
-  document.getElementById('empty2').style.display=e1;
-  const c1=document.getElementById('frame1').parentElement.classList.contains('show');
-  const c2=document.getElementById('frame2').parentElement.classList.contains('show');
-  if(c1)document.getElementById('status1').className='status status-live';
-  if(c2)document.getElementById('status2').className='status status-live';
-  saveState();toast('⇅ Intercambiados');
+  if(f1.style.display!=='none')document.getElementById('status1').className='status status-live';
+  if(f2.style.display!=='none')document.getElementById('status2').className='status status-live';
+  saveState();
 }
 
-// ── Fullscreen ──
 function fullscreenSlot(n){
   const frame=document.getElementById('frame'+n);
   if(frame.requestFullscreen)frame.requestFullscreen().catch(()=>{});
@@ -353,7 +292,6 @@ function toggleFullscreen(){
   else document.documentElement.requestFullscreen().catch(()=>{});
 }
 
-// ── Layout toggle ──
 function toggleLayout(){
   setLayout(layout==='vertical'?'horizontal':'vertical',true);
 }
@@ -362,13 +300,10 @@ function setLayout(mode,save){
   document.getElementById('mainArea').className=mode;
   document.getElementById('layoutBtn').textContent=mode==='vertical'?'⬍':'⬌';
   if(save)saveState();
-  toast(mode==='horizontal'?'⬌ Horizontal':'⬍ Vertical');
 }
 
-// ── Persistence ──
-function saveState(){localStorage.setItem('visor-dual-v7',JSON.stringify([...S,{layout}]))}
+function saveState(){localStorage.setItem('visor-dual-v8',JSON.stringify([...S,{layout}]))}
 
-// ── Toast ──
 function toast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg;t.style.display='block';
@@ -376,7 +311,6 @@ function toast(msg){
   t.style.animation='toastIn .3s ease-out,toastOut .3s 1.4s ease-in forwards';
 }
 
-// ── Keyboard ──
 document.addEventListener('keydown',e=>{
   if(e.target.tagName==='SELECT')return;
   switch(e.key.toLowerCase()){
