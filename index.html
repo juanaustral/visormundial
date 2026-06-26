@@ -75,8 +75,14 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 }
 .btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);color:#fff}
 
-/* ── Frame + overlays ── */
-.slot-frame{width:100%;height:100%;border:none;background:#000;display:none}
+/* ── Frame + overlays + clip ── */
+.clip{overflow:hidden;position:absolute;inset:0;display:none}
+.clip.show{display:block}
+.slot-frame{
+  position:absolute;top:-72px;left:0;
+  width:100%;height:calc(100% + 72px + 65px);
+  border:none;background:#000;
+}
 .pause-overlay{
   position:absolute;inset:0;z-index:5;
   display:none;align-items:center;justify-content:center;
@@ -170,7 +176,7 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
     </div>
     <div class="pause-overlay" id="paused1" onclick="togglePlay(1)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
     <div class="empty" id="empty1"><span class="icon">📺</span><p>Elegí un canal del selector</p></div>
-    <iframe class="slot-frame" id="frame1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="clip"><iframe class="slot-frame" id="frame1" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
   </div>
 
   <!-- Slot 2 -->
@@ -188,7 +194,7 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
     </div>
     <div class="pause-overlay" id="paused2" onclick="togglePlay(2)">⏸ Pausado<br><span style="font-size:10px;opacity:.5">click para reanudar</span></div>
     <div class="empty" id="empty2"><span class="icon">📺</span><p>Elegí un canal del selector</p></div>
-    <iframe class="slot-frame" id="frame2" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="clip"><iframe class="slot-frame" id="frame2" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
   </div>
 </div>
 
@@ -269,9 +275,10 @@ function loadSlot(n){
   document.getElementById('play'+n).textContent='⏸ Pausar';
 
   const frame=document.getElementById('frame'+n);
+  const clip=document.getElementById('frame'+n).parentElement;
   const status=document.getElementById('status'+n);
   status.className='status status-loading';
-  frame.style.display='block';
+  clip.classList.add('show');
   frame.src=url;
   frame.onload=()=>{status.className='status status-live'};
   frame.onerror=()=>{status.className='status status-dead';toast('⚠ Error en '+S[n-1].label)};
@@ -329,8 +336,10 @@ function swapSlots(){
   const e1=document.getElementById('empty1').style.display;
   document.getElementById('empty1').style.display=document.getElementById('empty2').style.display;
   document.getElementById('empty2').style.display=e1;
-  if(f1.style.display!=='none')document.getElementById('status1').className='status status-live';
-  if(f2.style.display!=='none')document.getElementById('status2').className='status status-live';
+  const c1=document.getElementById('frame1').parentElement.classList.contains('show');
+  const c2=document.getElementById('frame2').parentElement.classList.contains('show');
+  if(c1)document.getElementById('status1').className='status status-live';
+  if(c2)document.getElementById('status2').className='status status-live';
   saveState();toast('⇅ Intercambiados');
 }
 
