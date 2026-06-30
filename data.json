@@ -1,0 +1,376 @@
+{
+  "updated": "2026-06-30T17:44:41.797Z",
+  "date": "martes, 30 de junio de 2026",
+  "matches": [
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Costa de Marfil",
+      "awayTeam": "Noruega",
+      "time": "18:00",
+      "title": "Copa Mundial: Costa de Marfil vs Noruega",
+      "channels": [
+        {
+          "name": "DirecTV Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0c2FyLnBocA==",
+          "streamUrl": "https://latamvidzfy.org/dsportsar.php"
+        },
+        {
+          "name": "FOX One",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZm94MS5waHA=",
+          "streamUrl": "https://latamvidzfy.org/fox1.php"
+        },
+        {
+          "name": "DirecTV Sports | Solo LATAM",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0cy5waHA=",
+          "streamUrl": "https://latamvidzfy.org/dsports.php"
+        },
+        {
+          "name": "DirecTV Sports | OP 3",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "Unicanal",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdW5pY2FuYWwucGhw",
+          "streamUrl": "https://latamvidzfy.org/unicanal.php"
+        },
+        {
+          "name": "Das Erste",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZGFzZXJzdGVwci5waHA=",
+          "streamUrl": "https://latamvidzfy.org/daserstepr.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "Trece",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHJlY2UucGhw",
+          "streamUrl": "https://latamvidzfy.org/trece.php"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHNuMS5waHA=",
+          "streamUrl": "https://latamvidzfy.org/tsn1.php"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTEucGhw",
+          "streamUrl": "https://latamvidzfy.org/caze1.php"
+        }
+      ],
+      "homeData": {
+        "flag": "🇨🇮",
+        "group": "E",
+        "pos": "2°",
+        "pts": 6,
+        "dg": "+2",
+        "played": 3,
+        "form": [
+          "V",
+          "D",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 47,
+        "best": "Fase de grupos",
+        "apps": 5,
+        "conf": "CAF",
+        "star": "⚽⚽",
+        "rating": 91,
+        "attack": "⚡ Alto",
+        "defense": "✅ Buena",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "1–0",
+            "opponent": "🇪🇨 Ecuador",
+            "result": "w"
+          },
+          {
+            "score": "1–2",
+            "opponent": "🇩🇪 Alemania",
+            "result": "l"
+          },
+          {
+            "score": "2–0",
+            "opponent": "🇨🇼 Curazao",
+            "result": "w"
+          }
+        ]
+      },
+      "awayData": {
+        "flag": "🇳🇴",
+        "group": "I",
+        "pos": "2°",
+        "pts": 6,
+        "dg": "+1",
+        "played": 3,
+        "form": [
+          "V",
+          "V",
+          "D"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 43,
+        "best": "Octavos (1998)",
+        "apps": 4,
+        "conf": "UEFA",
+        "star": "⚽⚽",
+        "rating": 88,
+        "attack": "⚡ Alto",
+        "defense": "✅ Buena",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "4–1",
+            "opponent": "🇮🇶 Irak",
+            "result": "w"
+          },
+          {
+            "score": "3–2",
+            "opponent": "🇸🇳 Senegal",
+            "result": "w"
+          },
+          {
+            "score": "1–4",
+            "opponent": "🇫🇷 Francia",
+            "result": "l"
+          }
+        ]
+      }
+    },
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Francia",
+      "awayTeam": "Suecia",
+      "time": "22:00",
+      "title": "Copa Mundial: Francia vs Suecia",
+      "channels": [
+        {
+          "name": "DirecTV Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        }
+      ],
+      "homeData": {
+        "flag": "🇫🇷",
+        "group": "I",
+        "pos": "1°",
+        "pts": 9,
+        "dg": "+8",
+        "played": 3,
+        "form": [
+          "V",
+          "V",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 2,
+        "best": "Campeón (1998, 2018)",
+        "apps": 16,
+        "conf": "UEFA",
+        "star": "⚽⚽⚽⚽⚽",
+        "rating": 99,
+        "attack": "🔥 Muy alto",
+        "defense": "🛡️ Sólida",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "3–1",
+            "opponent": "🇸🇳 Senegal",
+            "result": "w"
+          },
+          {
+            "score": "3–0",
+            "opponent": "🇮🇶 Irak",
+            "result": "w"
+          },
+          {
+            "score": "4–1",
+            "opponent": "🇳🇴 Noruega",
+            "result": "w"
+          }
+        ]
+      },
+      "awayData": {
+        "flag": "🇸🇪",
+        "group": "F",
+        "pos": "3°",
+        "pts": 4,
+        "dg": "0",
+        "played": 3,
+        "form": [
+          "V",
+          "D",
+          "E"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 23,
+        "best": "Subcampeón (1958)",
+        "apps": 13,
+        "conf": "UEFA",
+        "star": "⚽⚽⚽",
+        "rating": 70,
+        "attack": "⚖️ Medio",
+        "defense": "⚠️ Regular",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "5–1",
+            "opponent": "🇹🇳 Túnez",
+            "result": "w"
+          },
+          {
+            "score": "1–5",
+            "opponent": "🇳🇱 Países Bajos",
+            "result": "l"
+          },
+          {
+            "score": "1–1",
+            "opponent": "🇯🇵 Japón",
+            "result": "d"
+          }
+        ]
+      }
+    },
+    {
+      "category": "CH",
+      "competition": "Copa Chile",
+      "homeTeam": "Audax Italiano",
+      "awayTeam": "Palestino",
+      "time": "23:00",
+      "title": "Copa Chile: Audax Italiano vs Palestino",
+      "channels": [],
+      "homeData": null,
+      "awayData": null
+    },
+    {
+      "category": "CH",
+      "competition": "Copa Chile",
+      "homeTeam": "Universidad Católica",
+      "awayTeam": "Everton",
+      "time": "01:30",
+      "title": "Copa Chile: Universidad Católica vs Everton",
+      "channels": [],
+      "homeData": null,
+      "awayData": null
+    },
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "México",
+      "awayTeam": "Ecuador",
+      "time": "02:00",
+      "title": "Copa Mundial: México vs Ecuador",
+      "channels": [
+        {
+          "name": "DirecTV Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        }
+      ],
+      "homeData": {
+        "flag": "🇲🇽",
+        "group": "A",
+        "pos": "1°",
+        "pts": 9,
+        "dg": "+6",
+        "played": 3,
+        "form": [
+          "V",
+          "V",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 15,
+        "best": "Cuartos (1970, 1986)",
+        "apps": 18,
+        "conf": "Concacaf",
+        "star": "⚽⚽⚽",
+        "rating": 99,
+        "attack": "🔥 Muy alto",
+        "defense": "🛡️ Sólida",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "2–0",
+            "opponent": "🇿🇦 Sudáfrica",
+            "result": "w"
+          },
+          {
+            "score": "1–0",
+            "opponent": "🇰🇷 Corea del Sur",
+            "result": "w"
+          },
+          {
+            "score": "3–0",
+            "opponent": "🇨🇿 Rep. Checa",
+            "result": "w"
+          }
+        ]
+      },
+      "awayData": {
+        "flag": "🇪🇨",
+        "group": "E",
+        "pos": "3°",
+        "pts": 4,
+        "dg": "0",
+        "played": 3,
+        "form": [
+          "D",
+          "E",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 36,
+        "best": "Octavos (2006)",
+        "apps": 5,
+        "conf": "Conmebol",
+        "star": "⚽⚽",
+        "rating": 70,
+        "attack": "⚖️ Medio",
+        "defense": "⚠️ Regular",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "0–1",
+            "opponent": "🇨🇮 Costa de Marfil",
+            "result": "l"
+          },
+          {
+            "score": "0–0",
+            "opponent": "🇨🇼 Curazao",
+            "result": "d"
+          },
+          {
+            "score": "2–1",
+            "opponent": "🇩🇪 Alemania",
+            "result": "w"
+          }
+        ]
+      }
+    }
+  ]
+}
