@@ -62,21 +62,24 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 #placeholder{color:var(--text-muted);text-align:center;padding:30px;font-size:13px}
 #placeholder strong{display:block;font-size:16px;color:var(--text-dim);margin-bottom:4px}
 
-#controls{
-  background:var(--surface);padding:6px 10px;display:flex;align-items:center;gap:6px;
-  border-top:1px solid rgba(255,255,255,.06);flex-shrink:0;min-height:36px;
+/* ── Side Controls (inside sidebar) ── */
+#sideControls{
+  background:var(--card);border-radius:var(--radius);padding:8px 10px;
+  margin-bottom:8px;border:1px solid rgba(255,255,255,.04);
 }
-#controls .label{font-size:11px;font-weight:500;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-dim)}
-#controls .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
-#controls .dot.live{background:var(--green);box-shadow:0 0 5px var(--green)}
-#controls .dot.off{background:var(--dgray)}
-#controls .dot.loading{background:#f0a500;animation:pulse .8s infinite}
+#sideControls .scTop{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+#sideControls .scBottom{display:flex;align-items:center;gap:6px}
+#sideControls .label{font-size:11px;font-weight:500;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+#sideControls .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+#sideControls .dot.live{background:var(--green);box-shadow:0 0 5px var(--green)}
+#sideControls .dot.off{background:var(--dgray)}
+#sideControls .dot.loading{background:#f0a500;animation:pulse .8s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
 #chanSel{
-  background:var(--card);border:1px solid rgba(255,255,255,.1);
+  background:var(--surface);border:1px solid rgba(255,255,255,.1);
   color:var(--text);padding:4px 8px;border-radius:var(--radius);
-  font-size:11px;cursor:pointer;outline:none;min-width:120px;
+  font-size:11px;cursor:pointer;outline:none;min-width:120px;flex:1;
 }
 #chanSel:focus{border-color:var(--green)}
 
@@ -167,14 +170,18 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
       </div>
       <iframe id="streamFrame" allow="autoplay; fullscreen" allowfullscreen style="display:none"></iframe>
     </div>
-    <div id="controls">
-      <span class="dot off" id="statusDot"></span>
-      <span class="label" id="matchLabel">Ningun partido seleccionado</span>
-      <select id="chanSel" style="display:none" onchange="pickChannel(this.value)"></select>
-      <button class="btn" id="fsBtn" style="display:none" onclick="fullscreen()">⛶</button>
-    </div>
   </div>
   <div id="sideCol">
+    <div id="sideControls" style="display:none">
+      <div class="scTop">
+        <span class="dot off" id="statusDot"></span>
+        <span class="label" id="matchLabel">Ningun partido seleccionado</span>
+      </div>
+      <div class="scBottom">
+        <select id="chanSel" style="display:none" onchange="pickChannel(this.value)"></select>
+        <button class="btn" id="fsBtn" style="display:none" onclick="fullscreen()">Pantalla completa</button>
+      </div>
+    </div>
     <div id="teamInfo"><div class="empty">Selecciona un partido para ver estadisticas</div></div>
     <div id="sideCredit">
       <a href="https://juanmartinezgarcia.com" target="_blank">
@@ -242,13 +249,14 @@ function selectMatch(idx) {
   renderTeams(m);
 
   // Channel selector
+  const sideCtl = document.getElementById('sideControls');
   const sel = document.getElementById('chanSel');
   const fs = document.getElementById('fsBtn');
   const label = document.getElementById('matchLabel');
   label.textContent = `${m.homeTeam} vs ${m.awayTeam} — ${m.time}`;
 
   if (m.channels.length) {
-    sel.style.display = ''; fs.style.display = '';
+    sideCtl.style.display = ''; sel.style.display = ''; fs.style.display = '';
     sel.innerHTML = '<option value="">Canal...</option>' +
       m.channels.map((c, ci) => `<option value="${ci}">${c.name} (${c.quality.replace('Calidad ','')})</option>`).join('');
     sel.value = '';
@@ -257,7 +265,7 @@ function selectMatch(idx) {
     const hd = m.channels.findIndex(c => c.quality.includes('1080'));
     if (hd >= 0) { sel.value = hd; pickChannel(hd); }
   } else {
-    sel.style.display = 'none'; fs.style.display = 'none';
+    sideCtl.style.display = 'none'; sel.style.display = 'none'; fs.style.display = 'none';
     stopStream();
     toast('Sin canales disponibles aun');
   }
