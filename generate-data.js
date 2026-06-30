@@ -45,6 +45,16 @@ function normalizeTeam(name, teamData) {
   return null;
 }
 
+// ── Timezone conversion ────────────────────────────
+// Source (futbol-libres.su) usa UTC+1 (CET). Target: Argentina (UTC-3)
+function toLocalTime(timeStr) {
+  if (!timeStr) return timeStr;
+  const p = timeStr.split(':');
+  if (p.length < 2) return timeStr;
+  let h = (parseInt(p[0]) - 4 + 24) % 24;
+  return `${String(h).padStart(2, '0')}:${p[1]}`;
+}
+
 async function main() {
   // ── Load team data ──
   let teamData = {};
@@ -78,7 +88,7 @@ async function main() {
     const channelsHtml = liMatch[3];
 
     const timeMatch = titleHtml.match(/<span[^>]*class="t"[^>]*>([^<]+)<\/span>/);
-    const time = timeMatch ? timeMatch[1].trim() : '';
+    const time = timeMatch ? toLocalTime(timeMatch[1].trim()) : '';
     const title = titleHtml.replace(/<span[^>]*>.*?<\/span>/g, '').trim();
 
     let competition = '', homeTeam = '', awayTeam = '';

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T18:16:16.067Z",
+  "updated": "2026-06-30T18:16:40.597Z",
   "date": "martes, 30 de junio de 2026",
   "matches": [
     {
@@ -7,7 +7,7 @@
       "competition": "Copa Mundial",
       "homeTeam": "Costa de Marfil",
       "awayTeam": "Noruega",
-      "time": "18:00",
+      "time": "14:00",
       "title": "Copa Mundial: Costa de Marfil vs Noruega",
       "channels": [
         {
@@ -163,7 +163,7 @@
       "competition": "Copa Mundial",
       "homeTeam": "Francia",
       "awayTeam": "Suecia",
-      "time": "22:00",
+      "time": "18:00",
       "title": "Copa Mundial: Francia vs Suecia",
       "channels": [
         {
@@ -259,7 +259,7 @@
       "competition": "Copa Chile",
       "homeTeam": "Audax Italiano",
       "awayTeam": "Palestino",
-      "time": "23:00",
+      "time": "19:00",
       "title": "Copa Chile: Audax Italiano vs Palestino",
       "channels": [],
       "homeData": null,
@@ -270,7 +270,7 @@
       "competition": "Copa Chile",
       "homeTeam": "Universidad Católica",
       "awayTeam": "Everton",
-      "time": "01:30",
+      "time": "21:30",
       "title": "Copa Chile: Universidad Católica vs Everton",
       "channels": [],
       "homeData": null,
@@ -281,7 +281,7 @@
       "competition": "Copa Mundial",
       "homeTeam": "México",
       "awayTeam": "Ecuador",
-      "time": "02:00",
+      "time": "22:00",
       "title": "Copa Mundial: México vs Ecuador",
       "channels": [
         {
