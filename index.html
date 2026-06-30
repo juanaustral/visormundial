@@ -8,7 +8,7 @@
 <meta name="author" content="Juan Martinez Garcia">
 <style>
 :root {
-  --bg:#0a0e12; --surface:#111820; --card:#1a2332;
+  --bg:#080c12; --surface:#0f141c; --card:#161e2a;
   --text:#dce1e8; --text-dim:#7a8a9e; --text-muted:#4a5a6e;
   --green:#3CAC3B; --blue:#2A398D; --red:#E61D25; --lgray:#D1D4D1; --dgray:#474A4A;
   --radius:6px; --font:system-ui,-apple-system,sans-serif;
@@ -50,7 +50,6 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 /* ── Main Layout ── */
 #main{flex:1;display:flex;overflow:hidden}
 #videoCol{flex:1;display:flex;flex-direction:column;min-width:0;position:relative}
-#sideCol{width:335px;flex-shrink:0;overflow-y:auto;background:var(--surface);border-left:1px solid rgba(255,255,255,.06);padding:12px}
 
 /* ── Video ── */
 #videoWrap{flex:1;position:relative;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden}
@@ -77,10 +76,12 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 #chanSel:focus{border-color:var(--green)}
 
 /* ── Sidebar ── */
+#sideCol{width:270px;flex-shrink:0;overflow-y:auto;background:var(--surface);border-left:1px solid rgba(255,255,255,.06);padding:12px 12px 8px 12px}
 #sideCol .title{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-muted);margin-bottom:8px}
 #sideCol .empty{color:var(--text-muted);text-align:center;padding:30px 0;font-size:12px}
-.team-row{display:flex;gap:7px;margin-bottom:10px}
-.team-box{flex:1;background:var(--card);border-radius:var(--radius);padding:10px;border:1px solid rgba(255,255,255,.04);min-width:0}
+
+/* ── Team cards (stacked) ── */
+.team-box{background:var(--card);border-radius:var(--radius);padding:10px;border:1px solid rgba(255,255,255,.04);margin-bottom:6px}
 .team-box .hd{display:flex;align-items:center;gap:6px;margin-bottom:6px}
 .team-box .flag{font-size:18px}
 .team-box .name{font-size:12px;font-weight:600}
@@ -108,17 +109,15 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 .mi .mr.w{color:var(--green)}.mi .mr.l{color:var(--red)}.mi .mr.d{color:#5b7ae8}
 .mi .op{flex:1;color:var(--text-dim)}.mi .sc{font-weight:600}
 
-/* ── Credit ── */
-#credit{
-  position:fixed;bottom:8px;left:10px;z-index:30;
-  background:rgba(17,24,32,.8);backdrop-filter:blur(5px);
-  border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:3px 12px;
+/* ── Sidebar credit ── */
+#sideCredit{
+  padding:8px 0 2px 0;border-top:1px solid rgba(255,255,255,.05);margin-top:2px;
 }
-#credit a{color:var(--text-dim);text-decoration:none;font-size:9px;display:flex;align-items:center;gap:4px}
-#credit a:hover{color:var(--text)}
-#credit .d{display:flex;gap:2px}
-#credit .d s{width:3px;height:3px;border-radius:50%}
-#credit .d .g{background:var(--green)}#credit .d .b{background:var(--blue)}#credit .d .r{background:var(--red)}
+#sideCredit a{color:var(--text-muted);text-decoration:none;font-size:9px;display:flex;align-items:center;gap:4px;justify-content:center}
+#sideCredit a:hover{color:var(--text-dim)}
+#sideCredit .d{display:flex;gap:2px}
+#sideCredit .d s{width:3px;height:3px;border-radius:50%}
+#sideCredit .d .g{background:var(--green)}#sideCredit .d .b{background:var(--blue)}#sideCredit .d .r{background:var(--red)}
 
 /* ── Toast ── */
 #toast{position:fixed;bottom:50%;left:50%;transform:translate(-50%,50%);
@@ -172,15 +171,15 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
   </div>
   <div id="sideCol">
     <div id="teamInfo"><div class="empty">Selecciona un partido para ver estadisticas</div></div>
+    <div id="sideCredit">
+      <a href="https://juanmartinezgarcia.com" target="_blank">
+        <span class="d"><s class="g"></s><s class="b"></s><s class="r"></s></span>
+        Juan Martinez Garcia
+      </a>
+    </div>
   </div>
 </div>
 
-<div id="credit">
-  <a href="https://juanmartinezgarcia.com" target="_blank">
-    <span class="d"><s class="g"></s><s class="b"></s><s class="r"></s></span>
-    Juan Martinez Garcia
-  </a>
-</div>
 <div id="toast"></div>
 
 <script>
@@ -339,7 +338,7 @@ function renderTeams(m) {
   };
 
   el.innerHTML = `<div class="title">Estadisticas de equipos</div>
-    <div class="team-row">${card(m.homeTeam, m.homeData)}${card(m.awayTeam, m.awayData)}</div>`;
+    ${card(m.homeTeam, m.homeData)}${card(m.awayTeam, m.awayData)}`;
 }
 
 // ── Toast ──
