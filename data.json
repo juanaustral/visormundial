@@ -1,14 +1,16 @@
 {
-  "updated": "2026-06-30T18:16:40.597Z",
+  "updated": "2026-06-30T20:58:12.050Z",
   "date": "martes, 30 de junio de 2026",
   "matches": [
     {
       "category": "FIFA",
       "competition": "Copa Mundial",
-      "homeTeam": "Costa de Marfil",
-      "awayTeam": "Noruega",
-      "time": "14:00",
-      "title": "Copa Mundial: Costa de Marfil vs Noruega",
+      "homeTeam": "Francia",
+      "awayTeam": "Suecia",
+      "time": "18:00",
+      "title": "Copa Mundial: Francia vs Suecia",
+      "status": "live",
+      "score": null,
       "channels": [
         {
           "name": "DirecTV Sports",
@@ -17,10 +19,16 @@
           "streamUrl": "https://latamvidzfy.org/dsportsar.php"
         },
         {
-          "name": "FOX One",
+          "name": "TVE La 1 Español",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZm94MS5waHA=",
-          "streamUrl": "https://latamvidzfy.org/fox1.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHZlbGExLnBocA==",
+          "streamUrl": "https://latamvidzfy.org/tvela1.php"
+        },
+        {
+          "name": "Caracol TV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vY2FyYWNvbHR2LnBocA==",
+          "streamUrl": "https://esvidzy99.co/caracoltv.php"
         },
         {
           "name": "DirecTV Sports | Solo LATAM",
@@ -41,22 +49,16 @@
           "streamUrl": "https://latamvidzfy.org/unicanal.php"
         },
         {
-          "name": "Das Erste",
+          "name": "FOX One",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZGFzZXJzdGVwci5waHA=",
-          "streamUrl": "https://latamvidzfy.org/daserstepr.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZm94MS5waHA=",
+          "streamUrl": "https://latamvidzfy.org/fox1.php"
         },
         {
-          "name": "Telemundo",
+          "name": "TyC Sports",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
-        },
-        {
-          "name": "Trece",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHJlY2UucGhw",
-          "streamUrl": "https://latamvidzfy.org/trece.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dHljc3BvcnRz",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tycsports"
         },
         {
           "name": "TSN 1",
@@ -65,112 +67,28 @@
           "streamUrl": "https://latamvidzfy.org/tsn1.php"
         },
         {
-          "name": "VIX+",
+          "name": "Trece",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHJlY2UucGhw",
+          "streamUrl": "https://latamvidzfy.org/trece.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
         },
         {
           "name": "CazeTV",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTEucGhw",
-          "streamUrl": "https://latamvidzfy.org/caze1.php"
-        }
-      ],
-      "homeData": {
-        "flag": "🇨🇮",
-        "group": "E",
-        "pos": "2°",
-        "pts": 6,
-        "dg": "+2",
-        "played": 3,
-        "form": [
-          "V",
-          "D",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 47,
-        "best": "Fase de grupos",
-        "apps": 5,
-        "conf": "CAF",
-        "star": "⚽⚽",
-        "rating": 91,
-        "attack": "⚡ Alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–0",
-            "opponent": "🇪🇨 Ecuador",
-            "result": "w"
-          },
-          {
-            "score": "1–2",
-            "opponent": "🇩🇪 Alemania",
-            "result": "l"
-          },
-          {
-            "score": "2–0",
-            "opponent": "🇨🇼 Curazao",
-            "result": "w"
-          }
-        ]
-      },
-      "awayData": {
-        "flag": "🇳🇴",
-        "group": "I",
-        "pos": "2°",
-        "pts": 6,
-        "dg": "+1",
-        "played": 3,
-        "form": [
-          "V",
-          "V",
-          "D"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 43,
-        "best": "Octavos (1998)",
-        "apps": 4,
-        "conf": "UEFA",
-        "star": "⚽⚽",
-        "rating": 88,
-        "attack": "⚡ Alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "4–1",
-            "opponent": "🇮🇶 Irak",
-            "result": "w"
-          },
-          {
-            "score": "3–2",
-            "opponent": "🇸🇳 Senegal",
-            "result": "w"
-          },
-          {
-            "score": "1–4",
-            "opponent": "🇫🇷 Francia",
-            "result": "l"
-          }
-        ]
-      }
-    },
-    {
-      "category": "FIFA",
-      "competition": "Copa Mundial",
-      "homeTeam": "Francia",
-      "awayTeam": "Suecia",
-      "time": "18:00",
-      "title": "Copa Mundial: Francia vs Suecia",
-      "channels": [
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTIucGhw",
+          "streamUrl": "https://latamvidzfy.org/caze2.php"
+        },
         {
-          "name": "DirecTV Sports",
+          "name": "VIX+",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4Mg==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix2"
         }
       ],
       "homeData": {
@@ -261,6 +179,8 @@
       "awayTeam": "Palestino",
       "time": "19:00",
       "title": "Copa Chile: Audax Italiano vs Palestino",
+      "status": "upcoming",
+      "score": null,
       "channels": [],
       "homeData": null,
       "awayData": null
@@ -272,6 +192,8 @@
       "awayTeam": "Everton",
       "time": "21:30",
       "title": "Copa Chile: Universidad Católica vs Everton",
+      "status": "upcoming",
+      "score": null,
       "channels": [],
       "homeData": null,
       "awayData": null
@@ -283,6 +205,8 @@
       "awayTeam": "Ecuador",
       "time": "22:00",
       "title": "Copa Mundial: México vs Ecuador",
+      "status": "upcoming",
+      "score": null,
       "channels": [
         {
           "name": "DirecTV Sports",
@@ -371,6 +295,19 @@
           }
         ]
       }
+    },
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Costa de Marfil",
+      "awayTeam": "Noruega",
+      "time": "14:00",
+      "title": "Copa Mundial: Costa de Marfil vs Noruega",
+      "status": "finished",
+      "score": "1–2",
+      "channels": [],
+      "homeData": null,
+      "awayData": null
     }
   ]
 }

@@ -45,6 +45,11 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 .match-tab .teams{font-weight:500}
 .match-tab .live{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green)}
 .match-tab .ch{font-size:9px;background:rgba(255,255,255,.08);padding:1px 6px;border-radius:8px;color:var(--text-dim)}
+.match-tab .score{font-weight:700;font-size:11px;color:var(--text)}
+.match-tab .result{font-size:9px;color:var(--text-muted);font-style:italic}
+.match-tab .status-badge{font-size:8px;padding:1px 5px;border-radius:4px;font-weight:600}
+.match-tab .status-badge.live{background:rgba(60,172,59,.2);color:var(--green);animation:pulse 1.2s infinite}
+.match-tab .status-badge.finished{background:rgba(71,74,74,.3);color:var(--text-dim)}
 #loadingAgenda{padding:0 14px;display:flex;align-items:center;color:var(--text-muted);font-size:11px;gap:6px}
 
 /* ── Main Layout ── */
@@ -207,12 +212,19 @@ function renderAgenda() {
     const now = new Date();
     const [h, mi] = (m.time||'0:0').split(':').map(Number);
     const mt = new Date(now); mt.setHours(h, mi, 0, 0);
-    const live = (now - mt) > -3600000 && (now - mt) < 9000000;
+    const diff = (now - mt) / 60000;
+    const live = diff > -15 && diff < 135;
+    const finished = diff >= 135;
+    const badge = finished ? '<span class="status-badge finished">FT</span>'
+      : live ? '<span class="status-badge live">EN VIVO</span>' : '';
+    const score = m.score ? `<span class="score">${m.score}</span>` : '';
+    const timeDisplay = finished ? (m.score || m.time) : m.time;
     return `<div class="match-tab${selectedIdx===i?' active':''}" onclick="selectMatch(${i})">
-      ${live?'<span class="live"></span>':''}
+      ${badge}
       <span class="teams">${m.homeTeam} vs ${m.awayTeam}</span>
-      <span class="t">${m.time}</span>
-      ${m.channels.length ? `<span class="ch">${m.channels.length}</span>` : ''}
+      <span class="t">${finished && m.score ? '' : timeDisplay}</span>
+      ${score}
+      ${live && !finished && m.channels.length ? `<span class="ch">${m.channels.length}</span>` : ''}
     </div>`;
   }).join('');
 }

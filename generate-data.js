@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Generate data.json for visor-dual — scrapes agenda + team data
+// Generate data.json for visor-dual — scrapes agenda + team data + results
 
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
@@ -55,6 +55,49 @@ function toLocalTime(timeStr) {
   return `${String(h).padStart(2, '0')}:${p[1]}`;
 }
 
+// ── Match status from time ─────────────────────────
+function getMatchStatus(timeStr) {
+  if (!timeStr) return 'upcoming';
+  const [h, m] = timeStr.split(':').map(Number);
+  const now = new Date();
+  const matchStart = new Date(now);
+  matchStart.setHours(h, m, 0, 0);
+
+  const diffMin = (now - matchStart) / 60000;
+  if (diffMin < -15) return 'upcoming';         // more than 15 min to go
+  if (diffMin < 0) return 'live';               // starts in <15 min
+  if (diffMin < 105) return 'live';             // first half + break + second half (≈105 min)
+  if (diffMin < 135) return 'live';             // extra time buffer
+  return 'finished';
+}
+
+// ── Fetch score from web ───────────────────────────
+async function fetchScore(homeTeam, awayTeam) {
+  // Normalize team names for search
+  const q = `${encodeURIComponent(homeTeam)} ${encodeURIComponent(awayTeam)} mundial 2026 resultado`;
+  const url = `https://html.duckduckgo.com/html/?q=${q}`;
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0' },
+      signal: AbortSignal.timeout(8000),
+    });
+    const html = await res.text();
+    // Look for score patterns like "2-1", "1–0", "3-2" near team names
+    const scoreRegex = new RegExp(
+      `${homeTeam.substring(0,4)}[^]{0,100}?(\\d+)[–-−](\\d+)[^]{0,100}?${awayTeam.substring(0,4)}|${awayTeam.substring(0,4)}[^]{0,100}?(\\d+)[–-−](\\d+)[^]{0,100}?${homeTeam.substring(0,4)}`,
+      'i'
+    );
+    const m = html.match(scoreRegex);
+    if (m) {
+      if (m[1] !== undefined && m[2] !== undefined) return `${m[1]}–${m[2]}`;
+      if (m[3] !== undefined && m[4] !== undefined) return `${m[4]}–${m[3]}`;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   // ── Load team data ──
   let teamData = {};
@@ -68,6 +111,19 @@ async function main() {
     }
   } else {
     console.warn('[gen] data_ko.json no encontrado en', koPath);
+  }
+
+  // Also load previous data.json to preserve manually-entered scores
+  let prevScores = {};
+  const prevPath = join(REPO_DIR, 'data.json');
+  if (existsSync(prevPath)) {
+    try {
+      const prev = JSON.parse(readFileSync(prevPath, 'utf-8'));
+      for (const m of prev.matches || []) {
+        if (m.score) prevScores[`${m.homeTeam}|${m.awayTeam}|${m.time}`] = m.score;
+      }
+      console.log(`[gen] Cargados ${Object.keys(prevScores).length} scores previos`);
+    } catch {}
   }
 
   // ── Scrape agenda ──
@@ -109,6 +165,23 @@ async function main() {
       }
     }
 
+    // Determine status
+    const status = getMatchStatus(time);
+
+    // Score: try previous data first, then fetch if finished
+    let score = null;
+    const scoreKey = `${homeTeam}|${awayTeam}|${time}`;
+    if (prevScores[scoreKey]) {
+      score = prevScores[scoreKey];
+    } else if (status === 'finished') {
+      console.log(`[gen] Buscando resultado: ${homeTeam} vs ${awayTeam}...`);
+      score = await fetchScore(homeTeam, awayTeam);
+      if (score) console.log(`[gen]   → ${score}`);
+      else console.log(`[gen]   → sin resultado disponible`);
+      // Small delay between requests
+      await new Promise(r => setTimeout(r, 500));
+    }
+
     // Parse channels
     const channels = [];
     const chanRegex = /<a\s+href="([^"]+)"[^>]*>([^<]+)<span>([^<]+)<\/span><\/a>/gi;
@@ -132,7 +205,8 @@ async function main() {
     const awayData = awayKey ? teamData[awayKey] : null;
 
     matches.push({
-      category, competition, homeTeam, awayTeam, time, title,
+      category, competition, homeTeam, awayTeam, time, title, status,
+      score,
       channels, homeData, awayData,
     });
   }
@@ -140,7 +214,36 @@ async function main() {
   console.log(`[gen] ${matches.length} partidos encontrados`);
   console.log(`[gen] Canales totales: ${matches.reduce((s, m) => s + m.channels.length, 0)}`);
 
+  // Sort by time
+  matches.sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+
   // ── Write data.json ──
+  // Merge with previous data to preserve finished matches no longer in agenda
+  const prevMatches = {};
+  if (existsSync(prevPath)) {
+    try {
+      const prev = JSON.parse(readFileSync(prevPath, 'utf-8'));
+      for (const m of prev.matches || []) {
+        prevMatches[`${m.homeTeam}|${m.awayTeam}`] = m;
+      }
+    } catch {}
+  }
+
+  // Add finished matches from previous run that are now gone from agenda
+  // (only if they finished within the last 24h)
+  const oneDayAgo = Date.now() - 86400000;
+  for (const [key, pm] of Object.entries(prevMatches)) {
+    if (pm.status === 'finished' && !matches.some(m => `${m.homeTeam}|${m.awayTeam}` === key)) {
+      const pmTime = new Date();
+      const [h, mi] = (pm.time || '0:0').split(':').map(Number);
+      pmTime.setHours(h, mi, 0, 0);
+      if (pmTime > oneDayAgo) {
+        matches.push(pm);
+        console.log(`[gen] Preservado resultado: ${pm.homeTeam} vs ${pm.awayTeam} (${pm.score || 'finalizado'})`);
+      }
+    }
+  }
+
   const output = {
     updated: new Date().toISOString(),
     date: new Date().toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }),
