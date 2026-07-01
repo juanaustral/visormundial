@@ -253,14 +253,11 @@ let busy = false, loadTimer = null, matches = [];
     const r = await fetch('./data.json?_=' + Date.now());
     data = await r.json();
     // Filter: solo partidos del Mundial que tengan streams o sean proximos
-    const now = new Date();
     matches = data.matches.filter(m => {
       if (m.competition !== 'Copa Mundial' && m.category !== 'FIFA') return false;
       if (m.status === 'finished') {
-        // Solo mantener finished si tiene resultado y termino hoy
-        const [h, mi] = (m.time||'0:0').split(':').map(Number);
-        const mt = new Date(now); mt.setHours(h, mi, 0, 0);
-        return mt.toLocaleDateString('es-AR') === now.toLocaleDateString('es-AR') && m.score;
+        // Solo finished si tiene datos de equipos (match real de hoy) o canales
+        return (m.homeData || m.awayData || m.channels.length > 0) && m.score;
       }
       return true; // upcoming/live siempre se muestran
     });
