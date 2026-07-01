@@ -246,17 +246,29 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 
 <script>
 let data = null, selectedIdx = -1, activeChan = null;
-let busy = false, loadTimer = null;
+let busy = false, loadTimer = null, matches = [];
 
 (async function init() {
   try {
     const r = await fetch('./data.json?_=' + Date.now());
     data = await r.json();
+    // Filter: solo partidos del Mundial que tengan streams o sean proximos
+    const now = new Date();
+    matches = data.matches.filter(m => {
+      if (m.competition !== 'Copa Mundial' && m.category !== 'FIFA') return false;
+      if (m.status === 'finished') {
+        // Solo mantener finished si tiene resultado y termino hoy
+        const [h, mi] = (m.time||'0:0').split(':').map(Number);
+        const mt = new Date(now); mt.setHours(h, mi, 0, 0);
+        return mt.toLocaleDateString('es-AR') === now.toLocaleDateString('es-AR') && m.score;
+      }
+      return true; // upcoming/live siempre se muestran
+    });
     document.getElementById('loadingAgenda').remove();
     renderAgenda();
     // Check URL hash for auto-select
     const idx = parseInt(location.hash.replace('#',''));
-    if (!isNaN(idx) && data.matches[idx]) selectMatch(idx);
+    if (!isNaN(idx) && matches[idx]) selectMatch(idx);
   } catch(e) {
     document.getElementById('loadingAgenda').textContent = 'Error al cargar datos';
     console.error(e);
@@ -265,7 +277,7 @@ let busy = false, loadTimer = null;
 
 function renderAgenda() {
   const list = document.getElementById('agendaList');
-  list.innerHTML = data.matches.map((m, i) => {
+  list.innerHTML = matches.map((m, i) => {
     const now = new Date();
     const [h, mi] = (m.time||'0:0').split(':').map(Number);
     const mt = new Date(now); mt.setHours(h, mi, 0, 0);
@@ -276,19 +288,20 @@ function renderAgenda() {
       : live ? '<span class="status-badge live">EN VIVO</span>' : '';
     const score = m.score ? `<span class="score">${m.score}</span>` : '';
     const timeDisplay = finished ? (m.score || m.time) : m.time;
+    const chCount = live && !finished && m.channels.length ? `<span class="ch">${m.channels.length}</span>` : '';
     return `<div class="match-tab${selectedIdx===i?' active':''}" onclick="selectMatch(${i})">
       ${badge}
       <span class="teams">${m.homeTeam} vs ${m.awayTeam}</span>
       <span class="t">${finished && m.score ? '' : timeDisplay}</span>
       ${score}
-      ${live && !finished && m.channels.length ? `<span class="ch">${m.channels.length}</span>` : ''}
+      ${chCount}
     </div>`;
   }).join('');
 }
 
 function selectMatch(idx) {
   selectedIdx = idx;
-  const m = data.matches[idx];
+  const m = matches[idx];
   if (!m) return;
   location.hash = idx;
 
@@ -323,7 +336,7 @@ function selectMatch(idx) {
 
 function pickChannel(ci) {
   if (ci === '') { stopStream(); return; }
-  const m = data.matches[selectedIdx];
+  const m = matches[selectedIdx];
   if (!m || !m.channels[ci]) return;
   const ch = m.channels[ci];
   activeChan = ci;
@@ -422,6 +435,7 @@ function toast(msg) {
 const CHANGELOG = [
   {v:"1.0", d:"01/07", t:"Version inicial, hints en sidebar, credit destacado, fix EN VIVO"},
   {v:"1.1", d:"01/07", t:"Alias de equipos corregidos, hints reposicionados, footer con credit 2 lineas + changelog"},
+  {v:"1.2", d:"01/07", t:"Filtro en topbar: solo partidos streamables, finished ocultos, sidebar usa lista filtrada"},
 ];
 const VER = CHANGELOG[CHANGELOG.length-1].v;
 
