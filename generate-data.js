@@ -28,6 +28,12 @@ const TEAM_ALIASES = {
   'Sudáfrica': 'Sudáfrica', 'Sudafrica': 'Sudáfrica',
   'Corea del Sur': 'Corea del Sur', 'Rep. Checa': 'Rep. Checa',
   'República Checa': 'Rep. Checa',
+  'RD del Congo': 'RD Congo',
+  'R.D. Congo': 'RD Congo',
+  'EE. UU.': 'EE.UU.',
+  'EE.UU. ': 'EE.UU.',
+  'Bosnia-Herzegovina': 'Bosnia H.',
+  'Bosnia': 'Bosnia H.',
 };
 
 function b64decode(str) {
