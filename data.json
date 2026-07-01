@@ -1,171 +1,7 @@
 {
-  "updated": "2026-07-01T22:42:19.283Z",
+  "updated": "2026-07-01T23:13:13.134Z",
   "date": "miércoles, 1 de julio de 2026",
   "matches": [
-    {
-      "category": "FIFA",
-      "competition": "Copa Mundial",
-      "homeTeam": "Bélgica",
-      "awayTeam": "Senegal",
-      "time": "17:00",
-      "title": "Copa Mundial: Bélgica vs Senegal",
-      "status": "finished",
-      "score": null,
-      "channels": [
-        {
-          "name": "DirecTV Sports",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0c2FyLnBocA==",
-          "streamUrl": "https://latamvidzfy.org/dsportsar.php"
-        },
-        {
-          "name": "FOX Sports",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3gxdXMucGhw",
-          "streamUrl": "https://esvidzypro.sbs/fox1us.php"
-        },
-        {
-          "name": "DirecTV Sports | Solo LATAM",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0cy5waHA=",
-          "streamUrl": "https://latamvidzfy.org/dsports.php"
-        },
-        {
-          "name": "DirecTV Sports | OP 3",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
-        },
-        {
-          "name": "Das Erste",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZGFzZXJzdGVwci5waHA=",
-          "streamUrl": "https://latamvidzfy.org/daserstepr.php"
-        },
-        {
-          "name": "America TV",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9hbWVyaWNhdHYucGhw",
-          "streamUrl": "https://esvidzypro.sbs/americatv.php"
-        },
-        {
-          "name": "CTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY3R2LnBocA==",
-          "streamUrl": "https://latamvidzfy.org/ctv.php"
-        },
-        {
-          "name": "Telemundo",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
-        },
-        {
-          "name": "TSN 1",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHNuMS5waHA=",
-          "streamUrl": "https://latamvidzfy.org/tsn1.php"
-        },
-        {
-          "name": "Win Sports",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09d2luc3BvcnRz",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=winsports"
-        },
-        {
-          "name": "CazeTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTIucGhw",
-          "streamUrl": "https://latamvidzfy.org/caze2.php"
-        },
-        {
-          "name": "VIX+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9zdHJlYW10cC5zYnMvZ2xvYmFsMi5waHA/c3RyZWFtPXZpeDE=",
-          "streamUrl": "https://streamtp.sbs/global2.php?stream=vix1"
-        }
-      ],
-      "homeData": {
-        "flag": "🇧🇪",
-        "group": "G",
-        "pos": "1°",
-        "pts": 5,
-        "dg": "+4",
-        "played": 3,
-        "form": [
-          "E",
-          "E",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 5,
-        "best": "Tercer puesto (2018)",
-        "apps": 15,
-        "conf": "UEFA",
-        "star": "⚽⚽⚽⚽",
-        "rating": 97,
-        "attack": "⚡ Alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–1",
-            "opponent": "🇪🇬 Egipto",
-            "result": "d"
-          },
-          {
-            "score": "0–0",
-            "opponent": "🇮🇷 Irán",
-            "result": "d"
-          },
-          {
-            "score": "5–1",
-            "opponent": "🇳🇿 N. Zelanda",
-            "result": "w"
-          }
-        ]
-      },
-      "awayData": {
-        "flag": "🇸🇳",
-        "group": "I",
-        "pos": "3°",
-        "pts": 3,
-        "dg": "+2",
-        "played": 3,
-        "form": [
-          "D",
-          "D",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 18,
-        "best": "Cuartos (2002)",
-        "apps": 4,
-        "conf": "CAF",
-        "star": "⚽⚽⚽",
-        "rating": 71,
-        "attack": "⚖️ Medio",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–3",
-            "opponent": "🇫🇷 Francia",
-            "result": "l"
-          },
-          {
-            "score": "2–3",
-            "opponent": "🇳🇴 Noruega",
-            "result": "l"
-          },
-          {
-            "score": "5–0",
-            "opponent": "🇮🇶 Irak",
-            "result": "w"
-          }
-        ]
-      }
-    },
     {
       "category": "CH",
       "competition": "Copa Chile",
@@ -205,8 +41,8 @@
         {
           "name": "DirecTV Sports",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0c2FyLnBocA==",
-          "streamUrl": "https://latamvidzfy.org/dsportsar.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
+          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
         },
         {
           "name": "Canal 5 MX",
@@ -381,6 +217,170 @@
       ],
       "homeData": null,
       "awayData": null
+    },
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Bélgica",
+      "awayTeam": "Senegal",
+      "time": "17:00",
+      "title": "Copa Mundial: Bélgica vs Senegal",
+      "status": "finished",
+      "score": null,
+      "channels": [
+        {
+          "name": "DirecTV Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0c2FyLnBocA==",
+          "streamUrl": "https://latamvidzfy.org/dsportsar.php"
+        },
+        {
+          "name": "FOX Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3gxdXMucGhw",
+          "streamUrl": "https://esvidzypro.sbs/fox1us.php"
+        },
+        {
+          "name": "DirecTV Sports | Solo LATAM",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0cy5waHA=",
+          "streamUrl": "https://latamvidzfy.org/dsports.php"
+        },
+        {
+          "name": "DirecTV Sports | OP 3",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "Das Erste",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZGFzZXJzdGVwci5waHA=",
+          "streamUrl": "https://latamvidzfy.org/daserstepr.php"
+        },
+        {
+          "name": "America TV",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9hbWVyaWNhdHYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/americatv.php"
+        },
+        {
+          "name": "CTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY3R2LnBocA==",
+          "streamUrl": "https://latamvidzfy.org/ctv.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHNuMS5waHA=",
+          "streamUrl": "https://latamvidzfy.org/tsn1.php"
+        },
+        {
+          "name": "Win Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09d2luc3BvcnRz",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=winsports"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTIucGhw",
+          "streamUrl": "https://latamvidzfy.org/caze2.php"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9zdHJlYW10cC5zYnMvZ2xvYmFsMi5waHA/c3RyZWFtPXZpeDE=",
+          "streamUrl": "https://streamtp.sbs/global2.php?stream=vix1"
+        }
+      ],
+      "homeData": {
+        "flag": "🇧🇪",
+        "group": "G",
+        "pos": "1°",
+        "pts": 5,
+        "dg": "+4",
+        "played": 3,
+        "form": [
+          "E",
+          "E",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 5,
+        "best": "Tercer puesto (2018)",
+        "apps": 15,
+        "conf": "UEFA",
+        "star": "⚽⚽⚽⚽",
+        "rating": 97,
+        "attack": "⚡ Alto",
+        "defense": "✅ Buena",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "1–1",
+            "opponent": "🇪🇬 Egipto",
+            "result": "d"
+          },
+          {
+            "score": "0–0",
+            "opponent": "🇮🇷 Irán",
+            "result": "d"
+          },
+          {
+            "score": "5–1",
+            "opponent": "🇳🇿 N. Zelanda",
+            "result": "w"
+          }
+        ]
+      },
+      "awayData": {
+        "flag": "🇸🇳",
+        "group": "I",
+        "pos": "3°",
+        "pts": 3,
+        "dg": "+2",
+        "played": 3,
+        "form": [
+          "D",
+          "D",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 18,
+        "best": "Cuartos (2002)",
+        "apps": 4,
+        "conf": "CAF",
+        "star": "⚽⚽⚽",
+        "rating": 71,
+        "attack": "⚖️ Medio",
+        "defense": "✅ Buena",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "1–3",
+            "opponent": "🇫🇷 Francia",
+            "result": "l"
+          },
+          {
+            "score": "2–3",
+            "opponent": "🇳🇴 Noruega",
+            "result": "l"
+          },
+          {
+            "score": "5–0",
+            "opponent": "🇮🇶 Irak",
+            "result": "w"
+          }
+        ]
+      }
     },
     {
       "category": "FIFA",
