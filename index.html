@@ -126,18 +126,45 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 }
 #sideCredit a{
   color:var(--text-dim);text-decoration:none;font-size:9px;display:flex;
-  align-items:center;gap:5px;justify-content:center;
-  background:var(--card);border:1px solid rgba(255,255,255,.06);
-  border-radius:var(--radius);padding:6px 10px;
-  transition:all .15s;font-weight:500;letter-spacing:.3px;
+  flex-direction:column;align-items:center;gap:4px;justify-content:center;
+  background:linear-gradient(135deg,rgba(60,172,59,.12),rgba(42,57,141,.08),rgba(230,29,37,.06));
+  border:1px solid rgba(60,172,59,.15);
+  border-radius:var(--radius);padding:7px 10px;
+  transition:all .2s;font-weight:500;letter-spacing:.3px;cursor:pointer;
 }
 #sideCredit a:hover{
-  background:rgba(60,172,59,.1);border-color:rgba(60,172,59,.2);
-  color:var(--green);
+  background:linear-gradient(135deg,rgba(60,172,59,.22),rgba(42,57,141,.14),rgba(230,29,37,.1));
+  border-color:var(--green);color:var(--green);
 }
 #sideCredit .d{display:flex;gap:3px}
 #sideCredit .d s{width:4px;height:4px;border-radius:50%}
 #sideCredit .d .g{background:var(--green)}#sideCredit .d .b{background:var(--blue)}#sideCredit .d .r{background:var(--red)}
+#sideCredit .line1{font-size:8px;color:var(--text-muted);letter-spacing:.5px}
+#sideCredit .line2{font-size:10px;color:var(--text);font-weight:600;letter-spacing:.2px}
+#sideCredit a:hover .line2{color:var(--green)}
+#sideCredit .line2 small{font-weight:400;color:var(--text-muted);font-size:8px;margin-left:4px}
+
+/* ── Version / Changelog ── */
+#versionBar{
+  display:flex;align-items:center;justify-content:center;gap:4px;
+  padding:4px 0 2px 0;font-size:8px;color:var(--text-muted);margin-top:2px;
+}
+#versionBar .v{font-weight:600;background:rgba(255,255,255,.05);padding:1px 4px;border-radius:3px}
+#versionBar .cl{color:var(--text-muted);cursor:pointer;text-decoration:underline dotted;transition:color .1s}
+#versionBar .cl:hover{color:var(--green)}
+#changelogModal{
+  display:none;position:fixed;bottom:10px;right:10px;width:260px;
+  max-height:200px;overflow-y:auto;background:var(--surface);
+  border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);
+  padding:8px 10px;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,.4);
+}
+#changelogModal.show{display:block}
+#changelogModal .chtitle{font-size:9px;font-weight:600;color:var(--text);margin-bottom:4px;display:flex;justify-content:space-between;align-items:center}
+#changelogModal .close{color:var(--text-muted);font-size:11px;cursor:pointer;padding:0 2px}
+#changelogModal .close:hover{color:var(--text)}
+#changelogModal .chentry{font-size:8px;color:var(--text-dim);padding:2px 0;border-bottom:1px solid rgba(255,255,255,.04);line-height:1.3}
+#changelogModal .chentry:last-child{border-bottom:none}
+#changelogModal .cdate{color:var(--text-muted)}
 
 /* ── Toast ── */
 #toast{position:fixed;bottom:50%;left:50%;transform:translate(-50%,50%);
@@ -200,8 +227,17 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
     <div id="sideCredit">
       <a href="https://juanmartinezgarcia.com" target="_blank">
         <span class="d"><s class="g"></s><s class="b"></s><s class="r"></s></span>
-        DESARROLLADO POR JUAN MARTINEZ GARCIA
+        <span class="line1">DESARROLLADO POR</span>
+        <span class="line2">JUAN MARTINEZ GARCIA</span>
       </a>
+      <div id="versionBar">
+        <span class="v">v<span id="verNum">1.0</span></span>
+        <span class="cl" onclick="toggleChangelog()">changelog</span>
+      </div>
+    </div>
+    <div id="changelogModal">
+      <div class="chtitle">Changelog <span class="close" onclick="toggleChangelog()">x</span></div>
+      <div id="changelogList"></div>
     </div>
   </div>
 </div>
@@ -382,7 +418,26 @@ function toast(msg) {
   setTimeout(() => t.className = '', 2000);
 }
 
-// ── Keyboard ──
+// ── Changelog ──
+const CHANGELOG = [
+  {v:"1.0", d:"01/07", t:"Version inicial, hints en sidebar, credit destacado, fix EN VIVO"},
+  {v:"1.1", d:"01/07", t:"Alias de equipos corregidos, hints reposicionados, footer con credit 2 lineas + changelog"},
+];
+const VER = CHANGELOG[CHANGELOG.length-1].v;
+
+function toggleChangelog() {
+  const m = document.getElementById('changelogModal');
+  if (m.classList.contains('show')) { m.classList.remove('show'); return; }
+  const list = document.getElementById('changelogList');
+  if (!list.children.length) {
+    list.innerHTML = CHANGELOG.slice().reverse().map(e =>
+      `<div class="chentry"><span class="cdate">${e.d}</span> v${e.v} — ${e.t}</div>`
+    ).join('');
+  }
+  document.getElementById('verNum').textContent = VER;
+  m.classList.add('show');
+}
+document.getElementById('verNum').textContent = VER;
 document.addEventListener('keydown', e => {
   if (e.target.tagName==='SELECT') return;
   if (e.key==='f'||e.key==='F') { e.preventDefault(); fullscreen(); }
