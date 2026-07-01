@@ -34,20 +34,20 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 }
 #agendaList::-webkit-scrollbar{display:none}
 .match-tab{
-  flex-shrink:0;padding:0 12px;cursor:pointer;display:flex;align-items:center;
-  gap:6px;border-right:1px solid rgba(255,255,255,.04);
-  transition:background .12s;white-space:nowrap;font-size:12px;
+  flex-shrink:0;padding:0 10px;cursor:pointer;display:flex;align-items:center;
+  gap:5px;border-right:1px solid rgba(255,255,255,.04);
+  transition:background .12s;white-space:nowrap;font-size:12px;overflow:hidden;
 }
 .match-tab:hover{background:rgba(60,172,59,.07)}
 .match-tab.active{background:rgba(60,172,59,.12)}
 .match-tab.active::after{content:'';position:absolute;bottom:0;left:4px;right:4px;height:2px;background:var(--green);border-radius:2px}
-.match-tab .t{color:var(--text-dim);font-size:10px;font-weight:500}
-.match-tab .teams{font-weight:500}
-.match-tab .live{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green)}
-.match-tab .ch{font-size:9px;background:rgba(255,255,255,.08);padding:1px 6px;border-radius:8px;color:var(--text-dim)}
-.match-tab .score{font-weight:700;font-size:11px;color:var(--text)}
+.match-tab .t{color:var(--text-dim);font-size:10px;font-weight:500;flex-shrink:0}
+.match-tab .teams{font-weight:500;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.match-tab .live{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);flex-shrink:0}
+.match-tab .ch{font-size:9px;background:rgba(255,255,255,.08);padding:1px 6px;border-radius:8px;color:var(--text-dim);flex-shrink:0}
+.match-tab .score{font-weight:700;font-size:11px;color:var(--text);flex-shrink:0}
 .match-tab .result{font-size:9px;color:var(--text-muted);font-style:italic}
-.match-tab .status-badge{font-size:8px;padding:1px 5px;border-radius:4px;font-weight:600}
+.match-tab .status-badge{font-size:8px;padding:1px 5px;border-radius:4px;font-weight:600;flex-shrink:0}
 .match-tab .status-badge.live{background:rgba(60,172,59,.2);color:var(--green);animation:pulse 1.2s infinite}
 .match-tab .status-badge.finished{background:rgba(71,74,74,.3);color:var(--text-dim)}
 #loadingAgenda{padding:0 14px;display:flex;align-items:center;color:var(--text-muted);font-size:11px;gap:6px}
@@ -75,6 +75,9 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 #sideControls .dot.off{background:var(--dgray)}
 #sideControls .dot.loading{background:#f0a500;animation:pulse .8s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+#sideControls .hint1{font-size:9px;color:var(--text-muted);text-align:center;padding:4px 0 0 0;border-top:1px solid rgba(255,255,255,.04);margin-top:5px;line-height:1.3;font-weight:400;letter-spacing:.15px}
+#sideControls .hint2{font-size:9px;color:var(--text-dim);text-align:center;padding:3px 0 0 0;line-height:1.3;font-weight:400;letter-spacing:.15px}
+#sideControls .hint2 strong{color:var(--green);font-weight:600}
 
 #chanSel{
   background:var(--surface);border:1px solid rgba(255,255,255,.1);
@@ -119,12 +122,21 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 
 /* ── Sidebar credit ── */
 #sideCredit{
-  padding:8px 0 2px 0;border-top:1px solid rgba(255,255,255,.05);margin-top:2px;
+  padding:10px 0 4px 0;border-top:1px solid rgba(255,255,255,.08);margin-top:4px;
 }
-#sideCredit a{color:var(--text-muted);text-decoration:none;font-size:9px;display:flex;align-items:center;gap:4px;justify-content:center}
-#sideCredit a:hover{color:var(--text-dim)}
-#sideCredit .d{display:flex;gap:2px}
-#sideCredit .d s{width:3px;height:3px;border-radius:50%}
+#sideCredit a{
+  color:var(--text-dim);text-decoration:none;font-size:9px;display:flex;
+  align-items:center;gap:5px;justify-content:center;
+  background:var(--card);border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);padding:6px 10px;
+  transition:all .15s;font-weight:500;letter-spacing:.3px;
+}
+#sideCredit a:hover{
+  background:rgba(60,172,59,.1);border-color:rgba(60,172,59,.2);
+  color:var(--green);
+}
+#sideCredit .d{display:flex;gap:3px}
+#sideCredit .d s{width:4px;height:4px;border-radius:50%}
 #sideCredit .d .g{background:var(--green)}#sideCredit .d .b{background:var(--blue)}#sideCredit .d .r{background:var(--red)}
 
 /* ── Toast ── */
@@ -181,12 +193,14 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
         <select id="chanSel" style="display:none" onchange="pickChannel(this.value)"></select>
         <button class="btn" id="fsBtn" style="display:none" onclick="fullscreen()">Pantalla completa</button>
       </div>
+      <div class="hint1">En la barra superior elegi el partido que queres ver</div>
+      <div class="hint2">En el menu de abajo elegi el <strong>canal</strong> de transmision</div>
     </div>
     <div id="teamInfo"><div class="empty">Selecciona un partido para ver estadisticas</div></div>
     <div id="sideCredit">
       <a href="https://juanmartinezgarcia.com" target="_blank">
         <span class="d"><s class="g"></s><s class="b"></s><s class="r"></s></span>
-        Juan Martinez Garcia
+        DESARROLLADO POR JUAN MARTINEZ GARCIA
       </a>
     </div>
   </div>
