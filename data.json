@@ -1,98 +1,7 @@
 {
-  "updated": "2026-07-01T18:24:37.000Z",
+  "updated": "2026-07-01T20:30:04.643Z",
   "date": "miércoles, 1 de julio de 2026",
   "matches": [
-    {
-      "category": "FIFA",
-      "competition": "Copa Mundial",
-      "homeTeam": "Inglaterra",
-      "awayTeam": "RD del Congo",
-      "time": "13:00",
-      "title": "Copa Mundial: Inglaterra vs RD del Congo",
-      "status": "finished",
-      "score": "2-1",
-      "channels": [],
-      "homeData": {
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "group": "L",
-        "pos": "1°",
-        "pts": 7,
-        "dg": "+4",
-        "played": 3,
-        "form": [
-          "V",
-          "E",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 4,
-        "best": "Campeón (1966)",
-        "apps": 17,
-        "conf": "UEFA",
-        "star": "⚽⚽⚽⚽",
-        "rating": 99,
-        "attack": "🔥 Muy alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "4–2",
-            "opponent": "🇭🇷 Croacia",
-            "result": "w"
-          },
-          {
-            "score": "0–0",
-            "opponent": "🇬🇭 Ghana",
-            "result": "d"
-          },
-          {
-            "score": "2–0",
-            "opponent": "🇵🇦 Panamá",
-            "result": "w"
-          }
-        ]
-      },
-      "awayData": {
-        "flag": "🇨🇩",
-        "group": "K",
-        "pos": "3°",
-        "pts": 4,
-        "dg": "+1",
-        "played": 3,
-        "form": [
-          "E",
-          "D",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 64,
-        "best": "Fase de grupos (1974 como Zaire)",
-        "apps": 2,
-        "conf": "CAF",
-        "star": "⚽",
-        "rating": 73,
-        "attack": "⚖️ Medio",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–1",
-            "opponent": "🇵🇹 Portugal",
-            "result": "d"
-          },
-          {
-            "score": "0–1",
-            "opponent": "🇨🇴 Colombia",
-            "result": "l"
-          },
-          {
-            "score": "3–1",
-            "opponent": "🇺🇿 Uzbekistán",
-            "result": "w"
-          }
-        ]
-      }
-    },
     {
       "category": "FIFA",
       "competition": "Copa Mundial",
@@ -100,14 +9,80 @@
       "awayTeam": "Senegal",
       "time": "17:00",
       "title": "Copa Mundial: Bélgica vs Senegal",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
           "name": "DirecTV Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0c2FyLnBocA==",
+          "streamUrl": "https://latamvidzfy.org/dsportsar.php"
+        },
+        {
+          "name": "FOX Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3gxdXMucGhw",
+          "streamUrl": "https://esvidzypro.sbs/fox1us.php"
+        },
+        {
+          "name": "DirecTV Sports | Solo LATAM",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0cy5waHA=",
+          "streamUrl": "https://latamvidzfy.org/dsports.php"
+        },
+        {
+          "name": "DirecTV Sports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "Das Erste",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZGFzZXJzdGVwci5waHA=",
+          "streamUrl": "https://latamvidzfy.org/daserstepr.php"
+        },
+        {
+          "name": "America TV",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9hbWVyaWNhdHYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/americatv.php"
+        },
+        {
+          "name": "CTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY3R2LnBocA==",
+          "streamUrl": "https://latamvidzfy.org/ctv.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHNuMS5waHA=",
+          "streamUrl": "https://latamvidzfy.org/tsn1.php"
+        },
+        {
+          "name": "Win Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09d2luc3BvcnRz",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=winsports"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTIucGhw",
+          "streamUrl": "https://latamvidzfy.org/caze2.php"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9zdHJlYW10cC5zYnMvZ2xvYmFsMi5waHA/c3RyZWFtPXZpeDE=",
+          "streamUrl": "https://streamtp.sbs/global2.php?stream=vix1"
         }
       ],
       "homeData": {
@@ -200,7 +175,20 @@
       "title": "Copa Chile: Deportes Limache vs Coquimbo Unido",
       "status": "upcoming",
       "score": null,
-      "channels": [],
+      "channels": [
+        {
+          "name": "MAX",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
+        },
+        {
+          "name": "MAX | OP 2",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
+        }
+      ],
       "homeData": null,
       "awayData": null
     },
@@ -216,9 +204,75 @@
       "channels": [
         {
           "name": "DirecTV Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0c2FyLnBocA==",
+          "streamUrl": "https://latamvidzfy.org/dsportsar.php"
+        },
+        {
+          "name": "Canal 5 MX",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
+        },
+        {
+          "name": "DirecTV Sports | Solo LATAM",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0cy5waHA=",
+          "streamUrl": "https://latamvidzfy.org/dsports.php"
+        },
+        {
+          "name": "DirecTV Sports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "FOX One",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZm94MS5waHA=",
+          "streamUrl": "https://latamvidzfy.org/fox1.php"
+        },
+        {
+          "name": "TyC Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dHljc3BvcnRz",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tycsports"
+        },
+        {
+          "name": "CTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY3R2LnBocA==",
+          "streamUrl": "https://latamvidzfy.org/ctv.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHNuMS5waHA=",
+          "streamUrl": "https://latamvidzfy.org/tsn1.php"
+        },
+        {
+          "name": "Universo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dW5pdmVyc29fdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=universo_usa"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTEucGhw",
+          "streamUrl": "https://latamvidzfy.org/caze1.php"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4Mw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix3"
         }
       ],
       "homeData": {
@@ -311,9 +365,113 @@
       "title": "Copa Chile: Universidad Chile vs Unión La Calera",
       "status": "upcoming",
       "score": null,
-      "channels": [],
+      "channels": [
+        {
+          "name": "MAX",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
+        },
+        {
+          "name": "MAX | OP 2",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
+        }
+      ],
       "homeData": null,
       "awayData": null
+    },
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Inglaterra",
+      "awayTeam": "RD del Congo",
+      "time": "13:00",
+      "title": "Copa Mundial: Inglaterra vs RD del Congo",
+      "status": "finished",
+      "score": "2-1",
+      "channels": [],
+      "homeData": {
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "group": "L",
+        "pos": "1°",
+        "pts": 7,
+        "dg": "+4",
+        "played": 3,
+        "form": [
+          "V",
+          "E",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 4,
+        "best": "Campeón (1966)",
+        "apps": 17,
+        "conf": "UEFA",
+        "star": "⚽⚽⚽⚽",
+        "rating": 99,
+        "attack": "🔥 Muy alto",
+        "defense": "✅ Buena",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "4–2",
+            "opponent": "🇭🇷 Croacia",
+            "result": "w"
+          },
+          {
+            "score": "0–0",
+            "opponent": "🇬🇭 Ghana",
+            "result": "d"
+          },
+          {
+            "score": "2–0",
+            "opponent": "🇵🇦 Panamá",
+            "result": "w"
+          }
+        ]
+      },
+      "awayData": {
+        "flag": "🇨🇩",
+        "group": "K",
+        "pos": "3°",
+        "pts": 4,
+        "dg": "+1",
+        "played": 3,
+        "form": [
+          "E",
+          "D",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 64,
+        "best": "Fase de grupos (1974 como Zaire)",
+        "apps": 2,
+        "conf": "CAF",
+        "star": "⚽",
+        "rating": 73,
+        "attack": "⚖️ Medio",
+        "defense": "✅ Buena",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "1–1",
+            "opponent": "🇵🇹 Portugal",
+            "result": "d"
+          },
+          {
+            "score": "0–1",
+            "opponent": "🇨🇴 Colombia",
+            "result": "l"
+          },
+          {
+            "score": "3–1",
+            "opponent": "🇺🇿 Uzbekistán",
+            "result": "w"
+          }
+        ]
+      }
     },
     {
       "category": "FIFA",
