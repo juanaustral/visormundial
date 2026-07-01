@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T17:54:19.967Z",
+  "updated": "2026-07-01T18:24:37.000Z",
   "date": "miércoles, 1 de julio de 2026",
   "matches": [
     {
@@ -9,82 +9,9 @@
       "awayTeam": "RD del Congo",
       "time": "13:00",
       "title": "Copa Mundial: Inglaterra vs RD del Congo",
-      "status": "live",
-      "score": null,
-      "channels": [
-        {
-          "name": "DirecTV Sports",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0c2FyLnBocA==",
-          "streamUrl": "https://latamvidzfy.org/dsportsar.php"
-        },
-        {
-          "name": "TVE La 1 Español",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dmVsYTEucGhw",
-          "streamUrl": "https://esvidzypro.sbs/tvela1.php"
-        },
-        {
-          "name": "Caracol TV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vY2FyYWNvbHR2LnBocA==",
-          "streamUrl": "https://esvidzy99.co/caracoltv.php"
-        },
-        {
-          "name": "DirecTV Sports | Solo LATAM",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZHNwb3J0cy5waHA=",
-          "streamUrl": "https://latamvidzfy.org/dsports.php"
-        },
-        {
-          "name": "DirecTV Sports | OP 3",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
-        },
-        {
-          "name": "FOX One",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZm94MS5waHA=",
-          "streamUrl": "https://latamvidzfy.org/fox1.php"
-        },
-        {
-          "name": "Das Erste",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvZGFzZXJzdGVwci5waHA=",
-          "streamUrl": "https://latamvidzfy.org/daserstepr.php"
-        },
-        {
-          "name": "Telemundo",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
-        },
-        {
-          "name": "TSN 1",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvdHNuMS5waHA=",
-          "streamUrl": "https://latamvidzfy.org/tsn1.php"
-        },
-        {
-          "name": "CTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY3R2LnBocA==",
-          "streamUrl": "https://latamvidzfy.org/ctv.php"
-        },
-        {
-          "name": "VIX+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
-        },
-        {
-          "name": "CazeTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvY2F6ZTEucGhw",
-          "streamUrl": "https://latamvidzfy.org/caze1.php"
-        }
-      ],
+      "status": "finished",
+      "score": "2-1",
+      "channels": [],
       "homeData": {
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
         "group": "L",
