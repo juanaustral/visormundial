@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T15:54:54.991Z",
+  "updated": "2026-07-01T16:18:52.774Z",
   "date": "miércoles, 1 de julio de 2026",
   "matches": [
     {
@@ -125,46 +125,7 @@
           }
         ]
       },
-      "awayData": {
-        "flag": "🇨🇩",
-        "group": "K",
-        "pos": "3°",
-        "pts": 4,
-        "dg": "+1",
-        "played": 3,
-        "form": [
-          "E",
-          "D",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 64,
-        "best": "Fase de grupos (1974 como Zaire)",
-        "apps": 2,
-        "conf": "CAF",
-        "star": "⚽",
-        "rating": 73,
-        "attack": "⚖️ Medio",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–1",
-            "opponent": "🇵🇹 Portugal",
-            "result": "d"
-          },
-          {
-            "score": "0–1",
-            "opponent": "🇨🇴 Colombia",
-            "result": "l"
-          },
-          {
-            "score": "3–1",
-            "opponent": "🇺🇿 Uzbekistán",
-            "result": "w"
-          }
-        ]
-      }
+      "awayData": null
     },
     {
       "category": "FIFA",
@@ -294,86 +255,8 @@
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
         }
       ],
-      "homeData": {
-        "flag": "🇺🇸",
-        "group": "D",
-        "pos": "1°",
-        "pts": 6,
-        "dg": "+4",
-        "played": 3,
-        "form": [
-          "V",
-          "V",
-          "D"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 11,
-        "best": "Semifinales (1930)",
-        "apps": 12,
-        "conf": "Concacaf",
-        "star": "⚽⚽⚽",
-        "rating": 99,
-        "attack": "⚡ Alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "4–1",
-            "opponent": "🇵🇾 Paraguay",
-            "result": "w"
-          },
-          {
-            "score": "2–0",
-            "opponent": "🇦🇺 Australia",
-            "result": "w"
-          },
-          {
-            "score": "2–3",
-            "opponent": "🇹🇷 Turquía",
-            "result": "l"
-          }
-        ]
-      },
-      "awayData": {
-        "flag": "🇧🇦",
-        "group": "B",
-        "pos": "3°",
-        "pts": 4,
-        "dg": "-1",
-        "played": 3,
-        "form": [
-          "E",
-          "D",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 55,
-        "best": "Fase de grupos (2014)",
-        "apps": 2,
-        "conf": "UEFA",
-        "star": "⚽",
-        "rating": 67,
-        "attack": "⚖️ Medio",
-        "defense": "⚠️ Regular",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–1",
-            "opponent": "🇨🇦 Canadá",
-            "result": "d"
-          },
-          {
-            "score": "1–4",
-            "opponent": "🇨🇭 Suiza",
-            "result": "l"
-          },
-          {
-            "score": "3–1",
-            "opponent": "🇶🇦 Qatar",
-            "result": "w"
-          }
-        ]
-      }
+      "homeData": null,
+      "awayData": null
     },
     {
       "category": "CH",
