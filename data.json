@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T21:17:36.382Z",
+  "updated": "2026-07-03T21:48:28.931Z",
   "date": "viernes, 3 de julio de 2026",
   "matches": [
     {
@@ -9,7 +9,7 @@
       "awayTeam": "Islas de Cabo Verde",
       "time": "19:00",
       "title": "Copa Mundial: Argentina vs Islas de Cabo Verde",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
@@ -99,8 +99,8 @@
         {
           "name": "Telemundo",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYTIwaGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10ZWxlbXVuZG8=",
+          "streamUrl": "https://la20hd.com/vivo/canal.php?stream=telemundo"
         },
         {
           "name": "CazeTV",
@@ -111,8 +111,8 @@
         {
           "name": "VIX+",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4Mg==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix2"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9zdHJlYW10cC5zYnMvZ2xvYmFsMi5waHA/c3RyZWFtPXZpeDE=",
+          "streamUrl": "https://streamtp.sbs/global2.php?stream=vix1"
         }
       ],
       "homeData": {
