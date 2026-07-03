@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T21:48:28.931Z",
+  "updated": "2026-07-03T22:19:36.780Z",
   "date": "viernes, 3 de julio de 2026",
   "matches": [
     {
@@ -19,10 +19,10 @@
           "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
         },
         {
-          "name": "Canal 5 MX",
+          "name": "TUDN MX",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
         },
         {
           "name": "Caracol TV",
@@ -49,10 +49,10 @@
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
         },
         {
-          "name": "TUDN MX",
+          "name": "Canal 5 MX",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
-          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
         },
         {
           "name": "Teleamazonas",
@@ -79,10 +79,10 @@
           "streamUrl": "https://esvidzypro.sbs/sportv1.php"
         },
         {
-          "name": "America TV",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9hbWVyaWNhdHYucGhw",
-          "streamUrl": "https://esvidzypro.sbs/americatv.php"
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
         },
         {
           "name": "Disney+",
@@ -91,22 +91,16 @@
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney1"
         },
         {
-          "name": "TSN 1",
+          "name": "CazeTV",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
-          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMi5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze2.php"
         },
         {
           "name": "Telemundo",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYTIwaGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10ZWxlbXVuZG8=",
           "streamUrl": "https://la20hd.com/vivo/canal.php?stream=telemundo"
-        },
-        {
-          "name": "CazeTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/caze1.php"
         },
         {
           "name": "VIX+",
