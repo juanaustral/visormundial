@@ -1,95 +1,250 @@
 {
-  "updated": "2026-07-03T03:53:55.895Z",
+  "updated": "2026-07-03T14:48:12.028Z",
   "date": "viernes, 3 de julio de 2026",
   "matches": [
     {
       "category": "FIFA",
       "competition": "Copa Mundial",
-      "homeTeam": "Suiza",
-      "awayTeam": "Argelia",
-      "time": "00:00",
-      "title": "Copa Mundial: Suiza vs Argelia",
-      "status": "live",
+      "homeTeam": "Australia",
+      "awayTeam": "Egipto",
+      "time": "15:00",
+      "title": "Copa Mundial: Australia vs Egipto",
+      "status": "upcoming",
       "score": null,
       "channels": [
         {
           "name": "DirecTV Sports",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
-          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
-        },
-        {
-          "name": "FOX Sports",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3gxdXMucGhw",
-          "streamUrl": "https://esvidzypro.sbs/fox1us.php"
-        },
-        {
-          "name": "DirecTV Sports | Solo LATAM",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzbC5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
-        },
-        {
-          "name": "DirecTV Sports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
-        },
-        {
-          "name": "ZDF",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy96ZGYucGhw",
-          "streamUrl": "https://esvidzypro.sbs/zdf.php"
-        },
-        {
-          "name": "CTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jdHYucGhw",
-          "streamUrl": "https://esvidzypro.sbs/ctv.php"
-        },
-        {
-          "name": "Telemundo",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
-        },
-        {
-          "name": "TSN 1",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
-          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
-        },
-        {
-          "name": "CazeTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/caze1.php"
-        },
-        {
-          "name": "VIX+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4Mw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix3"
         }
       ],
       "homeData": {
-        "flag": "🇨🇭",
-        "group": "B",
-        "pos": "1°",
-        "pts": 7,
-        "dg": "+4",
+        "flag": "🇦🇺",
+        "group": "D",
+        "pos": "2°",
+        "pts": 4,
+        "dg": "0",
+        "played": 3,
+        "form": [
+          "V",
+          "D",
+          "E"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 27,
+        "best": "Octavos (2006, 2022)",
+        "apps": 7,
+        "conf": "AFC",
+        "star": "⚽⚽",
+        "rating": 75,
+        "attack": "⚖️ Medio",
+        "defense": "⚠️ Regular",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "2–0",
+            "opponent": "🇹🇷 Turquía",
+            "result": "w"
+          },
+          {
+            "score": "0–2",
+            "opponent": "🇺🇸 EE.UU.",
+            "result": "l"
+          },
+          {
+            "score": "0–0",
+            "opponent": "🇵🇾 Paraguay",
+            "result": "d"
+          }
+        ]
+      },
+      "awayData": {
+        "flag": "🇪🇬",
+        "group": "G",
+        "pos": "2°",
+        "pts": 5,
+        "dg": "+2",
         "played": 3,
         "form": [
           "E",
           "V",
+          "E"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 35,
+        "best": "Octavos (1934)",
+        "apps": 4,
+        "conf": "CAF",
+        "star": "⚽⚽",
+        "rating": 86,
+        "attack": "⚡ Alto",
+        "defense": "✅ Buena",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "1–1",
+            "opponent": "🇧🇪 Bélgica",
+            "result": "d"
+          },
+          {
+            "score": "3–1",
+            "opponent": "🇳🇿 N. Zelanda",
+            "result": "w"
+          },
+          {
+            "score": "1–1",
+            "opponent": "🇮🇷 Irán",
+            "result": "d"
+          }
+        ]
+      }
+    },
+    {
+      "category": "FUT",
+      "competition": "Amistoso",
+      "homeTeam": "River Plate",
+      "awayTeam": "Flamengo",
+      "time": "15:30",
+      "title": "Amistoso: River Plate vs Flamengo",
+      "status": "upcoming",
+      "score": null,
+      "channels": [],
+      "homeData": null,
+      "awayData": null
+    },
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Argentina",
+      "awayTeam": "Islas de Cabo Verde",
+      "time": "19:00",
+      "title": "Copa Mundial: Argentina vs Islas de Cabo Verde",
+      "status": "upcoming",
+      "score": null,
+      "channels": [
+        {
+          "name": "DirecTV Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        }
+      ],
+      "homeData": {
+        "flag": "🇦🇷",
+        "group": "J",
+        "pos": "1°",
+        "pts": 9,
+        "dg": "+7",
+        "played": 3,
+        "form": [
+          "V",
+          "V",
           "V"
         ],
         "status": "Clasificado",
-        "fifa_rank": 12,
-        "best": "Cuartos (1934, 38, 54)",
-        "apps": 13,
-        "conf": "UEFA",
+        "fifa_rank": 1,
+        "best": "Campeón (1978, 86, 2022)",
+        "apps": 19,
+        "conf": "Conmebol",
+        "star": "⚽⚽⚽⚽⚽",
+        "rating": 99,
+        "attack": "🔥 Muy alto",
+        "defense": "🛡️ Sólida",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "3–0",
+            "opponent": "🇩🇿 Argelia",
+            "result": "w"
+          },
+          {
+            "score": "2–0",
+            "opponent": "🇦🇹 Austria",
+            "result": "w"
+          },
+          {
+            "score": "3–1",
+            "opponent": "🇯🇴 Jordania",
+            "result": "w"
+          }
+        ]
+      },
+      "awayData": {
+        "flag": "🇨🇻",
+        "group": "H",
+        "pos": "2°",
+        "pts": 3,
+        "dg": "0",
+        "played": 3,
+        "form": [
+          "E",
+          "E",
+          "E"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 67,
+        "best": "Debut",
+        "apps": 1,
+        "conf": "CAF",
+        "star": "⚽",
+        "rating": 70,
+        "attack": "⚖️ Medio",
+        "defense": "⚠️ Regular",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "0–0",
+            "opponent": "🇪🇸 España",
+            "result": "d"
+          },
+          {
+            "score": "2–2",
+            "opponent": "🇺🇾 Uruguay",
+            "result": "d"
+          },
+          {
+            "score": "0–0",
+            "opponent": "🇸🇦 Arabia Saudita",
+            "result": "d"
+          }
+        ]
+      }
+    },
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Colombia",
+      "awayTeam": "Ghana",
+      "time": "22:30",
+      "title": "Copa Mundial: Colombia vs Ghana",
+      "status": "upcoming",
+      "score": null,
+      "channels": [
+        {
+          "name": "DirecTV Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        }
+      ],
+      "homeData": {
+        "flag": "🇨🇴",
+        "group": "K",
+        "pos": "1°",
+        "pts": 7,
+        "dg": "+3",
+        "played": 3,
+        "form": [
+          "V",
+          "V",
+          "E"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 17,
+        "best": "Cuartos (2014)",
+        "apps": 7,
+        "conf": "Conmebol",
         "star": "⚽⚽⚽",
         "rating": 99,
         "attack": "🔥 Muy alto",
@@ -97,82 +252,62 @@
         "keeper": "🧤 Sólido",
         "matches_detail": [
           {
-            "score": "1–1",
-            "opponent": "🇶🇦 Qatar",
+            "score": "3–1",
+            "opponent": "🇺🇿 Uzbekistán",
+            "result": "w"
+          },
+          {
+            "score": "1–0",
+            "opponent": "🇨🇩 RD Congo",
+            "result": "w"
+          },
+          {
+            "score": "0–0",
+            "opponent": "🇵🇹 Portugal",
             "result": "d"
-          },
-          {
-            "score": "4–1",
-            "opponent": "🇧🇦 Bosnia H.",
-            "result": "w"
-          },
-          {
-            "score": "2–1",
-            "opponent": "🇨🇦 Canadá",
-            "result": "w"
           }
         ]
       },
       "awayData": {
-        "flag": "🇩🇿",
-        "group": "J",
+        "flag": "🇬🇭",
+        "group": "L",
         "pos": "3°",
         "pts": 4,
-        "dg": "-2",
+        "dg": "0",
         "played": 3,
         "form": [
-          "D",
           "V",
-          "E"
+          "E",
+          "D"
         ],
         "status": "Clasificado",
-        "fifa_rank": 34,
-        "best": "Octavos (2014)",
+        "fifa_rank": 52,
+        "best": "Cuartos (2010)",
         "apps": 5,
         "conf": "CAF",
         "star": "⚽⚽",
-        "rating": 64,
+        "rating": 70,
         "attack": "⚖️ Medio",
         "defense": "⚠️ Regular",
-        "keeper": "🧤 Irregular",
+        "keeper": "🧤 Sólido",
         "matches_detail": [
           {
-            "score": "0–3",
-            "opponent": "🇦🇷 Argentina",
-            "result": "l"
-          },
-          {
-            "score": "2–1",
-            "opponent": "🇯🇴 Jordania",
+            "score": "1–0",
+            "opponent": "🇵🇦 Panamá",
             "result": "w"
           },
           {
-            "score": "3–3",
-            "opponent": "🇦🇹 Austria",
+            "score": "0–0",
+            "opponent": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra",
             "result": "d"
+          },
+          {
+            "score": "1–2",
+            "opponent": "🇭🇷 Croacia",
+            "result": "l"
           }
         ]
       }
-    },
-    {
-      "category": "CH",
-      "competition": "Copa Chile",
-      "homeTeam": "O'Higgins",
-      "awayTeam": "Colo-Colo",
-      "time": "21:30",
-      "title": "Copa Chile: O'Higgins vs Colo-Colo",
-      "status": "upcoming",
-      "score": null,
-      "channels": [
-        {
-          "name": "MAX",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
     },
     {
       "category": "FIFA",
