@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T15:55:32.666Z",
+  "updated": "2026-07-03T17:58:13.857Z",
   "date": "viernes, 3 de julio de 2026",
   "matches": [
     {
@@ -9,14 +9,80 @@
       "awayTeam": "Egipto",
       "time": "15:00",
       "title": "Copa Mundial: Australia vs Egipto",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
           "name": "DirecTV Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
+          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
+        },
+        {
+          "name": "FOX One",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
+          "streamUrl": "https://esvidzypro.sbs/foxone.php"
+        },
+        {
+          "name": "DirecTV Sports | Solo LATAM",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzbC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
+        },
+        {
+          "name": "DirecTV Sports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "Canal M6",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9tNi5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/m6.php"
+        },
+        {
+          "name": "ZDF",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy96ZGYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/zdf.php"
+        },
+        {
+          "name": "TyC Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dHljc3BvcnRz",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tycsports"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
+        },
+        {
+          "name": "SporTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9zcG9ydHYxLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/sportv1.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze1.php"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
         }
       ],
       "homeData": {
@@ -109,7 +175,20 @@
       "title": "Amistoso: River Plate vs Flamengo",
       "status": "upcoming",
       "score": null,
-      "channels": [],
+      "channels": [
+        {
+          "name": "SporTV 2",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9zcG9ydHYyLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/sportv2.php"
+        },
+        {
+          "name": "Disney+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZGlzbmV5Mw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney3"
+        }
+      ],
       "homeData": null,
       "awayData": null
     },
