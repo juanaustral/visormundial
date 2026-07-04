@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T20:45:25.472Z",
+  "updated": "2026-07-04T21:16:21.569Z",
   "date": "sábado, 4 de julio de 2026",
   "matches": [
     {
@@ -225,7 +225,14 @@
       "title": "Amistoso: Cancún vs Pumas UNAM",
       "status": "upcoming",
       "score": null,
-      "channels": [],
+      "channels": [
+        {
+          "name": "Eventos",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZXZlbnRvczM=",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=eventos3"
+        }
+      ],
       "homeData": null,
       "awayData": null
     },
@@ -238,7 +245,20 @@
       "title": "Copa Chile: Universidad Católica vs Copiapó",
       "status": "upcoming",
       "score": null,
-      "channels": [],
+      "channels": [
+        {
+          "name": "MAX",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
+        },
+        {
+          "name": "MAX | OP 2",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
+        }
+      ],
       "homeData": null,
       "awayData": null
     },
@@ -251,7 +271,14 @@
       "title": "Amistoso: CDS Tampico Madero vs América",
       "status": "upcoming",
       "score": null,
-      "channels": [],
+      "channels": [
+        {
+          "name": "Eventos",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZXZlbnRvczM=",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=eventos3"
+        }
+      ],
       "homeData": null,
       "awayData": null
     },
