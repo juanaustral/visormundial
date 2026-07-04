@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T22:19:36.780Z",
+  "updated": "2026-07-04T00:54:34.909Z",
   "date": "viernes, 3 de julio de 2026",
   "matches": [
     {
@@ -9,7 +9,7 @@
       "awayTeam": "Islas de Cabo Verde",
       "time": "19:00",
       "title": "Copa Mundial: Argentina vs Islas de Cabo Verde",
-      "status": "live",
+      "status": "finished",
       "score": null,
       "channels": [
         {
@@ -202,9 +202,93 @@
       "channels": [
         {
           "name": "DirecTV Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
+          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
+        },
+        {
+          "name": "TUDN MX",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
+        },
+        {
+          "name": "Caracol TV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vY2FyYWNvbHR2LnBocA==",
+          "streamUrl": "https://esvidzy99.co/caracoltv.php"
+        },
+        {
+          "name": "Canal 5 MX",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
+        },
+        {
+          "name": "DirecTV Sports | Solo LATAM",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzbC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
+        },
+        {
+          "name": "DirecTV Sports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "Teleamazonas",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vdGVsZWFtei5waHA=",
+          "streamUrl": "https://esvidzy99.co/teleamz.php"
+        },
+        {
+          "name": "ZDF",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy96ZGYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/zdf.php"
+        },
+        {
+          "name": "Disney+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZGlzbmV5Mg==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney2"
+        },
+        {
+          "name": "RCN | Solo Colombia",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9yY24ucGhw",
+          "streamUrl": "https://esvidzypro.sbs/rcn.php"
+        },
+        {
+          "name": "FOX One",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
+          "streamUrl": "https://esvidzypro.sbs/foxone.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze1.php"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4Mw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix3"
         }
       ],
       "homeData": {
