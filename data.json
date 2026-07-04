@@ -1,15 +1,15 @@
 {
-  "updated": "2026-07-04T17:39:28.886Z",
+  "updated": "2026-07-04T20:14:32.406Z",
   "date": "sábado, 4 de julio de 2026",
   "matches": [
     {
       "category": "FIFA",
       "competition": "Copa Mundial",
-      "homeTeam": "Canadá",
-      "awayTeam": "Marruecos",
-      "time": "14:00",
-      "title": "Copa Mundial: Canadá vs Marruecos",
-      "status": "live",
+      "homeTeam": "Paraguay",
+      "awayTeam": "Francia",
+      "time": "18:00",
+      "title": "Copa Mundial: Paraguay vs Francia",
+      "status": "upcoming",
       "score": null,
       "channels": [
         {
@@ -19,16 +19,22 @@
           "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
         },
         {
-          "name": "FOX One",
+          "name": "Canal 5 MX",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
-          "streamUrl": "https://esvidzypro.sbs/foxone.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
         },
         {
-          "name": "CTV",
+          "name": "Caracol TV",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jdHYucGhw",
-          "streamUrl": "https://esvidzypro.sbs/ctv.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vY2FyYWNvbHR2LnBocA==",
+          "streamUrl": "https://esvidzy99.co/caracoltv.php"
+        },
+        {
+          "name": "TVE La 1 Español",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dmVsYTEucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tvela1.php"
         },
         {
           "name": "DirecTV Sports | Solo LATAM",
@@ -49,10 +55,34 @@
           "streamUrl": "https://esvidzypro.sbs/m6.php"
         },
         {
-          "name": "ITV 1",
+          "name": "TUDN MX",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9pdHYxLnBocA==",
-          "streamUrl": "https://esvidzypro.sbs/itv1.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
+        },
+        {
+          "name": "Teleamazonas",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vdGVsZWFtei5waHA=",
+          "streamUrl": "https://esvidzy99.co/teleamz.php"
+        },
+        {
+          "name": "TyC Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dHljc3BvcnRz",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tycsports"
+        },
+        {
+          "name": "CTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jdHYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/ctv.php"
+        },
+        {
+          "name": "FOX One",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
+          "streamUrl": "https://esvidzypro.sbs/foxone.php"
         },
         {
           "name": "Telemundo",
@@ -67,132 +97,16 @@
           "streamUrl": "https://esvidzypro.sbs/tsn1.php"
         },
         {
-          "name": "Win Sports",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09d2luc3BvcnRz",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=winsports"
-        },
-        {
-          "name": "ZDF",
+          "name": "CazeTV",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy96ZGYucGhw",
-          "streamUrl": "https://esvidzypro.sbs/zdf.php"
-        },
-        {
-          "name": "SporTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9zcG9ydHYxLnBocA==",
-          "streamUrl": "https://esvidzypro.sbs/sportv1.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMi5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze2.php"
         },
         {
           "name": "VIX+",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
-        },
-        {
-          "name": "CazeTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/caze1.php"
-        }
-      ],
-      "homeData": {
-        "flag": "🇨🇦",
-        "group": "B",
-        "pos": "2°",
-        "pts": 4,
-        "dg": "+5",
-        "played": 3,
-        "form": [
-          "E",
-          "V",
-          "D"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 41,
-        "best": "Fase de grupos",
-        "apps": 3,
-        "conf": "Concacaf",
-        "star": "⚽⚽",
-        "rating": 90,
-        "attack": "⚖️ Medio",
-        "defense": "🛡️ Sólida",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–1",
-            "opponent": "🇧🇦 Bosnia H.",
-            "result": "d"
-          },
-          {
-            "score": "6–0",
-            "opponent": "🇶🇦 Qatar",
-            "result": "w"
-          },
-          {
-            "score": "1–2",
-            "opponent": "🇨🇭 Suiza",
-            "result": "l"
-          }
-        ]
-      },
-      "awayData": {
-        "flag": "🇲🇦",
-        "group": "C",
-        "pos": "2°",
-        "pts": 7,
-        "dg": "+3",
-        "played": 3,
-        "form": [
-          "E",
-          "V",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 13,
-        "best": "Semifinales (2022)",
-        "apps": 7,
-        "conf": "CAF",
-        "star": "⚽⚽⚽⚽",
-        "rating": 99,
-        "attack": "🔥 Muy alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–1",
-            "opponent": "🇧🇷 Brasil",
-            "result": "d"
-          },
-          {
-            "score": "1–0",
-            "opponent": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia",
-            "result": "w"
-          },
-          {
-            "score": "4–2",
-            "opponent": "🇭🇹 Haití",
-            "result": "w"
-          }
-        ]
-      }
-    },
-    {
-      "category": "FIFA",
-      "competition": "Copa Mundial",
-      "homeTeam": "Paraguay",
-      "awayTeam": "Francia",
-      "time": "18:00",
-      "title": "Copa Mundial: Paraguay vs Francia",
-      "status": "upcoming",
-      "score": null,
-      "channels": [
-        {
-          "name": "DirecTV Sports",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4Mg==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix2"
         }
       ],
       "homeData": {
@@ -285,7 +199,20 @@
       "title": "Copa Chile: Deportes Iquique vs Coquimbo Unido",
       "status": "upcoming",
       "score": null,
-      "channels": [],
+      "channels": [
+        {
+          "name": "MAX",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
+        },
+        {
+          "name": "MAX | OP 2",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
+        }
+      ],
       "homeData": null,
       "awayData": null
     },
