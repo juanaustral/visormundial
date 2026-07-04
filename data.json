@@ -1,27 +1,7 @@
 {
-  "updated": "2026-07-04T16:36:49.563Z",
+  "updated": "2026-07-04T17:08:18.721Z",
   "date": "sábado, 4 de julio de 2026",
   "matches": [
-    {
-      "category": "FUT",
-      "competition": "Amistoso",
-      "homeTeam": "Cruzeiro",
-      "awayTeam": "Defensor Sporting",
-      "time": "11:00",
-      "title": "Amistoso: Cruzeiro vs Defensor Sporting",
-      "status": "finished",
-      "score": null,
-      "channels": [
-        {
-          "name": "Disney+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZXZlbnRvcw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=eventos"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
     {
       "category": "FIFA",
       "competition": "Copa Mundial",
@@ -29,7 +9,7 @@
       "awayTeam": "Marruecos",
       "time": "14:00",
       "title": "Copa Mundial: Canadá vs Marruecos",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
@@ -345,6 +325,26 @@
       "status": "upcoming",
       "score": null,
       "channels": [],
+      "homeData": null,
+      "awayData": null
+    },
+    {
+      "category": "FUT",
+      "competition": "Amistoso",
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Defensor Sporting",
+      "time": "11:00",
+      "title": "Amistoso: Cruzeiro vs Defensor Sporting",
+      "status": "finished",
+      "score": null,
+      "channels": [
+        {
+          "name": "Disney+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZXZlbnRvcw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=eventos"
+        }
+      ],
       "homeData": null,
       "awayData": null
     },
