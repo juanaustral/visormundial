@@ -1,53 +1,7 @@
 {
-  "updated": "2026-07-05T19:06:28.927Z",
+  "updated": "2026-07-05T19:47:24.404Z",
   "date": "domingo, 5 de julio de 2026",
   "matches": [
-    {
-      "category": "CH",
-      "competition": "Copa Chile",
-      "homeTeam": "Santiago Wanderers",
-      "awayTeam": "Universidad de Chile",
-      "time": "13:30",
-      "title": "Copa Chile: Santiago Wanderers vs Universidad de Chile",
-      "status": "finished",
-      "score": null,
-      "channels": [
-        {
-          "name": "MAX",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
-        },
-        {
-          "name": "MAX | OP 2",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
-    {
-      "category": "URU",
-      "competition": "Primera División",
-      "homeTeam": "Danubio",
-      "awayTeam": "Juventud",
-      "time": "14:00",
-      "title": "Primera División: Danubio vs Juventud",
-      "status": "live",
-      "score": null,
-      "channels": [
-        {
-          "name": "Disney+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZGlzbmV5Mg==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney2"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
     {
       "category": "CH",
       "competition": "Copa Chile",
@@ -81,7 +35,7 @@
       "awayTeam": "Noruega",
       "time": "17:00",
       "title": "Copa Mundial: Brasil vs Noruega",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
@@ -444,6 +398,32 @@
       "time": "21:00",
       "title": "Copa Chile: Deportes Limache vs San Marcos",
       "status": "upcoming",
+      "score": null,
+      "channels": [
+        {
+          "name": "MAX",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
+        },
+        {
+          "name": "MAX | OP 2",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
+        }
+      ],
+      "homeData": null,
+      "awayData": null
+    },
+    {
+      "category": "CH",
+      "competition": "Copa Chile",
+      "homeTeam": "Santiago Wanderers",
+      "awayTeam": "Universidad de Chile",
+      "time": "13:30",
+      "title": "Copa Chile: Santiago Wanderers vs Universidad de Chile",
+      "status": "finished",
       "score": null,
       "channels": [
         {
