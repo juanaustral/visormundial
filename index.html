@@ -23,15 +23,16 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
 
 #agenda{
   background:var(--surface);border-bottom:1px solid rgba(255,255,255,.06);
-  display:flex;align-items:stretch;height:52px;flex-shrink:0;overflow:hidden;
+  display:flex;align-items:stretch;height:56px;flex-shrink:0;overflow:hidden;
+  position:sticky;top:0;z-index:100;
 }
 #agenda .brand{
-  padding:0 16px;font-weight:700;font-size:14px;color:var(--green);
+  padding:0 18px;font-weight:700;font-size:15px;color:var(--green);
   display:flex;align-items:center;gap:8px;white-space:nowrap;
   border-right:1px solid rgba(255,255,255,.06);letter-spacing:.5px;
 }
 #agenda .brand small{color:var(--text-dim);font-weight:400;font-size:11px}
-#agenda .ball-icon{width:26px;height:26px;animation:spin 4s infinite linear;flex-shrink:0}
+#agenda .ball-icon{width:28px;height:28px;animation:spin 4s infinite linear;flex-shrink:0}
 #agendaList{
   display:flex;overflow-x:auto;flex:1;gap:0;
   scrollbar-width:none;-ms-overflow-style:none;
@@ -154,8 +155,9 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
   padding:4px 0 2px 0;font-size:8px;color:var(--text-muted);margin-top:2px;
 }
 #versionBar .v{font-weight:600;background:rgba(255,255,255,.05);padding:1px 4px;border-radius:3px}
-#versionBar .cl{color:var(--text-muted);cursor:pointer;text-decoration:underline dotted;transition:color .1s}
-#versionBar .cl:hover{color:var(--green)}
+#versionBar .cl{color:var(--text-dim);cursor:pointer;transition:color .1s;font-weight:500}
+#versionBar .cl:hover{color:var(--green);text-decoration:underline}
+#versionBar .dot{color:var(--text-muted);margin:0 2px;font-size:6px}
 #changelogModal{
   display:none;position:fixed;bottom:10px;right:10px;width:260px;
   max-height:200px;overflow-y:auto;background:var(--surface);
@@ -242,8 +244,9 @@ body{font-family:var(--font);color:var(--text);display:flex;flex-direction:colum
         <span class="line2">JUAN MARTINEZ GARCIA</span>
       </a>
       <div id="versionBar">
-        <span class="v">v<span id="verNum">1.0</span></span>
-        <span class="cl" onclick="toggleChangelog()">changelog</span>
+        <span class="v">v<span id="verNum">--</span></span>
+        <span class="dot">&#183;</span>
+        <span class="cl" onclick="toggleChangelog()">registro</span>
       </div>
     </div>
     <div id="changelogModal">
@@ -448,8 +451,8 @@ const CHANGELOG = [
   {v:"1.0", d:"01/07", t:"Version inicial, hints en sidebar, credit destacado, fix EN VIVO"},
   {v:"1.1", d:"01/07", t:"Alias de equipos corregidos, hints reposicionados, footer con credit 2 lineas + changelog"},
   {v:"1.2", d:"01/07", t:"Filtro en topbar: solo partidos streamables, finished ocultos, sidebar usa lista filtrada"},
-  {v:"1.3", d:"04/07", t:"Status detection: usa data.json en vez de reloj. Scores corregidos Argentina 3-2 Cabo Verde y Belgica 3-2 Senegal. Partidos viejos limpiados. CSS active fix"},
-  {v:"1.4", d:"05/07", t:"Header mas grande (52px) + pelota SVG girando como logo"},
+  {v:"1.3", d:"04/07", t:"Status detection: usa data.json en vez de reloj. Scores corregidos Argentina 3-2 y Belgica 3-2. Partidos viejos limpiados"},
+  {v:"1.4", d:"05/07", t:"Header mas grande con pelota girando, barra fija al scrollear"},
 ];
 const VER = CHANGELOG[CHANGELOG.length-1].v;
 
