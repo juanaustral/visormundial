@@ -1,249 +1,7 @@
 {
-  "updated": "2026-07-05T20:18:59.740Z",
+  "updated": "2026-07-05T23:25:28.298Z",
   "date": "domingo, 5 de julio de 2026",
   "matches": [
-    {
-      "category": "CH",
-      "competition": "Copa Chile",
-      "homeTeam": "Ñublense",
-      "awayTeam": "Curicó Unido",
-      "time": "16:00",
-      "title": "Copa Chile: Ñublense vs Curicó Unido",
-      "status": "live",
-      "score": null,
-      "channels": [
-        {
-          "name": "MAX",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
-        },
-        {
-          "name": "MAX | OP 2",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
-    {
-      "category": "FIFA",
-      "competition": "Copa Mundial",
-      "homeTeam": "Brasil",
-      "awayTeam": "Noruega",
-      "time": "17:00",
-      "title": "Copa Mundial: Brasil vs Noruega",
-      "status": "live",
-      "score": null,
-      "channels": [
-        {
-          "name": "DirecTV Sports",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
-          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
-        },
-        {
-          "name": "TVE La 1 Español",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dmVsYTEucGhw",
-          "streamUrl": "https://esvidzypro.sbs/tvela1.php"
-        },
-        {
-          "name": "Caracol TV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vY2FyYWNvbHR2LnBocA==",
-          "streamUrl": "https://esvidzy99.co/caracoltv.php"
-        },
-        {
-          "name": "FOX One",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
-          "streamUrl": "https://esvidzypro.sbs/foxone.php"
-        },
-        {
-          "name": "DirecTV Sports | Solo LATAM",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzbC5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
-        },
-        {
-          "name": "DirecTV Sports | OP 3",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
-        },
-        {
-          "name": "Canal M6",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9tNi5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/m6.php"
-        },
-        {
-          "name": "SporTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9zcG9ydHYxLnBocA==",
-          "streamUrl": "https://esvidzypro.sbs/sportv1.php"
-        },
-        {
-          "name": "TyC Sports",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dHljc3BvcnRz",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tycsports"
-        },
-        {
-          "name": "ITV 1",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9pdHYxLnBocA==",
-          "streamUrl": "https://esvidzypro.sbs/itv1.php"
-        },
-        {
-          "name": "Teleamazonas",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vdGVsZWFtei5waHA=",
-          "streamUrl": "https://esvidzy99.co/teleamz.php"
-        },
-        {
-          "name": "CTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jdHYucGhw",
-          "streamUrl": "https://esvidzypro.sbs/ctv.php"
-        },
-        {
-          "name": "Disney+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZGlzbmV5Mw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney3"
-        },
-        {
-          "name": "TSN 1",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
-          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
-        },
-        {
-          "name": "Telemundo",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
-        },
-        {
-          "name": "CazeTV",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/caze1.php"
-        },
-        {
-          "name": "VIX+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
-        }
-      ],
-      "homeData": {
-        "flag": "🇧🇷",
-        "group": "C",
-        "pos": "1°",
-        "pts": 7,
-        "dg": "+6",
-        "played": 3,
-        "form": [
-          "E",
-          "V",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 3,
-        "best": "Campeón (1958, 62, 70, 94, 2002)",
-        "apps": 22,
-        "conf": "Conmebol",
-        "star": "⚽⚽⚽⚽⚽",
-        "rating": 99,
-        "attack": "🔥 Muy alto",
-        "defense": "🛡️ Sólida",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "1–1",
-            "opponent": "🇲🇦 Marruecos",
-            "result": "d"
-          },
-          {
-            "score": "3–0",
-            "opponent": "🇭🇹 Haití",
-            "result": "w"
-          },
-          {
-            "score": "3–0",
-            "opponent": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia",
-            "result": "w"
-          }
-        ],
-        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
-        "ko_matches": [
-          {
-            "r": "16avos de final",
-            "o": "Japón",
-            "s": "2-1",
-            "res": "w",
-            "x": ""
-          }
-        ],
-        "form_desc": "2V 1E 0D"
-      },
-      "awayData": {
-        "flag": "🇳🇴",
-        "group": "I",
-        "pos": "2°",
-        "pts": 6,
-        "dg": "+1",
-        "played": 3,
-        "form": [
-          "V",
-          "V",
-          "D"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 43,
-        "best": "Octavos (1998)",
-        "apps": 4,
-        "conf": "UEFA",
-        "star": "⚽⚽",
-        "rating": 88,
-        "attack": "⚡ Alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "4–1",
-            "opponent": "🇮🇶 Irak",
-            "result": "w"
-          },
-          {
-            "score": "3–2",
-            "opponent": "🇸🇳 Senegal",
-            "result": "w"
-          },
-          {
-            "score": "1–4",
-            "opponent": "🇫🇷 Francia",
-            "result": "l"
-          }
-        ],
-        "analysis": "Genera opiniones divididas entre los expertos: algunos lo ven como potencial revelacion, otros senalan que aun debe demostrar consistencia. Los scouts destacan su solidez tactica pero cuestionan su capacidad goleadora contra defensas cerradas. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 0E 1D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. Saldo goleador positivo, consistente con un equipo competitivo. ",
-        "ko_matches": [
-          {
-            "r": "16avos de final",
-            "o": "Costa de Marfil",
-            "s": "2-1",
-            "res": "w",
-            "x": null
-          }
-        ],
-        "form_desc": "2V 0E 1D"
-      }
-    },
     {
       "category": "CH",
       "competition": "Copa Chile",
@@ -251,7 +9,7 @@
       "awayTeam": "O'Higgins",
       "time": "18:30",
       "title": "Copa Chile: Unión Española vs O'Higgins",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
@@ -282,9 +40,81 @@
       "channels": [
         {
           "name": "DirecTV Sports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
+          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
+        },
+        {
+          "name": "TUDN MX",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
+        },
+        {
+          "name": "Las Estrellas",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9sYXNlc3QucGhw",
+          "streamUrl": "https://esvidzypro.sbs/lasest.php"
+        },
+        {
+          "name": "Canal 5 MX",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
+        },
+        {
+          "name": "Nu9ve",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9udTl2ZS5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/nu9ve.php"
+        },
+        {
+          "name": "DirecTV Sports | Solo LATAM",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzbC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
+        },
+        {
+          "name": "DirecTV Sports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "FOX One",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
+          "streamUrl": "https://esvidzypro.sbs/foxone.php"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMi5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze2.php"
+        },
+        {
+          "name": "Universo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYTIwaGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT11bml2ZXJzbw==",
+          "streamUrl": "https://la20hd.com/vivo/canal.php?stream=universo"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9zdHJlYW10cC5zYnMvZ2xvYmFsMi5waHA/c3RyZWFtPXZpeDE=",
+          "streamUrl": "https://streamtp.sbs/global2.php?stream=vix1"
         }
       ],
       "homeData": {
