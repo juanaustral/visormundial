@@ -1,14 +1,14 @@
 {
-  "updated": "2026-07-05T23:25:28.298Z",
+  "updated": "2026-07-06T00:29:04.166Z",
   "date": "domingo, 5 de julio de 2026",
   "matches": [
     {
       "category": "CH",
       "competition": "Copa Chile",
-      "homeTeam": "Unión Española",
-      "awayTeam": "O'Higgins",
-      "time": "18:30",
-      "title": "Copa Chile: Unión Española vs O'Higgins",
+      "homeTeam": "Deportes Limache",
+      "awayTeam": "San Marcos",
+      "time": "21:00",
+      "title": "Copa Chile: Deportes Limache vs San Marcos",
       "status": "live",
       "score": null,
       "channels": [
@@ -33,7 +33,7 @@
       "competition": "Copa Mundial",
       "homeTeam": "México",
       "awayTeam": "Inglaterra",
-      "time": "21:00",
+      "time": "22:00",
       "title": "Copa Mundial: México vs Inglaterra",
       "status": "upcoming",
       "score": null,
@@ -219,32 +219,6 @@
         ],
         "form_desc": "2V 1E 0D"
       }
-    },
-    {
-      "category": "CH",
-      "competition": "Copa Chile",
-      "homeTeam": "Deportes Limache",
-      "awayTeam": "San Marcos",
-      "time": "21:00",
-      "title": "Copa Chile: Deportes Limache vs San Marcos",
-      "status": "upcoming",
-      "score": null,
-      "channels": [
-        {
-          "name": "MAX",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
-        },
-        {
-          "name": "MAX | OP 2",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dG50c3BvcnRzY2hpbGU=",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tntsportschile"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
     },
     {
       "category": "CH",
