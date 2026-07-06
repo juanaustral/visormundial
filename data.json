@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T18:37:49.106Z",
+  "updated": "2026-07-06T19:41:27.353Z",
   "date": "lunes, 6 de julio de 2026",
   "matches": [
     {
@@ -9,7 +9,7 @@
       "awayTeam": "España",
       "time": "16:00",
       "title": "Copa Mundial: Portugal vs España",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
@@ -105,8 +105,8 @@
         {
           "name": "VIX+",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9zdHJlYW10cC5zYnMvZ2xvYmFsMi5waHA/c3RyZWFtPXZpeDE=",
-          "streamUrl": "https://streamtp.sbs/global2.php?stream=vix1"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
         }
       ],
       "homeData": {
