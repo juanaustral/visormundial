@@ -1,28 +1,22 @@
 {
-  "updated": "2026-07-07T20:07:21.288Z",
-  "date": "martes, 7 de julio de 2026",
+  "updated": "2026-07-09T19:30:58.748Z",
+  "date": "jueves, 9 de julio de 2026",
   "matches": [
     {
       "category": "FIFA",
       "competition": "Copa Mundial",
-      "homeTeam": "Suiza",
-      "awayTeam": "Colombia",
+      "homeTeam": "Francia",
+      "awayTeam": "Marruecos",
       "time": "17:00",
-      "title": "Copa Mundial: Suiza vs Colombia",
-      "status": "live",
+      "title": "Copa Mundial: Francia vs Marruecos",
+      "status": "upcoming",
       "score": null,
       "channels": [
         {
-          "name": "DirecTV Sports",
+          "name": "DSports",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzY28ucGhw",
-          "streamUrl": "https://esvidzypro.sbs/dsportsco.php"
-        },
-        {
-          "name": "TUDN MX",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
-          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
+          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
         },
         {
           "name": "Caracol TV",
@@ -31,28 +25,46 @@
           "streamUrl": "https://esvidzy99.co/caracoltv.php"
         },
         {
-          "name": "Canal 5 MX",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
-        },
-        {
-          "name": "Canal M6",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9tNi5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/m6.php"
-        },
-        {
-          "name": "DirecTV Sports | Solo LATAM",
+          "name": "DSports | Solo LATAM (AR|CO|PE|CL|EC|UY)",
           "quality": "Calidad 1080p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzbC5waHA=",
           "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
         },
         {
-          "name": "DirecTV Sports | OP 3",
+          "name": "VIX+ | Español",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy92aXgucGhw",
+          "streamUrl": "https://esvidzypro.sbs/vix.php"
+        },
+        {
+          "name": "RAI 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9yYWkxLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/rai1.php"
+        },
+        {
+          "name": "TUDN MX",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
+        },
+        {
+          "name": "DSports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "ČT Sport",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jdHNwb3J0cy5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/ctsports.php"
+        },
+        {
+          "name": "Canal 5 MX",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
         },
         {
           "name": "ITV 1",
@@ -61,16 +73,16 @@
           "streamUrl": "https://esvidzypro.sbs/itv1.php"
         },
         {
-          "name": "RCN | Solo Colombia",
+          "name": "TVE La 1 Español",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9yY24ucGhw",
-          "streamUrl": "https://esvidzypro.sbs/rcn.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dmVsYTEucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tvela1.php"
         },
         {
-          "name": "Telemundo",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+          "name": "SporTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9zcG9ydHYxLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/sportv1.php"
         },
         {
           "name": "Das Erste",
@@ -79,30 +91,82 @@
           "streamUrl": "https://esvidzypro.sbs/daserste.php"
         },
         {
-          "name": "VIX+",
+          "name": "Telemundo",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4Mg==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix2"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYTIwaGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10ZWxlbXVuZG8=",
+          "streamUrl": "https://la20hd.com/vivo/canal.php?stream=telemundo"
         },
         {
           "name": "CazeTV",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMi5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/caze2.php"
-        },
-        {
-          "name": "Universo",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dW5pdmVyc29fdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=universo_usa"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze1.php"
         }
       ],
       "homeData": {
-        "flag": "🇨🇭",
-        "group": "B",
+        "flag": "🇫🇷",
+        "group": "I",
         "pos": "1°",
+        "pts": 9,
+        "dg": "+8",
+        "played": 3,
+        "form": [
+          "V",
+          "V",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 2,
+        "best": "Campeón (1998, 2018)",
+        "apps": 16,
+        "conf": "UEFA",
+        "star": "⚽⚽⚽⚽⚽",
+        "rating": 99,
+        "attack": "🔥 Muy alto",
+        "defense": "🛡️ Sólida",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "3–1",
+            "opponent": "🇸🇳 Senegal",
+            "result": "w"
+          },
+          {
+            "score": "3–0",
+            "opponent": "🇮🇶 Irak",
+            "result": "w"
+          },
+          {
+            "score": "4–1",
+            "opponent": "🇳🇴 Noruega",
+            "result": "w"
+          }
+        ],
+        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su paso perfecto por la fase de grupos impresiono a la prensa: contundencia y solidez. Los expertos senalan que llega con la moral alta y el engranaje aceitado. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+        "ko_matches": [
+          {
+            "r": "16avos de final",
+            "o": "Suecia",
+            "s": "3-0",
+            "res": "w",
+            "x": null
+          },
+          {
+            "r": "Octavos de final",
+            "o": "Paraguay",
+            "s": "1-0",
+            "res": "w",
+            "x": null
+          }
+        ],
+        "form_desc": "3V 0E 0D"
+      },
+      "awayData": {
+        "flag": "🇲🇦",
+        "group": "C",
+        "pos": "2°",
         "pts": 7,
-        "dg": "+4",
+        "dg": "+3",
         "played": 3,
         "form": [
           "E",
@@ -110,11 +174,11 @@
           "V"
         ],
         "status": "Clasificado",
-        "fifa_rank": 12,
-        "best": "Cuartos (1934, 38, 54)",
-        "apps": 13,
-        "conf": "UEFA",
-        "star": "⚽⚽⚽",
+        "fifa_rank": 13,
+        "best": "Semifinales (2022)",
+        "apps": 7,
+        "conf": "CAF",
+        "star": "⚽⚽⚽⚽",
         "rating": 99,
         "attack": "🔥 Muy alto",
         "defense": "✅ Buena",
@@ -122,83 +186,59 @@
         "matches_detail": [
           {
             "score": "1–1",
-            "opponent": "🇶🇦 Qatar",
+            "opponent": "🇧🇷 Brasil",
             "result": "d"
           },
           {
-            "score": "4–1",
-            "opponent": "🇧🇦 Bosnia H.",
+            "score": "1–0",
+            "opponent": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia",
             "result": "w"
           },
           {
-            "score": "2–1",
-            "opponent": "🇨🇦 Canadá",
+            "score": "4–2",
+            "opponent": "🇭🇹 Haití",
             "result": "w"
           }
         ],
-        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Su mejor actuacion historica son las semifinales. Los medios especulan si podra dar el salto a la final. Saldo goleador positivo, consistente con un equipo competitivo. ",
         "ko_matches": [
           {
             "r": "16avos de final",
-            "o": "Argelia",
-            "s": "2-0",
+            "o": "Países Bajos",
+            "s": "1-1 (p)",
+            "res": "w",
+            "x": "Marruecos 3-2 penales"
+          },
+          {
+            "r": "Octavos de final",
+            "o": "Canadá",
+            "s": "3-0",
             "res": "w",
             "x": null
           }
         ],
         "form_desc": "2V 1E 0D"
-      },
-      "awayData": {
-        "flag": "🇨🇴",
-        "group": "K",
-        "pos": "1°",
-        "pts": 7,
-        "dg": "+3",
-        "played": 3,
-        "form": [
-          "V",
-          "V",
-          "E"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 17,
-        "best": "Cuartos (2014)",
-        "apps": 7,
-        "conf": "Conmebol",
-        "star": "⚽⚽⚽",
-        "rating": 99,
-        "attack": "🔥 Muy alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "3–1",
-            "opponent": "🇺🇿 Uzbekistán",
-            "result": "w"
-          },
-          {
-            "score": "1–0",
-            "opponent": "🇨🇩 RD Congo",
-            "result": "w"
-          },
-          {
-            "score": "0–0",
-            "opponent": "🇵🇹 Portugal",
-            "result": "d"
-          }
-        ],
-        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. Saldo goleador positivo, consistente con un equipo competitivo. ",
-        "ko_matches": [
-          {
-            "r": "16avos de final",
-            "o": "Ghana",
-            "s": "1-0",
-            "res": "w",
-            "x": ""
-          }
-        ],
-        "form_desc": "2V 1E 0D"
       }
+    },
+    {
+      "category": "CH",
+      "competition": "Copa de la Liga",
+      "homeTeam": "Ñublense",
+      "awayTeam": "O'Higgins",
+      "time": "20:00",
+      "title": "Copa de la Liga: Ñublense vs O'Higgins",
+      "status": "upcoming",
+      "score": null,
+      "channels": [
+        {
+          "name": "MAX",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
+        }
+      ],
+      "homeData": null,
+      "awayData": null
     },
     {
       "category": "CH",
