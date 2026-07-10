@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T14:35:56.322Z",
+  "updated": "2026-07-10T19:56:17.491Z",
   "date": "viernes, 10 de julio de 2026",
   "matches": [
     {
@@ -9,14 +9,92 @@
       "awayTeam": "Bélgica",
       "time": "16:00",
       "title": "Copa Mundial: España vs Bélgica",
-      "status": "upcoming",
+      "status": "live",
       "score": null,
       "channels": [
         {
           "name": "DSports",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzYXIucGhw",
+          "streamUrl": "https://esvidzypro.sbs/dsportsar.php"
+        },
+        {
+          "name": "DSports | Solo LATAM (AR|CO|PE|CL|EC|UY)",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9kc3BvcnRzbC5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
+        },
+        {
+          "name": "TVE La 1 Español",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dmVsYTEucGhw",
+          "streamUrl": "https://esvidzypro.sbs/tvela1.php"
+        },
+        {
+          "name": "Canal M6",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9tNi5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/m6.php"
+        },
+        {
+          "name": "FOX One",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
+          "streamUrl": "https://esvidzypro.sbs/foxone.php"
+        },
+        {
+          "name": "Teleamazonas",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vdGVsZWFtei5waHA=",
+          "streamUrl": "https://esvidzy99.co/teleamz.php"
+        },
+        {
+          "name": "DSports | OP 3",
           "quality": "Calidad 720p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
           "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "CTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jdHYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/ctv.php"
+        },
+        {
+          "name": "ZDF",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy96ZGYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/zdf.php"
+        },
+        {
+          "name": "TSN 1",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90c24xLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/tsn1.php"
+        },
+        {
+          "name": "Telemundo",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
+        },
+        {
+          "name": "SporTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9zcG9ydHYxLnBocA==",
+          "streamUrl": "https://esvidzypro.sbs/sportv1.php"
+        },
+        {
+          "name": "CazeTV",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze1.php"
+        },
+        {
+          "name": "VIX+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
         }
       ],
       "homeData": {
