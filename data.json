@@ -1,54 +1,14 @@
 {
-  "updated": "2026-07-11T20:30:27.405Z",
+  "updated": "2026-07-12T00:30:30.312Z",
   "date": "sábado, 11 de julio de 2026",
   "matches": [
     {
-      "category": "URU",
-      "competition": "Primera División",
-      "homeTeam": "Danubio",
-      "awayTeam": "Nacional",
-      "time": "15:00",
-      "title": "Primera División: Danubio vs Nacional",
-      "status": "finished",
-      "score": null,
-      "channels": [
-        {
-          "name": "Disney+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZGlzbmV5Mg==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney2"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
-    {
-      "category": "CH",
-      "competition": "Copa Chile",
-      "homeTeam": "Magallanes",
-      "awayTeam": "Audax Italiano",
-      "time": "16:00",
-      "title": "Copa Chile: Magallanes vs Audax Italiano",
-      "status": "live",
-      "score": null,
-      "channels": [
-        {
-          "name": "MAX",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
-    {
       "category": "FIFA",
       "competition": "Copa Mundial",
-      "homeTeam": "Noruega",
-      "awayTeam": "Inglaterra",
-      "time": "18:00",
-      "title": "Copa Mundial: Noruega vs Inglaterra",
+      "homeTeam": "Argentina",
+      "awayTeam": "Suiza",
+      "time": "22:00",
+      "title": "Copa Mundial: Argentina vs Suiza",
       "status": "upcoming",
       "score": null,
       "channels": [
@@ -65,28 +25,10 @@
           "streamUrl": "https://esvidzypro.sbs/dsportsl.php"
         },
         {
-          "name": "TUDN MX",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy90dWRubXgucGhw",
-          "streamUrl": "https://esvidzypro.sbs/tudnmx.php"
-        },
-        {
-          "name": "Canal M6",
-          "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9tNi5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/m6.php"
-        },
-        {
           "name": "FOX One",
           "quality": "Calidad 1080p",
           "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9mb3hvbmUucGhw",
           "streamUrl": "https://esvidzypro.sbs/foxone.php"
-        },
-        {
-          "name": "DSports | OP 3",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
         },
         {
           "name": "CTV",
@@ -95,10 +37,22 @@
           "streamUrl": "https://esvidzypro.sbs/ctv.php"
         },
         {
-          "name": "Canal 5 MX",
+          "name": "America TV",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9hbWVyaWNhdHYucGhw",
+          "streamUrl": "https://esvidzypro.sbs/americatv.php"
+        },
+        {
+          "name": "DSports | OP 3",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        },
+        {
+          "name": "Teleamazonas",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYW5hbDVteC5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/canal5mx.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5OTkuY28vdGVsZWFtei5waHA=",
+          "streamUrl": "https://esvidzy99.co/teleamz.php"
         },
         {
           "name": "ITV 1",
@@ -107,16 +61,16 @@
           "streamUrl": "https://esvidzypro.sbs/itv1.php"
         },
         {
-          "name": "Telemundo",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dGVsZW11bmRvdXNh",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=telemundousa"
-        },
-        {
           "name": "CazeTV",
           "quality": "Calidad 1080p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMS5waHA=",
-          "streamUrl": "https://esvidzypro.sbs/caze1.php"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9lc3ZpZHp5cHJvLnNicy9jYXplMi5waHA=",
+          "streamUrl": "https://esvidzypro.sbs/caze2.php"
+        },
+        {
+          "name": "TyC Sports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dHljc3BvcnRz",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=tycsports"
         },
         {
           "name": "TSN 1",
@@ -125,184 +79,28 @@
           "streamUrl": "https://esvidzypro.sbs/tsn1.php"
         },
         {
-          "name": "VIX+",
-          "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09dml4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=vix1"
-        }
-      ],
-      "homeData": {
-        "flag": "🇳🇴",
-        "group": "I",
-        "pos": "2°",
-        "pts": 6,
-        "dg": "+1",
-        "played": 3,
-        "form": [
-          "V",
-          "V",
-          "D"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 43,
-        "best": "Octavos (1998)",
-        "apps": 4,
-        "conf": "UEFA",
-        "star": "⚽⚽",
-        "rating": 88,
-        "attack": "⚡ Alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "4–1",
-            "opponent": "🇮🇶 Irak",
-            "result": "w"
-          },
-          {
-            "score": "3–2",
-            "opponent": "🇸🇳 Senegal",
-            "result": "w"
-          },
-          {
-            "score": "1–4",
-            "opponent": "🇫🇷 Francia",
-            "result": "l"
-          }
-        ],
-        "analysis": "Genera opiniones divididas entre los expertos: algunos lo ven como potencial revelacion, otros senalan que aun debe demostrar consistencia. Los scouts destacan su solidez tactica pero cuestionan su capacidad goleadora contra defensas cerradas. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 0E 1D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. Saldo goleador positivo, consistente con un equipo competitivo. ",
-        "ko_matches": [
-          {
-            "r": "16avos de final",
-            "o": "Costa de Marfil",
-            "s": "2-1",
-            "res": "w",
-            "x": null
-          },
-          {
-            "r": "Octavos de final",
-            "o": "Brasil",
-            "s": "2-1",
-            "res": "w",
-            "x": null
-          }
-        ],
-        "form_desc": "2V 0E 1D"
-      },
-      "awayData": {
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "group": "L",
-        "pos": "1°",
-        "pts": 7,
-        "dg": "+4",
-        "played": 3,
-        "form": [
-          "V",
-          "E",
-          "V"
-        ],
-        "status": "Clasificado",
-        "fifa_rank": 4,
-        "best": "Campeón (1966)",
-        "apps": 17,
-        "conf": "UEFA",
-        "star": "⚽⚽⚽⚽",
-        "rating": 99,
-        "attack": "🔥 Muy alto",
-        "defense": "✅ Buena",
-        "keeper": "🧤 Sólido",
-        "matches_detail": [
-          {
-            "score": "4–2",
-            "opponent": "🇭🇷 Croacia",
-            "result": "w"
-          },
-          {
-            "score": "0–0",
-            "opponent": "🇬🇭 Ghana",
-            "result": "d"
-          },
-          {
-            "score": "2–0",
-            "opponent": "🇵🇦 Panamá",
-            "result": "w"
-          }
-        ],
-        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
-        "ko_matches": [
-          {
-            "r": "16avos de final",
-            "o": "RD Congo",
-            "s": "2-1",
-            "res": "w",
-            "x": null
-          },
-          {
-            "r": "Octavos de final",
-            "o": "México",
-            "s": "3-2",
-            "res": "w",
-            "x": null
-          }
-        ],
-        "form_desc": "2V 1E 0D"
-      }
-    },
-    {
-      "category": "URU",
-      "competition": "Primera División",
-      "homeTeam": "Wanderers",
-      "awayTeam": "Progreso",
-      "time": "18:00",
-      "title": "Primera División: Wanderers vs Progreso",
-      "status": "upcoming",
-      "score": null,
-      "channels": [
+          "name": "RCN | Solo Colombia",
+          "quality": "Calidad 1080p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYXRhbXZpZHpmeS5vcmcvcmNuLnBocA==",
+          "streamUrl": "https://latamvidzfy.org/rcn.php"
+        },
         {
           "name": "Disney+",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZGlzbmV5MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney1"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
-    {
-      "category": "CH",
-      "competition": "Copa Chile",
-      "homeTeam": "San Luis",
-      "awayTeam": "Universidad Católica",
-      "time": "18:30",
-      "title": "Copa Chile: San Luis vs Universidad Católica",
-      "status": "upcoming",
-      "score": null,
-      "channels": [
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYTE4aGQuc3Uvdml2by9jYW5hbC5waHA/c3RyZWFtPWRpc25leTE=",
+          "streamUrl": "https://la18hd.su/vivo/canal.php?stream=disney1"
+        },
         {
-          "name": "MAX",
+          "name": "VIX+",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09bWF4MQ==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=max1"
-        }
-      ],
-      "homeData": null,
-      "awayData": null
-    },
-    {
-      "category": "FIFA",
-      "competition": "Copa Mundial",
-      "homeTeam": "Argentina",
-      "awayTeam": "Suiza",
-      "time": "22:00",
-      "title": "Copa Mundial: Argentina vs Suiza",
-      "status": "upcoming",
-      "score": null,
-      "channels": [
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9zdHJlYW10cC5zYnMvZ2xvYmFsMS5waHA/c3RyZWFtPXZpeDE=",
+          "streamUrl": "https://streamtp.sbs/global1.php?stream=vix1"
+        },
         {
-          "name": "DSports",
+          "name": "Telemundo",
           "quality": "Calidad 720p",
-          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
-          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly9sYTIwaGQuY29tL3Zpdm8vY2FuYWwucGhwP3N0cmVhbT10ZWxlbXVuZG8=",
+          "streamUrl": "https://la20hd.com/vivo/canal.php?stream=telemundo"
         }
       ],
       "homeData": {
@@ -421,6 +219,26 @@
         ],
         "form_desc": "2V 1E 0D"
       }
+    },
+    {
+      "category": "URU",
+      "competition": "Primera División",
+      "homeTeam": "Danubio",
+      "awayTeam": "Nacional",
+      "time": "15:00",
+      "title": "Primera División: Danubio vs Nacional",
+      "status": "finished",
+      "score": null,
+      "channels": [
+        {
+          "name": "Disney+",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZGlzbmV5Mg==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=disney2"
+        }
+      ],
+      "homeData": null,
+      "awayData": null
     },
     {
       "category": "CH",
