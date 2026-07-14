@@ -1,7 +1,155 @@
 {
-  "updated": "2026-07-12T19:10:12.554Z",
-  "date": "domingo, 12 de julio de 2026",
+  "updated": "2026-07-14T16:51:22.712Z",
+  "date": "martes, 14 de julio de 2026",
   "matches": [
+    {
+      "category": "FIFA",
+      "competition": "Copa Mundial",
+      "homeTeam": "Francia",
+      "awayTeam": "España",
+      "time": "16:00",
+      "title": "Copa Mundial: Francia vs España",
+      "status": "upcoming",
+      "score": null,
+      "channels": [
+        {
+          "name": "DSports",
+          "quality": "Calidad 720p",
+          "eventosUrl": "https://futbol-libres.su/eventos.html?r=aHR0cHM6Ly92aWR6ZW52aXZvLmNjL2NhbmFsLnBocD9zdHJlYW09ZHNwb3J0cw==",
+          "streamUrl": "https://vidzenvivo.cc/canal.php?stream=dsports"
+        }
+      ],
+      "homeData": {
+        "flag": "🇫🇷",
+        "group": "I",
+        "pos": "1°",
+        "pts": 9,
+        "dg": "+8",
+        "played": 3,
+        "form": [
+          "V",
+          "V",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 2,
+        "best": "Campeón (1998, 2018)",
+        "apps": 16,
+        "conf": "UEFA",
+        "star": "⚽⚽⚽⚽⚽",
+        "rating": 99,
+        "attack": "🔥 Muy alto",
+        "defense": "🛡️ Sólida",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "3–1",
+            "opponent": "🇸🇳 Senegal",
+            "result": "w"
+          },
+          {
+            "score": "3–0",
+            "opponent": "🇮🇶 Irak",
+            "result": "w"
+          },
+          {
+            "score": "4–1",
+            "opponent": "🇳🇴 Noruega",
+            "result": "w"
+          }
+        ],
+        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su paso perfecto por la fase de grupos impresiono a la prensa: contundencia y solidez. Los expertos senalan que llega con la moral alta y el engranaje aceitado. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+        "ko_matches": [
+          {
+            "r": "16avos de final",
+            "o": "Suecia",
+            "s": "3-0",
+            "res": "w",
+            "x": null
+          },
+          {
+            "r": "Octavos de final",
+            "o": "Paraguay",
+            "s": "1-0",
+            "res": "w",
+            "x": null
+          },
+          {
+            "r": "Cuartos de final",
+            "o": "Marruecos",
+            "s": "2-0",
+            "res": "w",
+            "x": null
+          }
+        ],
+        "form_desc": "3V 0E 0D"
+      },
+      "awayData": {
+        "flag": "🇪🇸",
+        "group": "H",
+        "pos": "1°",
+        "pts": 7,
+        "dg": "+5",
+        "played": 3,
+        "form": [
+          "E",
+          "V",
+          "V"
+        ],
+        "status": "Clasificado",
+        "fifa_rank": 8,
+        "best": "Campeón (2010)",
+        "apps": 16,
+        "conf": "UEFA",
+        "star": "⚽⚽⚽⚽",
+        "rating": 99,
+        "attack": "🔥 Muy alto",
+        "defense": "🛡️ Sólida",
+        "keeper": "🧤 Sólido",
+        "matches_detail": [
+          {
+            "score": "0–0",
+            "opponent": "🇨🇻 Cabo Verde",
+            "result": "d"
+          },
+          {
+            "score": "4–0",
+            "opponent": "🇸🇦 Arabia Saudita",
+            "result": "w"
+          },
+          {
+            "score": "1–0",
+            "opponent": "🇺🇾 Uruguay",
+            "result": "w"
+          }
+        ],
+        "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+        "ko_matches": [
+          {
+            "r": "16avos de final",
+            "o": "Austria",
+            "s": "3-0",
+            "res": "w",
+            "x": null
+          },
+          {
+            "r": "Octavos de final",
+            "o": "Portugal",
+            "s": "1-0",
+            "res": "w",
+            "x": null
+          },
+          {
+            "r": "Cuartos de final",
+            "o": "Bélgica",
+            "s": "2-1",
+            "res": "w",
+            "x": null
+          }
+        ],
+        "form_desc": "2V 1E 0D"
+      }
+    },
     {
       "category": "CH",
       "competition": "Copa Chile",
