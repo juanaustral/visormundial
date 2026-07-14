@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // Generate data.json for visor-dual — scrapes agenda + team data + results
+// Maintains teams-data.json with auto-updated KO match history and form
 
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
@@ -7,7 +8,14 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_DIR = __dirname;
-const DATA_DIR = join(REPO_DIR, '..', 'dashboard');
+
+const ROUND_NAMES = [
+  '16avos de final',
+  'Octavos de final',
+  'Cuartos de final',
+  'Semifinal',
+  'Final',
+];
 
 // ── Team name normalization ────────────────────────
 const TEAM_ALIASES = {
@@ -52,7 +60,6 @@ function normalizeTeam(name, teamData) {
 }
 
 // ── Timezone conversion ────────────────────────────
-// Source (futbol-libres.su) usa UTC+1 (CET). Target: Argentina (UTC-3)
 function toLocalTime(timeStr) {
   if (!timeStr) return timeStr;
   const p = timeStr.split(':');
@@ -70,16 +77,148 @@ function getMatchStatus(timeStr) {
   matchStart.setHours(h, m, 0, 0);
 
   const diffMin = (now - matchStart) / 60000;
-  if (diffMin < -15) return 'upcoming';         // more than 15 min to go
-  if (diffMin < 0) return 'live';               // starts in <15 min
-  if (diffMin < 105) return 'live';             // first half + break + second half (≈105 min)
-  if (diffMin < 135) return 'live';             // extra time buffer
+  if (diffMin < -15) return 'upcoming';
+  if (diffMin < 0) return 'live';
+  if (diffMin < 105) return 'live';
+  if (diffMin < 135) return 'live';
   return 'finished';
+}
+
+// ── Team data persistence ──────────────────────────
+function loadTeamData() {
+  let teams = {};
+
+  // 1. Base data (static seed)
+  const basePath = join(REPO_DIR, 'teams-base.json');
+  if (existsSync(basePath)) {
+    try {
+      teams = JSON.parse(readFileSync(basePath, 'utf-8')).teams || {};
+      console.log(`[gen] Cargados ${Object.keys(teams).length} equipos base`);
+    } catch (e) {
+      console.error('[gen] Error leyendo teams-base.json:', e.message);
+    }
+  }
+
+  // 2. Override with accumulated updates
+  const dataPath = join(REPO_DIR, 'teams-data.json');
+  if (existsSync(dataPath)) {
+    try {
+      const updates = JSON.parse(readFileSync(dataPath, 'utf-8')).teams || {};
+      let updatedCount = 0;
+      for (const [name, data] of Object.entries(updates)) {
+        teams[name] = data;
+        updatedCount++;
+      }
+      console.log(`[gen] ${updatedCount} equipos con datos actualizados`);
+    } catch (e) {
+      console.error('[gen] Error leyendo teams-data.json:', e.message);
+    }
+  }
+
+  return teams;
+}
+
+function persistTeamUpdates(teams, modifiedNames) {
+  if (!modifiedNames.length) return;
+
+  const dataPath = join(REPO_DIR, 'teams-data.json');
+  // Preserve existing updates for teams not modified this run
+  let existing = {};
+  if (existsSync(dataPath)) {
+    try {
+      existing = JSON.parse(readFileSync(dataPath, 'utf-8')).teams || {};
+    } catch {}
+  }
+
+  for (const name of modifiedNames) {
+    if (teams[name]) {
+      existing[name] = teams[name];
+    }
+  }
+
+  writeFileSync(dataPath, JSON.stringify({
+    updated: new Date().toISOString(),
+    teams: existing,
+  }, null, 2));
+  console.log(`[gen] teams-data.json guardado (${Object.keys(existing).length} equipos trackeados)`);
+}
+
+function formatResultChar(r) {
+  if (r === 'w' || r === 'W') return 'V';
+  if (r === 'l' || r === 'L') return 'D';
+  return 'E';
+}
+
+function computeFormDesc(form) {
+  const v = form.filter(f => f === 'V').length;
+  const e = form.filter(f => f === 'E').length;
+  const d = form.filter(f => f === 'D').length;
+  return `${v}V ${e}E ${d}D`;
+}
+
+// ── Update team after a finished match ─────────────
+function updateTeamStats(team, opponent, scoreParts, isHome, roundName) {
+  if (!team) return;
+
+  const teamScore = isHome ? parseInt(scoreParts[0]) : parseInt(scoreParts[1]);
+  const oppScore = isHome ? parseInt(scoreParts[1]) : parseInt(scoreParts[0]);
+  let result;
+  if (teamScore > oppScore) result = 'w';
+  else if (teamScore < oppScore) result = 'l';
+  else result = 'd';
+
+  // Init arrays if needed
+  if (!team.ko_matches) team.ko_matches = [];
+  if (!team.form) team.form = [];
+
+  // Check if this round was already recorded
+  if (team.ko_matches.some(k => k.r === roundName)) {
+    console.log(`[gen]   ${roundName} ya registrado para ${team.flag || ''} ${team.best ? '' : ''}`);
+    return;
+  }
+
+  const scoreStr = isHome
+    ? `${teamScore}-${oppScore}`
+    : `${oppScore}-${teamScore}`;
+
+  team.ko_matches.push({
+    r: roundName,
+    o: opponent,
+    s: scoreStr,
+    res: result,
+    x: null,
+  });
+  console.log(`[gen]   KO registrado: ${roundName} vs ${opponent} ${scoreStr} (${result})`);
+
+  // Update form (prepend newest result)
+  team.form.unshift(formatResultChar(result));
+  if (team.form.length > 5) team.form = team.form.slice(0, 5);
+  team.form_desc = computeFormDesc(team.form);
+
+  // Update status based on round
+  if (roundName === 'Final') {
+    if (result === 'w') {
+      team.status = 'Campeón';
+      team.best = `Campeón (${new Date().getFullYear()})`;
+    } else {
+      team.status = 'Subcampeón';
+    }
+  } else if (result === 'l') {
+    team.status = 'Eliminado';
+  } else {
+    team.status = 'Clasificado';
+  }
+}
+
+// ── Determine current round from KO match count ────
+function getRoundForTeam(team) {
+  const count = (team.ko_matches || []).length;
+  if (count >= ROUND_NAMES.length) return null; // already finished all rounds
+  return ROUND_NAMES[count];
 }
 
 // ── Fetch score from web ───────────────────────────
 async function fetchScore(homeTeam, awayTeam) {
-  // Normalize team names for search
   const q = `${encodeURIComponent(homeTeam)} ${encodeURIComponent(awayTeam)} mundial 2026 resultado`;
   const url = `https://html.duckduckgo.com/html/?q=${q}`;
   try {
@@ -88,7 +227,6 @@ async function fetchScore(homeTeam, awayTeam) {
       signal: AbortSignal.timeout(8000),
     });
     const html = await res.text();
-    // Look for score patterns like "2-1", "1–0", "3-2" near team names
     const scoreRegex = new RegExp(
       `${homeTeam.substring(0,4)}[^]{0,100}?(\\d+)[–-−](\\d+)[^]{0,100}?${awayTeam.substring(0,4)}|${awayTeam.substring(0,4)}[^]{0,100}?(\\d+)[–-−](\\d+)[^]{0,100}?${homeTeam.substring(0,4)}`,
       'i'
@@ -106,18 +244,8 @@ async function fetchScore(homeTeam, awayTeam) {
 
 async function main() {
   // ── Load team data ──
-  let teamData = {};
-  const koPath = join(DATA_DIR, 'data_ko.json');
-  if (existsSync(koPath)) {
-    try {
-      teamData = JSON.parse(readFileSync(koPath, 'utf-8')).teams || {};
-      console.log(`[gen] Cargados ${Object.keys(teamData).length} equipos`);
-    } catch (e) {
-      console.error('[gen] Error leyendo data_ko.json:', e.message);
-    }
-  } else {
-    console.warn('[gen] data_ko.json no encontrado en', koPath);
-  }
+  let teamData = loadTeamData();
+  const modifiedTeams = new Set();
 
   // Also load previous data.json to preserve manually-entered scores
   let prevScores = {};
@@ -171,7 +299,6 @@ async function main() {
       }
     }
 
-    // Determine status
     const status = getMatchStatus(time);
 
     // Score: try previous data first, then fetch if finished
@@ -184,7 +311,6 @@ async function main() {
       score = await fetchScore(homeTeam, awayTeam);
       if (score) console.log(`[gen]   → ${score}`);
       else console.log(`[gen]   → sin resultado disponible`);
-      // Small delay between requests
       await new Promise(r => setTimeout(r, 500));
     }
 
@@ -210,6 +336,30 @@ async function main() {
     const homeData = homeKey ? teamData[homeKey] : null;
     const awayData = awayKey ? teamData[awayKey] : null;
 
+    // ── Auto-update team stats for finished World Cup matches ──
+    if (status === 'finished' && score && (competition === 'Copa Mundial' || category === 'FIFA')) {
+      if (homeKey && homeData) {
+        const round = getRoundForTeam(homeData);
+        if (round) {
+          const scoreParts = score.replace('–', '-').split('-').filter(Boolean);
+          if (scoreParts.length === 2) {
+            updateTeamStats(homeData, awayTeam, scoreParts, true, round);
+            modifiedTeams.add(homeKey);
+          }
+        }
+      }
+      if (awayKey && awayData) {
+        const round = getRoundForTeam(awayData);
+        if (round) {
+          const scoreParts = score.replace('–', '-').split('-').filter(Boolean);
+          if (scoreParts.length === 2) {
+            updateTeamStats(awayData, homeTeam, scoreParts, false, round);
+            modifiedTeams.add(awayKey);
+          }
+        }
+      }
+    }
+
     matches.push({
       category, competition, homeTeam, awayTeam, time, title, status,
       score,
@@ -223,33 +373,12 @@ async function main() {
   // Sort by time
   matches.sort((a, b) => (a.time || '').localeCompare(b.time || ''));
 
+  // ── Persist team updates ──
+  if (modifiedTeams.size > 0) {
+    persistTeamUpdates(teamData, [...modifiedTeams]);
+  }
+
   // ── Write data.json ──
-  // Merge with previous data to preserve finished matches no longer in agenda
-  const prevMatches = {};
-  if (existsSync(prevPath)) {
-    try {
-      const prev = JSON.parse(readFileSync(prevPath, 'utf-8'));
-      for (const m of prev.matches || []) {
-        prevMatches[`${m.homeTeam}|${m.awayTeam}`] = m;
-      }
-    } catch {}
-  }
-
-  // Add finished matches from previous run that are now gone from agenda
-  // (only if they finished within the last 24h)
-  const oneDayAgo = Date.now() - 86400000;
-  for (const [key, pm] of Object.entries(prevMatches)) {
-    if (pm.status === 'finished' && !matches.some(m => `${m.homeTeam}|${m.awayTeam}` === key)) {
-      const pmTime = new Date();
-      const [h, mi] = (pm.time || '0:0').split(':').map(Number);
-      pmTime.setHours(h, mi, 0, 0);
-      if (pmTime > oneDayAgo) {
-        matches.push(pm);
-        console.log(`[gen] Preservado resultado: ${pm.homeTeam} vs ${pm.awayTeam} (${pm.score || 'finalizado'})`);
-      }
-    }
-  }
-
   const output = {
     updated: new Date().toISOString(),
     date: new Date().toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }),

@@ -1,0 +1,2165 @@
+{
+  "updated": "2026-07-12T01:50:49-03:00",
+  "source": "Flashscore / Yahoo Sports / Wikipedia / FIFA / The Athletic",
+  "note": "Cuartos: Francia 2-0 Marruecos (9 jul), Noruega 1-2 Inglaterra t.e. (11 jul), Espana 2-1 Belgica (10 jul), Argentina 3-1 Suiza t.e. (11 jul, Mac Allister 10', Alvarez 112', L. Martinez 120+1'; Ndoye 67'). Semifinales: Francia vs Espana, Inglaterra vs Argentina.",
+  "teams": {
+    "Sudáfrica": {
+      "flag": "🇿🇦",
+      "group": "A",
+      "pos": "2°",
+      "pts": 4,
+      "dg": "-1",
+      "played": 3,
+      "form": [
+        "D",
+        "E",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 58,
+      "best": "Fase de grupos",
+      "apps": 4,
+      "conf": "CAF",
+      "star": "⚽⚽",
+      "rating": 72,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "0–2",
+          "opponent": "🇲🇽 México",
+          "result": "l"
+        },
+        {
+          "score": "1–1",
+          "opponent": "🇨🇿 Rep. Checa",
+          "result": "d"
+        },
+        {
+          "score": "1–0",
+          "opponent": "🇰🇷 Corea del Sur",
+          "result": "w"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. El saldo goleador negativo genera alertas entre los analistas. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Canadá",
+          "s": "0-1",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Canadá": {
+      "flag": "🇨🇦",
+      "group": "B",
+      "pos": "2°",
+      "pts": 4,
+      "dg": "+5",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "D"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 41,
+      "best": "Fase de grupos",
+      "apps": 3,
+      "conf": "Concacaf",
+      "star": "⚽⚽",
+      "rating": 90,
+      "attack": "⚖️ Medio",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇧🇦 Bosnia H.",
+          "result": "d"
+        },
+        {
+          "score": "6–0",
+          "opponent": "🇶🇦 Qatar",
+          "result": "w"
+        },
+        {
+          "score": "1–2",
+          "opponent": "🇨🇭 Suiza",
+          "result": "l"
+        }
+      ],
+      "analysis": "Aparece en las quinielas de los especialistas como un serio aspirante. Los comentaristas senalan que tiene el talento necesario para llegar lejos, aunque debera confirmarlo en los momentos clave. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Sudáfrica",
+          "s": "1-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Marruecos",
+          "s": "0-3",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Brasil": {
+      "flag": "🇧🇷",
+      "group": "C",
+      "pos": "1°",
+      "pts": 7,
+      "dg": "+6",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 3,
+      "best": "Campeón (1958, 62, 70, 94, 2002)",
+      "apps": 22,
+      "conf": "Conmebol",
+      "star": "⚽⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇲🇦 Marruecos",
+          "result": "d"
+        },
+        {
+          "score": "3–0",
+          "opponent": "🇭🇹 Haití",
+          "result": "w"
+        },
+        {
+          "score": "3–0",
+          "opponent": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Japón",
+          "s": "2-1",
+          "res": "w",
+          "x": ""
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Noruega",
+          "s": "1-2",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "2V 1E 0D"
+    },
+    "Japón": {
+      "flag": "🇯🇵",
+      "group": "F",
+      "pos": "2°",
+      "pts": 5,
+      "dg": "+4",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 20,
+      "best": "Octavos (2002, 2010, 2018, 2022)",
+      "apps": 8,
+      "conf": "AFC",
+      "star": "⚽⚽⚽",
+      "rating": 92,
+      "attack": "⚡ Alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "2–2",
+          "opponent": "🇳🇱 Países Bajos",
+          "result": "d"
+        },
+        {
+          "score": "4–0",
+          "opponent": "🇹🇳 Túnez",
+          "result": "w"
+        },
+        {
+          "score": "1–1",
+          "opponent": "🇸🇪 Suecia",
+          "result": "d"
+        }
+      ],
+      "analysis": "Aparece en las quinielas de los especialistas como un serio aspirante. Los comentaristas senalan que tiene el talento necesario para llegar lejos, aunque debera confirmarlo en los momentos clave. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 2E 0D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Brasil",
+          "s": "1-2",
+          "res": "l",
+          "x": ""
+        }
+      ],
+      "form_desc": "1V 2E 0D"
+    },
+    "Alemania": {
+      "flag": "🇩🇪",
+      "group": "E",
+      "pos": "1°",
+      "pts": 6,
+      "dg": "+6",
+      "played": 3,
+      "form": [
+        "V",
+        "V",
+        "D"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 14,
+      "best": "Campeón (1954, 74, 90, 2014)",
+      "apps": 20,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "⚡ Alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "7–1",
+          "opponent": "🇨🇼 Curazao",
+          "result": "w"
+        },
+        {
+          "score": "2–1",
+          "opponent": "🇨🇮 Costa de Marfil",
+          "result": "w"
+        },
+        {
+          "score": "1–2",
+          "opponent": "🇪🇨 Ecuador",
+          "result": "l"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 0E 1D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Paraguay",
+          "s": "1-1 (p)",
+          "res": "l",
+          "x": "Paraguay 4-3 penales"
+        }
+      ],
+      "form_desc": "2V 0E 1D"
+    },
+    "Paraguay": {
+      "flag": "🇵🇾",
+      "group": "D",
+      "pos": "3°",
+      "pts": 4,
+      "dg": "-2",
+      "played": 3,
+      "form": [
+        "D",
+        "V",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 48,
+      "best": "Cuartos (2010)",
+      "apps": 9,
+      "conf": "Conmebol",
+      "star": "⚽⚽",
+      "rating": 64,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Irregular",
+      "matches_detail": [
+        {
+          "score": "1–4",
+          "opponent": "🇺🇸 EE.UU.",
+          "result": "l"
+        },
+        {
+          "score": "1–0",
+          "opponent": "🇹🇷 Turquía",
+          "result": "w"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇦🇺 Australia",
+          "result": "d"
+        }
+      ],
+      "analysis": "Llega como el equipo menos favorecido por las casas de apuesta. Los periodistas lo definen como un conjunto batallador que ya cumplio al llegar hasta aqui. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. La porteria genera dudas: el arquero ha alternado actuaciones brillantes con errores costosos. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. El saldo goleador negativo genera alertas entre los analistas. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Alemania",
+          "s": "1-1 (p)",
+          "res": "w",
+          "x": "Paraguay 4-3 penales"
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Francia",
+          "s": "0-1",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Países Bajos": {
+      "flag": "🇳🇱",
+      "group": "F",
+      "pos": "1°",
+      "pts": 7,
+      "dg": "+6",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 6,
+      "best": "Subcampeón (1974, 78, 2010)",
+      "apps": 12,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "2–2",
+          "opponent": "🇯🇵 Japón",
+          "result": "d"
+        },
+        {
+          "score": "5–1",
+          "opponent": "🇸🇪 Suecia",
+          "result": "w"
+        },
+        {
+          "score": "3–1",
+          "opponent": "🇹🇳 Túnez",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. Sabe lo que es llegar a la cima y caer en el ultimo escalon. Los especialistas valoran esa experiencia. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Marruecos",
+          "s": "1-1 (p)",
+          "res": "l",
+          "x": "Marruecos 3-2 penales"
+        }
+      ],
+      "form_desc": "2V 1E 0D"
+    },
+    "Marruecos": {
+      "flag": "🇲🇦",
+      "group": "C",
+      "pos": "2°",
+      "pts": 7,
+      "dg": "+3",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 13,
+      "best": "Semifinales (2022)",
+      "apps": 7,
+      "conf": "CAF",
+      "star": "⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇧🇷 Brasil",
+          "result": "d"
+        },
+        {
+          "score": "1–0",
+          "opponent": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia",
+          "result": "w"
+        },
+        {
+          "score": "4–2",
+          "opponent": "🇭🇹 Haití",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Su mejor actuacion historica son las semifinales. Los medios especulan si podra dar el salto a la final. Saldo goleador positivo, consistente con un equipo competitivo. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Países Bajos",
+          "s": "1-1 (p)",
+          "res": "w",
+          "x": "Marruecos 3-2 penales"
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Canadá",
+          "s": "3-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "Francia",
+          "s": "0-2",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "2V 1E 0D"
+    },
+    "Costa de Marfil": {
+      "flag": "🇨🇮",
+      "group": "E",
+      "pos": "2°",
+      "pts": 6,
+      "dg": "+2",
+      "played": 3,
+      "form": [
+        "V",
+        "D",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 47,
+      "best": "Fase de grupos",
+      "apps": 5,
+      "conf": "CAF",
+      "star": "⚽⚽",
+      "rating": 91,
+      "attack": "⚡ Alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–0",
+          "opponent": "🇪🇨 Ecuador",
+          "result": "w"
+        },
+        {
+          "score": "1–2",
+          "opponent": "🇩🇪 Alemania",
+          "result": "l"
+        },
+        {
+          "score": "2–0",
+          "opponent": "🇨🇼 Curazao",
+          "result": "w"
+        }
+      ],
+      "analysis": "Aparece en las quinielas de los especialistas como un serio aspirante. Los comentaristas senalan que tiene el talento necesario para llegar lejos, aunque debera confirmarlo en los momentos clave. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 0E 1D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. Saldo goleador positivo, consistente con un equipo competitivo. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Noruega",
+          "s": "1-2",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "2V 0E 1D"
+    },
+    "Noruega": {
+      "flag": "🇳🇴",
+      "group": "I",
+      "pos": "2°",
+      "pts": 6,
+      "dg": "+1",
+      "played": 3,
+      "form": [
+        "V",
+        "V",
+        "D"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 43,
+      "best": "Octavos (1998)",
+      "apps": 4,
+      "conf": "UEFA",
+      "star": "⚽⚽",
+      "rating": 88,
+      "attack": "⚡ Alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "4–1",
+          "opponent": "🇮🇶 Irak",
+          "result": "w"
+        },
+        {
+          "score": "3–2",
+          "opponent": "🇸🇳 Senegal",
+          "result": "w"
+        },
+        {
+          "score": "1–4",
+          "opponent": "🇫🇷 Francia",
+          "result": "l"
+        }
+      ],
+      "analysis": "Genera opiniones divididas entre los expertos: algunos lo ven como potencial revelacion, otros senalan que aun debe demostrar consistencia. Los scouts destacan su solidez tactica pero cuestionan su capacidad goleadora contra defensas cerradas. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 0E 1D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. Saldo goleador positivo, consistente con un equipo competitivo. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Costa de Marfil",
+          "s": "2-1",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Brasil",
+          "s": "2-1",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "Inglaterra",
+          "s": "1-2",
+          "res": "l",
+          "x": "1-2 t.e."
+        }
+      ],
+      "form_desc": "2V 0E 1D"
+    },
+    "Francia": {
+      "flag": "🇫🇷",
+      "group": "I",
+      "pos": "1°",
+      "pts": 9,
+      "dg": "+8",
+      "played": 3,
+      "form": [
+        "V",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 2,
+      "best": "Campeón (1998, 2018)",
+      "apps": 16,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "3–1",
+          "opponent": "🇸🇳 Senegal",
+          "result": "w"
+        },
+        {
+          "score": "3–0",
+          "opponent": "🇮🇶 Irak",
+          "result": "w"
+        },
+        {
+          "score": "4–1",
+          "opponent": "🇳🇴 Noruega",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su paso perfecto por la fase de grupos impresiono a la prensa: contundencia y solidez. Los expertos senalan que llega con la moral alta y el engranaje aceitado. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Suecia",
+          "s": "3-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Paraguay",
+          "s": "1-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "Marruecos",
+          "s": "2-0",
+          "res": "w",
+          "x": null
+        }
+      ],
+      "form_desc": "3V 0E 0D"
+    },
+    "Suecia": {
+      "flag": "🇸🇪",
+      "group": "F",
+      "pos": "3°",
+      "pts": 4,
+      "dg": "0",
+      "played": 3,
+      "form": [
+        "V",
+        "D",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 23,
+      "best": "Subcampeón (1958)",
+      "apps": 13,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽",
+      "rating": 70,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "5–1",
+          "opponent": "🇹🇳 Túnez",
+          "result": "w"
+        },
+        {
+          "score": "1–5",
+          "opponent": "🇳🇱 Países Bajos",
+          "result": "l"
+        },
+        {
+          "score": "1–1",
+          "opponent": "🇯🇵 Japón",
+          "result": "d"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Sabe lo que es llegar a la cima y caer en el ultimo escalon. Los especialistas valoran esa experiencia. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Francia",
+          "s": "0-3",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "México": {
+      "flag": "🇲🇽",
+      "group": "A",
+      "pos": "1°",
+      "pts": 9,
+      "dg": "+6",
+      "played": 3,
+      "form": [
+        "V",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 15,
+      "best": "Cuartos (1970, 1986)",
+      "apps": 18,
+      "conf": "Concacaf",
+      "star": "⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "2–0",
+          "opponent": "🇿🇦 Sudáfrica",
+          "result": "w"
+        },
+        {
+          "score": "1–0",
+          "opponent": "🇰🇷 Corea del Sur",
+          "result": "w"
+        },
+        {
+          "score": "3–0",
+          "opponent": "🇨🇿 Rep. Checa",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su paso perfecto por la fase de grupos impresiono a la prensa: contundencia y solidez. Los expertos senalan que llega con la moral alta y el engranaje aceitado. Al terminar primero de grupo, los pronosticos le son favorables. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Ecuador",
+          "s": "2-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Inglaterra",
+          "s": "2-3",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "3V 0E 0D"
+    },
+    "Ecuador": {
+      "flag": "🇪🇨",
+      "group": "E",
+      "pos": "3°",
+      "pts": 4,
+      "dg": "0",
+      "played": 3,
+      "form": [
+        "D",
+        "E",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 36,
+      "best": "Octavos (2006)",
+      "apps": 5,
+      "conf": "Conmebol",
+      "star": "⚽⚽",
+      "rating": 70,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "0–1",
+          "opponent": "🇨🇮 Costa de Marfil",
+          "result": "l"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇨🇼 Curazao",
+          "result": "d"
+        },
+        {
+          "score": "2–1",
+          "opponent": "🇩🇪 Alemania",
+          "result": "w"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "México",
+          "s": "0-2",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Inglaterra": {
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "group": "L",
+      "pos": "1°",
+      "pts": 7,
+      "dg": "+4",
+      "played": 3,
+      "form": [
+        "V",
+        "E",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 4,
+      "best": "Campeón (1966)",
+      "apps": 17,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "4–2",
+          "opponent": "🇭🇷 Croacia",
+          "result": "w"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇬🇭 Ghana",
+          "result": "d"
+        },
+        {
+          "score": "2–0",
+          "opponent": "🇵🇦 Panamá",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "RD Congo",
+          "s": "2-1",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Octavos de final",
+          "o": "México",
+          "s": "3-2",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "Noruega",
+          "s": "2-1",
+          "res": "w",
+          "x": "1-2 t.e."
+        }
+      ],
+      "form_desc": "2V 1E 0D"
+    },
+    "RD Congo": {
+      "flag": "🇨🇩",
+      "group": "K",
+      "pos": "3°",
+      "pts": 4,
+      "dg": "+1",
+      "played": 3,
+      "form": [
+        "E",
+        "D",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 64,
+      "best": "Fase de grupos (1974 como Zaire)",
+      "apps": 2,
+      "conf": "CAF",
+      "star": "⚽",
+      "rating": 73,
+      "attack": "⚖️ Medio",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇵🇹 Portugal",
+          "result": "d"
+        },
+        {
+          "score": "0–1",
+          "opponent": "🇨🇴 Colombia",
+          "result": "l"
+        },
+        {
+          "score": "3–1",
+          "opponent": "🇺🇿 Uzbekistán",
+          "result": "w"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. Saldo goleador positivo, consistente con un equipo competitivo. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Inglaterra",
+          "s": "1-2",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Bélgica": {
+      "flag": "🇧🇪",
+      "group": "G",
+      "pos": "1°",
+      "pts": 5,
+      "dg": "+4",
+      "played": 3,
+      "form": [
+        "E",
+        "E",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 5,
+      "best": "Tercer puesto (2018)",
+      "apps": 15,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽⚽",
+      "rating": 97,
+      "attack": "⚡ Alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇪🇬 Egipto",
+          "result": "d"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇮🇷 Irán",
+          "result": "d"
+        },
+        {
+          "score": "5–1",
+          "opponent": "🇳🇿 N. Zelanda",
+          "result": "w"
+        }
+      ],
+      "analysis": "Aparece en las quinielas de los especialistas como un serio aspirante. Los comentaristas senalan que tiene el talento necesario para llegar lejos, aunque debera confirmarlo en los momentos clave. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 2E 0D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al terminar primero de grupo, los pronosticos le son favorables. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Senegal",
+          "s": "3-2",
+          "res": "w",
+          "x": "3-2 t.e."
+        },
+        {
+          "r": "Octavos de final",
+          "o": "EE.UU.",
+          "s": "4-1",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "España",
+          "s": "1-2",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 2E 0D"
+    },
+    "Senegal": {
+      "flag": "🇸🇳",
+      "group": "I",
+      "pos": "3°",
+      "pts": 3,
+      "dg": "+2",
+      "played": 3,
+      "form": [
+        "D",
+        "D",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 18,
+      "best": "Cuartos (2002)",
+      "apps": 4,
+      "conf": "CAF",
+      "star": "⚽⚽⚽",
+      "rating": 71,
+      "attack": "⚖️ Medio",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–3",
+          "opponent": "🇫🇷 Francia",
+          "result": "l"
+        },
+        {
+          "score": "2–3",
+          "opponent": "🇳🇴 Noruega",
+          "result": "l"
+        },
+        {
+          "score": "5–0",
+          "opponent": "🇮🇶 Irak",
+          "result": "w"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 0E 2D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. Saldo goleador positivo, consistente con un equipo competitivo. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Bélgica",
+          "s": "2-3",
+          "res": "l",
+          "x": "3-2 t.e."
+        }
+      ],
+      "form_desc": "1V 0E 2D"
+    },
+    "EE.UU.": {
+      "flag": "🇺🇸",
+      "group": "D",
+      "pos": "1°",
+      "pts": 6,
+      "dg": "+4",
+      "played": 3,
+      "form": [
+        "V",
+        "V",
+        "D"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 11,
+      "best": "Semifinales (1930)",
+      "apps": 12,
+      "conf": "Concacaf",
+      "star": "⚽⚽⚽",
+      "rating": 99,
+      "attack": "⚡ Alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "4–1",
+          "opponent": "🇵🇾 Paraguay",
+          "result": "w"
+        },
+        {
+          "score": "2–0",
+          "opponent": "🇦🇺 Australia",
+          "result": "w"
+        },
+        {
+          "score": "2–3",
+          "opponent": "🇹🇷 Turquía",
+          "result": "l"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 0E 1D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. Su mejor actuacion historica son las semifinales. Los medios especulan si podra dar el salto a la final. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Bosnia H.",
+          "s": "2-0",
+          "res": "w",
+          "x": ""
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Bélgica",
+          "s": "1-4",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "2V 0E 1D"
+    },
+    "Bosnia H.": {
+      "flag": "🇧🇦",
+      "group": "B",
+      "pos": "3°",
+      "pts": 4,
+      "dg": "-1",
+      "played": 3,
+      "form": [
+        "E",
+        "D",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 55,
+      "best": "Fase de grupos (2014)",
+      "apps": 2,
+      "conf": "UEFA",
+      "star": "⚽",
+      "rating": 67,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇨🇦 Canadá",
+          "result": "d"
+        },
+        {
+          "score": "1–4",
+          "opponent": "🇨🇭 Suiza",
+          "result": "l"
+        },
+        {
+          "score": "3–1",
+          "opponent": "🇶🇦 Qatar",
+          "result": "w"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. El saldo goleador negativo genera alertas entre los analistas. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "EE.UU.",
+          "s": "0-2",
+          "res": "l",
+          "x": ""
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "España": {
+      "flag": "🇪🇸",
+      "group": "H",
+      "pos": "1°",
+      "pts": 7,
+      "dg": "+5",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 8,
+      "best": "Campeón (2010)",
+      "apps": 16,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "0–0",
+          "opponent": "🇨🇻 Cabo Verde",
+          "result": "d"
+        },
+        {
+          "score": "4–0",
+          "opponent": "🇸🇦 Arabia Saudita",
+          "result": "w"
+        },
+        {
+          "score": "1–0",
+          "opponent": "🇺🇾 Uruguay",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Austria",
+          "s": "3-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Portugal",
+          "s": "1-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "Bélgica",
+          "s": "2-1",
+          "res": "w",
+          "x": null
+        }
+      ],
+      "form_desc": "2V 1E 0D"
+    },
+    "Austria": {
+      "flag": "🇦🇹",
+      "group": "J",
+      "pos": "2°",
+      "pts": 4,
+      "dg": "0",
+      "played": 3,
+      "form": [
+        "V",
+        "D",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 29,
+      "best": "Tercer puesto (1954)",
+      "apps": 8,
+      "conf": "UEFA",
+      "star": "⚽⚽",
+      "rating": 75,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "3–1",
+          "opponent": "🇯🇴 Jordania",
+          "result": "w"
+        },
+        {
+          "score": "0–2",
+          "opponent": "🇦🇷 Argentina",
+          "result": "l"
+        },
+        {
+          "score": "3–3",
+          "opponent": "🇩🇿 Argelia",
+          "result": "d"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "España",
+          "s": "0-3",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Portugal": {
+      "flag": "🇵🇹",
+      "group": "K",
+      "pos": "2°",
+      "pts": 5,
+      "dg": "+5",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 7,
+      "best": "Tercer puesto (1966)",
+      "apps": 9,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽⚽",
+      "rating": 95,
+      "attack": "⚡ Alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇨🇩 RD Congo",
+          "result": "d"
+        },
+        {
+          "score": "5–0",
+          "opponent": "🇺🇿 Uzbekistán",
+          "result": "w"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇨🇴 Colombia",
+          "result": "d"
+        }
+      ],
+      "analysis": "Aparece en las quinielas de los especialistas como un serio aspirante. Los comentaristas senalan que tiene el talento necesario para llegar lejos, aunque debera confirmarlo en los momentos clave. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 2E 0D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Croacia",
+          "s": "2-1",
+          "res": "w",
+          "x": ""
+        },
+        {
+          "r": "Octavos de final",
+          "o": "España",
+          "s": "0-1",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 2E 0D"
+    },
+    "Croacia": {
+      "flag": "🇭🇷",
+      "group": "L",
+      "pos": "2°",
+      "pts": 6,
+      "dg": "0",
+      "played": 3,
+      "form": [
+        "D",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 10,
+      "best": "Subcampeón (2018)",
+      "apps": 7,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽",
+      "rating": 85,
+      "attack": "⚡ Alto",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "2–4",
+          "opponent": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra",
+          "result": "l"
+        },
+        {
+          "score": "1–0",
+          "opponent": "🇵🇦 Panamá",
+          "result": "w"
+        },
+        {
+          "score": "2–1",
+          "opponent": "🇬🇭 Ghana",
+          "result": "w"
+        }
+      ],
+      "analysis": "Genera opiniones divididas entre los expertos: algunos lo ven como potencial revelacion, otros senalan que aun debe demostrar consistencia. Los scouts destacan su solidez tactica pero cuestionan su capacidad goleadora contra defensas cerradas. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 0E 1D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Sabe lo que es llegar a la cima y caer en el ultimo escalon. Los especialistas valoran esa experiencia. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Portugal",
+          "s": "1-2",
+          "res": "l",
+          "x": ""
+        }
+      ],
+      "form_desc": "2V 0E 1D"
+    },
+    "Suiza": {
+      "flag": "🇨🇭",
+      "group": "B",
+      "pos": "1°",
+      "pts": 7,
+      "dg": "+4",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 12,
+      "best": "Cuartos (1934, 38, 54)",
+      "apps": 13,
+      "conf": "UEFA",
+      "star": "⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇶🇦 Qatar",
+          "result": "d"
+        },
+        {
+          "score": "4–1",
+          "opponent": "🇧🇦 Bosnia H.",
+          "result": "w"
+        },
+        {
+          "score": "2–1",
+          "opponent": "🇨🇦 Canadá",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Argelia",
+          "s": "2-0",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Colombia",
+          "s": "0-0 (p)",
+          "res": "w",
+          "x": "Suiza 4-3 penales"
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "Argentina",
+          "s": "1-3",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "2V 1E 0D"
+    },
+    "Argelia": {
+      "flag": "🇩🇿",
+      "group": "J",
+      "pos": "3°",
+      "pts": 4,
+      "dg": "-2",
+      "played": 3,
+      "form": [
+        "D",
+        "V",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 34,
+      "best": "Octavos (2014)",
+      "apps": 5,
+      "conf": "CAF",
+      "star": "⚽⚽",
+      "rating": 64,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Irregular",
+      "matches_detail": [
+        {
+          "score": "0–3",
+          "opponent": "🇦🇷 Argentina",
+          "result": "l"
+        },
+        {
+          "score": "2–1",
+          "opponent": "🇯🇴 Jordania",
+          "result": "w"
+        },
+        {
+          "score": "3–3",
+          "opponent": "🇦🇹 Austria",
+          "result": "d"
+        }
+      ],
+      "analysis": "Llega como el equipo menos favorecido por las casas de apuesta. Los periodistas lo definen como un conjunto batallador que ya cumplio al llegar hasta aqui. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. La porteria genera dudas: el arquero ha alternado actuaciones brillantes con errores costosos. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. El saldo goleador negativo genera alertas entre los analistas. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Suiza",
+          "s": "0-2",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Australia": {
+      "flag": "🇦🇺",
+      "group": "D",
+      "pos": "2°",
+      "pts": 4,
+      "dg": "0",
+      "played": 3,
+      "form": [
+        "V",
+        "D",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 27,
+      "best": "Octavos (2006, 2022)",
+      "apps": 7,
+      "conf": "AFC",
+      "star": "⚽⚽",
+      "rating": 75,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "2–0",
+          "opponent": "🇹🇷 Turquía",
+          "result": "w"
+        },
+        {
+          "score": "0–2",
+          "opponent": "🇺🇸 EE.UU.",
+          "result": "l"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇵🇾 Paraguay",
+          "result": "d"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Egipto",
+          "s": "1-1 (p)",
+          "res": "l",
+          "x": "Egipto 4-2 penales"
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    },
+    "Egipto": {
+      "flag": "🇪🇬",
+      "group": "G",
+      "pos": "2°",
+      "pts": 5,
+      "dg": "+2",
+      "played": 3,
+      "form": [
+        "E",
+        "V",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 35,
+      "best": "Octavos (1934)",
+      "apps": 4,
+      "conf": "CAF",
+      "star": "⚽⚽",
+      "rating": 86,
+      "attack": "⚡ Alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–1",
+          "opponent": "🇧🇪 Bélgica",
+          "result": "d"
+        },
+        {
+          "score": "3–1",
+          "opponent": "🇳🇿 N. Zelanda",
+          "result": "w"
+        },
+        {
+          "score": "1–1",
+          "opponent": "🇮🇷 Irán",
+          "result": "d"
+        }
+      ],
+      "analysis": "Genera opiniones divididas entre los expertos: algunos lo ven como potencial revelacion, otros senalan que aun debe demostrar consistencia. Los scouts destacan su solidez tactica pero cuestionan su capacidad goleadora contra defensas cerradas. La ofensiva ha recibido criticas positivas por su velocidad y asociacion. Los analistas senalan que genera ocasiones suficientes pero a veces carece de definicion. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 2E 0D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Ya igualo su mejor participacion (octavos). Los periodistas lo ven con potencial para seguir haciendo historia. Saldo goleador positivo, consistente con un equipo competitivo. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Australia",
+          "s": "1-1 (p)",
+          "res": "w",
+          "x": "Egipto 4-2 penales"
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Argentina",
+          "s": "2-3",
+          "res": "l",
+          "x": null
+        }
+      ],
+      "form_desc": "1V 2E 0D"
+    },
+    "Argentina": {
+      "flag": "🇦🇷",
+      "group": "J",
+      "pos": "1°",
+      "pts": 9,
+      "dg": "+7",
+      "played": 3,
+      "form": [
+        "V",
+        "V",
+        "V"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 1,
+      "best": "Campeón (1978, 86, 2022)",
+      "apps": 19,
+      "conf": "Conmebol",
+      "star": "⚽⚽⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "🛡️ Sólida",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "3–0",
+          "opponent": "🇩🇿 Argelia",
+          "result": "w"
+        },
+        {
+          "score": "2–0",
+          "opponent": "🇦🇹 Austria",
+          "result": "w"
+        },
+        {
+          "score": "3–1",
+          "opponent": "🇯🇴 Jordania",
+          "result": "w"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Defensivamente, los expertos lo colocan entre los mejores del torneo. La prensa destaca la disciplina tactica y la solidez del bloque bajo. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su paso perfecto por la fase de grupos impresiono a la prensa: contundencia y solidez. Los expertos senalan que llega con la moral alta y el engranaje aceitado. Al terminar primero de grupo, los pronosticos le son favorables. La historia pesa: los medios recuerdan que es una seleccion con tradicion de campeon. La presion de portar ese legado es vista como un arma de doble filo. El amplio diferencial de gol es senalado por la prensa como reflejo de su superioridad ofensiva. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Cabo Verde",
+          "s": "3-2",
+          "res": "w",
+          "x": "3-2 t.e."
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Egipto",
+          "s": "3-2",
+          "res": "w",
+          "x": null
+        },
+        {
+          "r": "Cuartos de final",
+          "o": "Suiza",
+          "s": "3-1",
+          "res": "w",
+          "x": null
+        }
+      ],
+      "form_desc": "3V 0E 0D"
+    },
+    "Cabo Verde": {
+      "flag": "🇨🇻",
+      "group": "H",
+      "pos": "2°",
+      "pts": 3,
+      "dg": "0",
+      "played": 3,
+      "form": [
+        "E",
+        "E",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 67,
+      "best": "Debut",
+      "apps": 1,
+      "conf": "CAF",
+      "star": "⚽",
+      "rating": 70,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "0–0",
+          "opponent": "🇪🇸 España",
+          "result": "d"
+        },
+        {
+          "score": "2–2",
+          "opponent": "🇺🇾 Uruguay",
+          "result": "d"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇸🇦 Arabia Saudita",
+          "result": "d"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Clasifico de manera ajustada (0V 3E 0D), generando dudas entre la prensa especializada. Los criticos se preguntan si podra elevar su nivel. Al clasificar 2°, los analistas senalan que el camino se pone cuesta arriba. Debutante o con minima experiencia mundialista. Las miradas estan puestas en como respondera a la presion. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Argentina",
+          "s": "2-3",
+          "res": "l",
+          "x": "3-2 t.e."
+        }
+      ],
+      "form_desc": "0V 3E 0D"
+    },
+    "Colombia": {
+      "flag": "🇨🇴",
+      "group": "K",
+      "pos": "1°",
+      "pts": 7,
+      "dg": "+3",
+      "played": 3,
+      "form": [
+        "V",
+        "V",
+        "E"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 17,
+      "best": "Cuartos (2014)",
+      "apps": 7,
+      "conf": "Conmebol",
+      "star": "⚽⚽⚽",
+      "rating": 99,
+      "attack": "🔥 Muy alto",
+      "defense": "✅ Buena",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "3–1",
+          "opponent": "🇺🇿 Uzbekistán",
+          "result": "w"
+        },
+        {
+          "score": "1–0",
+          "opponent": "🇨🇩 RD Congo",
+          "result": "w"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🇵🇹 Portugal",
+          "result": "d"
+        }
+      ],
+      "analysis": "Considerado por la prensa internacional como uno de los maximos candidatos al titulo. Los analistas destacan su profundidad de plantel y la experiencia en instancias decisivas. Su poder ofensivo es elogiado por la prensa deportiva como uno de los mas letales del torneo. Los comentaristas destacan su capacidad para resolver partidos desde la individualidad. Ha recibido elogios por su orden defensivo. Los analistas notan que es dificil de vulnerar, aunque no impenetrable. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. La campana de grupos (2V 1E 0D) fue considerada positiva. Las criticas resaltan la solidez pero advierten que debe mantener la intensidad. Al terminar primero de grupo, los pronosticos le son favorables. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. Saldo goleador positivo, consistente con un equipo competitivo. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Ghana",
+          "s": "1-0",
+          "res": "w",
+          "x": ""
+        },
+        {
+          "r": "Octavos de final",
+          "o": "Suiza",
+          "s": "0-0 (p)",
+          "res": "l",
+          "x": "Suiza 4-3 penales"
+        }
+      ],
+      "form_desc": "2V 1E 0D"
+    },
+    "Ghana": {
+      "flag": "🇬🇭",
+      "group": "L",
+      "pos": "3°",
+      "pts": 4,
+      "dg": "0",
+      "played": 3,
+      "form": [
+        "V",
+        "E",
+        "D"
+      ],
+      "status": "Clasificado",
+      "fifa_rank": 52,
+      "best": "Cuartos (2010)",
+      "apps": 5,
+      "conf": "CAF",
+      "star": "⚽⚽",
+      "rating": 70,
+      "attack": "⚖️ Medio",
+      "defense": "⚠️ Regular",
+      "keeper": "🧤 Sólido",
+      "matches_detail": [
+        {
+          "score": "1–0",
+          "opponent": "🇵🇦 Panamá",
+          "result": "w"
+        },
+        {
+          "score": "0–0",
+          "opponent": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra",
+          "result": "d"
+        },
+        {
+          "score": "1–2",
+          "opponent": "🇭🇷 Croacia",
+          "result": "l"
+        }
+      ],
+      "analysis": "Es visto como un equipo peligroso para cualquier favorito. La critica senala que su techo depende de la disciplina tactica y de evitar errores individuales. Uno de los puntos mas cuestionados es la produccion ofensiva. La critica coincide en que necesita mayor efectividad de cara al arco. La mayor debilidad senalada por los comentaristas es la fragilidad defensiva. Los errores en el fondo han sido tema recurrente en los analisis post-partido. Bajo los tres palos cuenta con un guardian que inspira confianza a la defensa. Su clasificacion (1V 1E 1D) fue suficiente aunque sin brillo. Algunos medios lo senalan como un equipo que aun no ha mostrado su mejor version. Al clasificar 3°, los analistas senalan que el camino se pone cuesta arriba. Su techo historico son los cuartos de final. La critica observa si podra romper esa barrera. ",
+      "ko_matches": [
+        {
+          "r": "16avos de final",
+          "o": "Colombia",
+          "s": "0-1",
+          "res": "l",
+          "x": ""
+        }
+      ],
+      "form_desc": "1V 1E 1D"
+    }
+  },
+  "rounds": [
+    {
+      "name": "16avos de final",
+      "matches": [
+        {
+          "id": 1,
+          "date": "28 jun 16:00",
+          "home": "Sudáfrica",
+          "away": "Canadá",
+          "hscore": 0,
+          "ascore": 1,
+          "status": "played",
+          "extra": null,
+          "stadium": "MetLife Stadium, NY"
+        },
+        {
+          "id": 2,
+          "date": "29 jun 14:00",
+          "home": "Brasil",
+          "away": "Japón",
+          "hscore": 2,
+          "ascore": 1,
+          "status": "played",
+          "stadium": "AT&T Stadium, TX"
+        },
+        {
+          "id": 3,
+          "date": "29 jun 17:30",
+          "home": "Alemania",
+          "away": "Paraguay",
+          "hscore": 1,
+          "ascore": 1,
+          "status": "played",
+          "extra": "Paraguay 4-3 penales",
+          "stadium": "SoFi Stadium, CA"
+        },
+        {
+          "id": 4,
+          "date": "29 jun 22:00",
+          "home": "Países Bajos",
+          "away": "Marruecos",
+          "hscore": 1,
+          "ascore": 1,
+          "status": "played",
+          "extra": "Marruecos 3-2 penales",
+          "stadium": "Mercedes-Benz, GA"
+        },
+        {
+          "id": 5,
+          "date": "30 jun 14:00",
+          "home": "Costa de Marfil",
+          "away": "Noruega",
+          "hscore": 1,
+          "ascore": 2,
+          "status": "played",
+          "extra": null,
+          "stadium": "NRG Stadium, TX"
+        },
+        {
+          "id": 6,
+          "date": "30 jun 18:00",
+          "home": "Francia",
+          "away": "Suecia",
+          "hscore": 3,
+          "ascore": 0,
+          "status": "played",
+          "extra": null,
+          "stadium": "Arrowhead, MO"
+        },
+        {
+          "id": 7,
+          "date": "30 jun 22:00",
+          "home": "México",
+          "away": "Ecuador",
+          "hscore": 2,
+          "ascore": 0,
+          "status": "played",
+          "extra": null,
+          "stadium": "Estadio Azteca, MX"
+        },
+        {
+          "id": 8,
+          "date": "1 jul 13:00",
+          "home": "Inglaterra",
+          "away": "RD Congo",
+          "hscore": 2,
+          "ascore": 1,
+          "status": "played",
+          "extra": null,
+          "stadium": "Wembley, UK"
+        },
+        {
+          "id": 9,
+          "date": "1 jul 17:00",
+          "home": "Bélgica",
+          "away": "Senegal",
+          "hscore": 3,
+          "ascore": 2,
+          "status": "played",
+          "extra": "3-2 t.e.",
+          "stadium": "BC Place, CA"
+        },
+        {
+          "id": 10,
+          "date": "1 jul 21:00",
+          "home": "EE.UU.",
+          "away": "Bosnia H.",
+          "hscore": 2,
+          "ascore": 0,
+          "status": "played",
+          "stadium": "Lumen Field, WA"
+        },
+        {
+          "id": 11,
+          "date": "2 jul 16:00",
+          "home": "España",
+          "away": "Austria",
+          "hscore": 3,
+          "ascore": 0,
+          "status": "played",
+          "extra": null,
+          "stadium": "MetLife Stadium, NY"
+        },
+        {
+          "id": 12,
+          "date": "2 jul 20:00",
+          "home": "Portugal",
+          "away": "Croacia",
+          "hscore": 2,
+          "ascore": 1,
+          "status": "played",
+          "stadium": "Hard Rock, FL"
+        },
+        {
+          "id": 13,
+          "date": "3 jul 00:00",
+          "home": "Suiza",
+          "away": "Argelia",
+          "hscore": 2,
+          "ascore": 0,
+          "status": "played",
+          "extra": null,
+          "stadium": "NRG Stadium, TX"
+        },
+        {
+          "id": 14,
+          "date": "3 jul 15:00",
+          "home": "Australia",
+          "away": "Egipto",
+          "hscore": 1,
+          "ascore": 1,
+          "status": "played",
+          "stadium": "Levi's, CA",
+          "extra": "Egipto 4-2 penales"
+        },
+        {
+          "id": 15,
+          "date": "3 jul 19:00",
+          "home": "Argentina",
+          "away": "Cabo Verde",
+          "hscore": 3,
+          "ascore": 2,
+          "status": "played",
+          "stadium": "River Plate, AR",
+          "extra": "3-2 t.e."
+        },
+        {
+          "id": 16,
+          "date": "3 jul 22:30",
+          "home": "Colombia",
+          "away": "Ghana",
+          "hscore": 1,
+          "ascore": 0,
+          "status": "played",
+          "stadium": "Camping World, FL"
+        }
+      ]
+    },
+    {
+      "name": "Octavos de final",
+      "matches": [
+        {
+          "id": 101,
+          "date": "4 jul 14:00",
+          "home": "Canadá",
+          "away": "Marruecos",
+          "hscore": 0,
+          "ascore": 3,
+          "status": "played",
+          "extra": null,
+          "stadium": "NRG Stadium, Houston"
+        },
+        {
+          "id": 102,
+          "date": "4 jul 18:00",
+          "home": "Paraguay",
+          "away": "Francia",
+          "hscore": 0,
+          "ascore": 1,
+          "status": "played",
+          "extra": null,
+          "stadium": "Lincoln Financial Field, Philadelphia"
+        },
+        {
+          "id": 103,
+          "date": "5 jul 17:00",
+          "home": "Brasil",
+          "away": "Noruega",
+          "hscore": 1,
+          "ascore": 2,
+          "status": "played",
+          "extra": null,
+          "stadium": "MetLife Stadium, NJ"
+        },
+        {
+          "id": 104,
+          "date": "5 jul 21:00",
+          "home": "México",
+          "away": "Inglaterra",
+          "hscore": 2,
+          "ascore": 3,
+          "status": "played",
+          "extra": null,
+          "stadium": "Estadio Azteca, CDMX"
+        },
+        {
+          "id": 105,
+          "date": "6 jul 16:00",
+          "home": "España",
+          "away": "Portugal",
+          "hscore": 1,
+          "ascore": 0,
+          "status": "played",
+          "extra": null,
+          "stadium": "AT&T Stadium, Dallas"
+        },
+        {
+          "id": 106,
+          "date": "6 jul 21:00",
+          "home": "Bélgica",
+          "away": "EE.UU.",
+          "hscore": 4,
+          "ascore": 1,
+          "status": "played",
+          "extra": null,
+          "stadium": "Lumen Field, Seattle"
+        },
+        {
+          "id": 107,
+          "date": "7 jul 13:00",
+          "home": "Egipto",
+          "away": "Argentina",
+          "hscore": 2,
+          "ascore": 3,
+          "status": "played",
+          "stadium": "Mercedes-Benz Stadium, Atlanta"
+        },
+        {
+          "id": 108,
+          "date": "7 jul 17:00",
+          "home": "Suiza",
+          "away": "Colombia",
+          "hscore": 0,
+          "ascore": 0,
+          "status": "played",
+          "stadium": "BC Place, Vancouver",
+          "extra": "Suiza 4-3 penales"
+        }
+      ]
+    },
+    {
+      "name": "Cuartos de final",
+      "matches": [
+        {
+          "id": 201,
+          "date": "9 jul 17:00",
+          "home": "Marruecos",
+          "away": "Francia",
+          "hscore": 0,
+          "ascore": 2,
+          "status": "played",
+          "stadium": "Gillette Stadium, Boston"
+        },
+        {
+          "id": 202,
+          "date": "11 jul 18:00",
+          "home": "Noruega",
+          "away": "Inglaterra",
+          "hscore": 1,
+          "ascore": 2,
+          "status": "played",
+          "stadium": "Hard Rock Stadium, Miami",
+          "extra": "1-2 t.e."
+        },
+        {
+          "id": 203,
+          "date": "10 jul 16:00",
+          "home": "España",
+          "away": "Bélgica",
+          "hscore": 2,
+          "ascore": 1,
+          "status": "played",
+          "stadium": "SoFi Stadium, Inglewood"
+        },
+        {
+          "id": 204,
+          "date": "11 jul 22:00",
+          "home": "Argentina",
+          "away": "Suiza",
+          "hscore": 3,
+          "ascore": 1,
+          "status": "played",
+          "stadium": "Arrowhead Stadium, Kansas City",
+          "extra": "3-1 t.e."
+        }
+      ]
+    },
+    {
+      "name": "Semifinales",
+      "matches": [
+        {
+          "id": 301,
+          "date": "14-15 jul",
+          "home": "Francia",
+          "away": "España",
+          "hscore": null,
+          "ascore": null,
+          "status": "upcoming",
+          "stadium": "—"
+        },
+        {
+          "id": 302,
+          "date": "14-15 jul",
+          "home": "Inglaterra",
+          "away": "Argentina",
+          "hscore": null,
+          "ascore": null,
+          "status": "upcoming",
+          "stadium": "—"
+        }
+      ]
+    },
+    {
+      "name": "Final",
+      "matches": [
+        {
+          "id": 401,
+          "date": "19 jul 16:00",
+          "home": "Gan. S1",
+          "away": "Gan. S2",
+          "hscore": null,
+          "ascore": null,
+          "status": "upcoming",
+          "stadium": "MetLife Stadium, NJ"
+        }
+      ]
+    }
+  ]
+}

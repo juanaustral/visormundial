@@ -411,6 +411,13 @@ function renderTeams(m) {
       return `<div class="mi"><span class="mr ${c}">${l}</span><span class="op">${md.opponent}</span><span class="sc">${md.score}</span></div>`;
     }).join('') : '';
 
+    const koMatches = d.ko_matches ? d.ko_matches.map(km => {
+      const c = km.res==='w'||km.res==='W'?'w':km.res==='l'||km.res==='L'?'l':'d';
+      const l = c==='w'?'G':c==='l'?'P':'E';
+      const extra = km.x ? ` <small style="color:var(--text-muted)">${km.x}</small>` : '';
+      return `<div class="mi"><span class="mr ${c}">${l}</span><span class="op">${km.r}: ${km.o}${extra}</span><span class="sc">${km.s}</span></div>`;
+    }).join('') : '';
+
     const rv = d.rating||0;
     const rc = rv>=80?'g':rv>=60?'a':'b';
 
@@ -429,6 +436,7 @@ function renderTeams(m) {
       <div class="rbar"><div class="rfill ${rc}" style="width:${rv}%"></div></div>
       ${form ? `<div style="font-size:9px;color:var(--text-muted);margin-top:5px">Forma</div><div class="form-row">${form}</div>` : ''}
       ${matches ? `<div style="font-size:9px;color:var(--text-muted);margin-top:5px">Ultimos partidos</div><div class="mlist">${matches}</div>` : ''}
+      ${koMatches ? `<div style="font-size:9px;color:var(--text-muted);margin-top:5px">Eliminatorias</div><div class="mlist">${koMatches}</div>` : ''}
     </div>`;
   };
 
@@ -450,6 +458,7 @@ const CHANGELOG = [
   {v:"1.2", d:"01/07", t:"Filtro en topbar: solo partidos streamables, finished ocultos, sidebar usa lista filtrada"},
   {v:"1.3", d:"04/07", t:"Status detection: usa data.json en vez de reloj. Scores corregidos Argentina 3-2 y Belgica 3-2. Partidos viejos limpiados"},
   {v:"1.4", d:"05/07", t:"Header mas grande con pelota girando, barra fija al scrollear"},
+  {v:"1.5", d:"14/07", t:"Sidebar muestra eliminatorias, stats de equipos se actualizan automaticamente, agenda solo upcoming/live"},
 ];
 const VER = CHANGELOG[CHANGELOG.length-1].v;
 
