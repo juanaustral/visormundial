@@ -268,12 +268,9 @@ let busy = false, loadTimer = null, matches = [];
     data = await r.json();
     // Filter: solo partidos del Mundial que tengan streams o sean proximos
     matches = data.matches.filter(m => {
+      // Solo partidos del Mundial que esten upcoming o live
       if (m.competition !== 'Copa Mundial' && m.category !== 'FIFA') return false;
-      if (m.status === 'finished') {
-        // Solo finished si tiene datos de equipos (match real de hoy) o canales
-        return (m.homeData || m.awayData || m.channels.length > 0) && m.score;
-      }
-      return true; // upcoming/live siempre se muestran
+      return m.status === 'upcoming' || m.status === 'live';
     });
     document.getElementById('loadingAgenda').remove();
     renderAgenda();
